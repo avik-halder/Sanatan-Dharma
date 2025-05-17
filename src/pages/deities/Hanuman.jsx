@@ -1,16 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Hanuman from "../../assets/deities/Hanuman/Hanuman2.jpg";
+import Hanuman from "../../assets/Deities/Hanuman/Hanuman2.jpg";
 
-import HanumanTemple from "../../assets/deities/Hanuman/Jakhu Temple_Hanuman Temple.webp";
+import HanumanTemple from "../../assets/Deities/Hanuman/Jakhu Temple_Hanuman Temple.webp";
 
-import Childhood from "../../assets/deities/Hanuman/Childhood and the Sun.jpg";
-import MeetingRama from "../../assets/deities/Hanuman/Meeting Lord Rama.jpg";
-import LeapToLanka from "../../assets/deities/Hanuman/Leap to Lanka.jpg";
-import FindingSita from "../../assets/deities/Hanuman/Finding Sita.jpg";
-import BurningLanka from "../../assets/deities/Hanuman/Burning of Lanka.jpg";
-import SanjeevaniMountain from "../../assets/deities/Hanuman/Sanjeevani Mountain.jpg";
+import Childhood from "../../assets/Deities/Hanuman/Childhood and the Sun.jpg";
+import MeetingRama from "../../assets/Deities/Hanuman/Meeting Lord Rama.jpg";
+import LeapToLanka from "../../assets/Deities/Hanuman/Leap to Lanka.jpg";
+import FindingSita from "../../assets/Deities/Hanuman/Finding Sita.jpg";
+import BurningLanka from "../../assets/Deities/Hanuman/Burning of Lanka.jpg";
+import SanjeevaniMountain from "../../assets/Deities/Hanuman/Sanjeevani Mountain.jpg";
 
 export default function HanumanPage() {
   return (

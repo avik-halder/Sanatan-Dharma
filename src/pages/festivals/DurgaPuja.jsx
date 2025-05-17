@@ -17,16 +17,6 @@ import artsAndCrafts from "../../assets/Festivals/DurgaPuja/Durga Puja Arts and 
 import literatureAndPublishing from "../../assets/Festivals/DurgaPuja/Literature and Publishing.jpg";
 import communityBonding from "../../assets/Festivals/DurgaPuja/Durga Puja Community Bonding.jpg";
 
-// import shailaputri from "../../assets/Deities/Durga/Shailaputri2.jpg";
-// import brahmacharini from '../../assets/Deities/Durga/Brahmacharini2.jpg'
-// import Chandraghanta from "../../assets/Deities/Durga/Chandraghanta.jpg";
-// import Mahagauri from "../../assets/Deities/Durga/Mahagauri.jpg";
-// import Siddhidatri from "../../assets/Deities/Durga/Siddhidatri.jpg";
-// import skandamata from "../../assets/Deities/Durga/Skandamatha.jpg";
-// import kushmanda from "../../assets/Deities/Durga/Kushmanda.jpg";
-// import Katyayani from "../../assets/Deities/Durga/Katyayani.jpg";
-// import Kalaratri from "../../assets/Deities/Durga/done/Kalaratri.png";
-
 import shailaputri from "../../assets/Deities/Durga/ok/Shailaputri.jpg";
 import brahmacharini from "../../assets/Deities/Durga/ok/Brahmacharini.jpg";
 import chandraghanta from "../../assets/Deities/Durga/ok/Chandraghanta.jpg";
