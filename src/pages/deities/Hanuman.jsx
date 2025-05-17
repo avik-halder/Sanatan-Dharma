@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Hanuman from "../../assets/Deities/Hanuman/Hanuman2.jpg";
+import Hanuman from "../../assets/Deities/Hanuman/hanuman2.jpg";
 
 import HanumanTemple from "../../assets/Deities/Hanuman/Jakhu Temple_Hanuman Temple.webp";
 
