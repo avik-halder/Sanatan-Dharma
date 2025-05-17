@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import Saraswati from "../../assets/Deities/saraswati.webp";
+import Saraswati from "../../assets/Deities/Saraswati.webp";
 import saraswatiPuja from '../../assets/Deities/Saraswati/Saraswati Puja.png'
 
 import origin from '../../assets/Deities/Saraswati/Origin and Creation of Saraswati.jpg'
