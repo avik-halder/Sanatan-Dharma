@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import babykrishna from "../../assets/Festivals/Janmashtami/Baby Krishna with Butter.png";
 import birthStory from "../../assets/Festivals/Janmashtami/Birth Story of Krishna.png";
-import janmashtami from "../../assets/Festivals/Janmashtami.webp";
+import janmashtami from "../../assets/Festivals/janmashtami.webp";
 
 import fasting from "../../assets/Festivals/Janmashtami/Fasting.png";
 import midnightCelebrations from "../../assets/Festivals/Janmashtami/Midnight Celebrations.png";
