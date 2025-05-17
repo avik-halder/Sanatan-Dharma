@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import ganesh from "../../assets/Deities/ganesh.webp";
+import ganesh from "../../assets/Deities/Ganesh.webp";
 import ganeshCaturthi from "../../assets/Festivals/ganesh chaturthi.webp";
 
 import birth from '../../assets/Deities/Ganesh/Birth.jpg'
