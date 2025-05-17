@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Lakshmi from "../../assets/Deities/lakshmi.webp";
+import Lakshmi from "../../assets/Deities/Lakshmi.webp";
 import lakshmiPuja from '../../assets/Deities/Lakshmi/Lakshmi Puja.png'
 
 import AdiLakshmi from "../../assets/Deities/Lakshmi/Adi Lakshmi.jpg";
