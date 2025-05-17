@@ -2,11 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import BrahmaImage from "../../assets/deities/Lord_Bramha.webp";
-import creatingUniverse from "../../assets/deities/Brahma/brahma creating universe.webp";
-import brahmaSaraswati from "../../assets/deities/Brahma/brahma with saraswati.webp";
-import brahmaTemple from "../../assets/deities/Brahma/brahma temple.webp";
-import brahmaMeditating from "../../assets/deities/Brahma/brahma meditation.webp";
+import BrahmaImage from "../../assets/Deities/Lord_Bramha.webp";
+import creatingUniverse from "../../assets/Deities/Brahma/brahma creating universe.webp";
+import brahmaSaraswati from "../../assets/Deities/Brahma/brahma with saraswati.webp";
+import brahmaTemple from "../../assets/Deities/Brahma/brahma temple.webp";
+import brahmaMeditating from "../../assets/Deities/Brahma/brahma meditation.webp";
 
 const BrahmaPage = () => {
   return (
