@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import yoga from '../../assets/yoga3.webp';
 import meditation from '../../assets/meditation2.webp';
-import puja from '../../assets/Puja.webp';
+import puja from '../../assets/puja.webp';
 import mantra from '../../assets/mantra.webp';
 
 const Practices = () => {
