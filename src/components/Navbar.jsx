@@ -93,7 +93,7 @@ export default function Navbar() {
         >
           <img
             loading="lazy"
-            src={logo3}
+            src="https://res.cloudinary.com/dvvkytr5n/image/upload/v1747848755/logo_voivmo.webp"
             alt="Logo"
             className="h-7 w-7 md:w-9 md:h-9 lg:h-11 lg:w-11 rounded-full"
           />
@@ -116,7 +116,7 @@ export default function Navbar() {
                 <a href="/">
                   <img
                     loading="lazy"
-                    src={logo3}
+                    src="https://res.cloudinary.com/dvvkytr5n/image/upload/v1747848755/logo_voivmo.webp"
                     alt="Logo"
                     className="h-9 w-9 rounded-full"
                   />
