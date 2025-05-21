@@ -30,7 +30,6 @@ import VedasPage from './pages/resouces/Vedas';
 import UpanishadsPage from './pages/resouces/Upanishads';
 import PuranasPage from './pages/resouces/Puranas';
 import EpicsPage from './pages/resouces/Epics';
-// import DemoPage from '../src/Demo'
 import PujaPage from './pages/practices/Puja';
 import YogaPage from './pages/practices/Yoga';
 import MeditationPage from './pages/practices/Meditation';
