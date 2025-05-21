@@ -65,6 +65,7 @@ export default function RamaPage() {
                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={Rama}
                   alt="Lord Rama"
                   className="object-cover w-full h-full"
@@ -118,7 +119,12 @@ export default function RamaPage() {
                     "The mark on his forehead represents his divine status and connection to Vishnu.",
                   icon: (
                     <>
-                      <img src={tilak} className="h-10 w-13" alt="" />
+                      <img
+                        loading="lazy"
+                        src={tilak}
+                        className="h-10 w-13"
+                        alt=""
+                      />
                     </>
                   ),
                 },
@@ -241,6 +247,7 @@ export default function RamaPage() {
                 className="relative h-[400px] rounded-lg overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={RamMandir}
                   alt="Ram Temple"
                   className="w-full h-full object-cover"

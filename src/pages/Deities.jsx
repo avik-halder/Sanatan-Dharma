@@ -164,6 +164,7 @@ export default function DeitiesPage() {
                 >
                   <div className="relative h-68">
                     <img
+                      loading="lazy"
                       src={deity.image || "/placeholder.svg"}
                       alt={deity.name}
                       className="object-cover w-full h-full"
@@ -255,6 +256,7 @@ export default function DeitiesPage() {
                     >
                       <div className="relative w-full md:w-1/3 h-60">
                         <img
+                          loading="lazy"
                           src={deity.image || "/placeholder.svg"}
                           alt={deity.name}
                           className="object-cover w-full h-full"
@@ -295,6 +297,7 @@ export default function DeitiesPage() {
                     >
                       <div className="relative w-full md:w-1/3 h-60">
                         <img
+                          loading="lazy"
                           src={deity.image || "/placeholder.svg"}
                           alt={deity.name}
                           className="object-cover w-full h-full"
@@ -371,6 +374,7 @@ export default function DeitiesPage() {
                 >
                   <div className="relative h-40 w-40 mx-auto mt-6">
                     <img
+                      loading="lazy"
                       src={avatar.image || "/placeholder.svg"}
                       alt={avatar.name}
                       className="object-cover rounded-full w-full h-full hover:scale-110 duration-500"

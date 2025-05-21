@@ -15,7 +15,7 @@ import Krishna from "../../assets/Deities/Krishna.webp";
 import Buddha from "../../assets/Deities/Buddha.webp";
 import Kalki from "../../assets/Deities/Kalki.webp";
 
-import vishnuLakshmi from '../../assets/Deities/Vishnu/Lord Vishnu with Goddess Lakshmi.jpg'
+import vishnuLakshmi from "../../assets/Deities/Vishnu/Lord Vishnu with Goddess Lakshmi.jpg";
 
 const VishnuPage = () => {
   return (
@@ -73,6 +73,7 @@ const VishnuPage = () => {
                 className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={Vishnu}
                   alt="Lord Vishnu"
                   className="object-cover w-full h-full"
@@ -248,6 +249,7 @@ const VishnuPage = () => {
                 >
                   <div className="relative h-40 w-40 mx-auto mt-6">
                     <img
+                      loading="lazy"
                       src={avatar.image || "/placeholder.svg"}
                       alt={avatar.name}
                       className="object-cover rounded-full w-full h-full hover:scale-110 duration-500"
@@ -338,6 +340,7 @@ const VishnuPage = () => {
                 className="relative lg:h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={vishnuLakshmi}
                   alt="Vishnu with Lakshmi"
                   className="object-cover w-full h-full"

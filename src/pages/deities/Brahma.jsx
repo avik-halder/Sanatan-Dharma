@@ -63,6 +63,7 @@ const BrahmaPage = () => {
                 className="relative lg:h-[470px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={BrahmaImage}
                   alt="Lord Brahma"
                   className="object-cover w-full h-full"
@@ -241,6 +242,7 @@ const BrahmaPage = () => {
                     className="relative h-60 rounded-lg overflow-hidden group"
                   >
                     <img
+                      loading="lazy"
                       src={item.image || "/placeholder.svg"}
                       alt={item.title}
                       className="object-cover w-full h-full rounded transition-transform duration-500 group-hover:scale-110"

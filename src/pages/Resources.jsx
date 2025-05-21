@@ -145,6 +145,7 @@ export default function ResourcesPage() {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
+                            loading="lazy"
                             src={vedas}
                             alt="Vedas"
                             className="object-cover w-full h-full"
@@ -213,6 +214,7 @@ export default function ResourcesPage() {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
+                            loading="lazy"
                             src={upanishads}
                             alt="Upanishads"
                             className="object-cover w-full h-full"
@@ -288,6 +290,7 @@ export default function ResourcesPage() {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
+                            loading="lazy"
                             src={epics}
                             alt="Hindu Epics"
                             className="object-cover w-full h-full"
@@ -353,6 +356,7 @@ export default function ResourcesPage() {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
+                            loading="lazy"
                             src={puranas}
                             alt="Puranas"
                             className="object-cover w-full h-full"
@@ -551,6 +555,7 @@ export default function ResourcesPage() {
                 >
                   <div className="relative h-64 mx-auto p-4">
                     <img
+                      loading="lazy"
                       src={book.image || "/placeholder.svg"}
                       alt={book.title}
                       className="object-cover w-full h-full rounded-md group-hover:scale-110 duration-500"

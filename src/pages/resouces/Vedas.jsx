@@ -63,6 +63,7 @@ const VedasPage = () => {
                   className="relative h-[300px] w-full rounded-xl overflow-hidden shadow-xl"
                 >
                   <img
+                    loading="lazy"
                     src={rigveda}
                     alt="Ancient Vedic manuscript"
                     className="object-cover w-full h-full"
@@ -130,6 +131,7 @@ const VedasPage = () => {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
+                            loading="lazy"
                             src={rigveda}
                             alt="Rigveda"
                             className="object-cover w-full h-full"
@@ -213,6 +215,7 @@ const VedasPage = () => {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
+                            loading="lazy"
                             src={yajurveda}
                             alt="Yajurveda"
                             className="object-cover w-full h-full"
@@ -295,6 +298,7 @@ const VedasPage = () => {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
+                            loading="lazy"
                             src={samaveda}
                             alt="Samaveda"
                             className="object-cover w-full h-full"
@@ -379,6 +383,7 @@ const VedasPage = () => {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
+                            loading="lazy"
                             src={atharvaveda}
                             alt="Atharvaveda"
                             className="object-cover w-full h-full"
@@ -739,6 +744,7 @@ const VedasPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={upanishads}
                       alt="The Upanishads"
                       className="object-cover rounded-lg w-full h-full"
@@ -769,6 +775,7 @@ const VedasPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={epics}
                       alt="The Epics"
                       className="object-cover w-full h-full rounded-lg"
@@ -799,6 +806,7 @@ const VedasPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={puranas}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"

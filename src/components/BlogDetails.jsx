@@ -16,7 +16,8 @@ const BlogDetails = () => {
   const [sourceLanguage, setSourceLanguage] = useState(null);
   const [targetLanguage, setTargetLanguage] = useState(null);
 
-  const APIkey = "2Ah2hYh9WbUVxrf07UT6rMrj13BPxQAYWD5K844dOJWluNyjenFnJQQJ99BEACqBBLyXJ3w3AAAbACOG2mpy";
+  const APIkey =
+    "2Ah2hYh9WbUVxrf07UT6rMrj13BPxQAYWD5K844dOJWluNyjenFnJQQJ99BEACqBBLyXJ3w3AAAbACOG2mpy";
   const endpoint = "https://api.cognitive.microsofttranslator.com";
   const location = "southeastasia";
 
@@ -55,13 +56,19 @@ const BlogDetails = () => {
 
     const applyStyles = (part) => {
       if (/^##(.*?)##/.test(part)) {
-        return <span className="text-2xl">{applyStyles(part.slice(2, -2))}</span>;
+        return (
+          <span className="text-2xl">{applyStyles(part.slice(2, -2))}</span>
+        );
       }
       if (/^#(.*?)#/.test(part)) {
-        return <span className="text-xl">{applyStyles(part.slice(1, -1))}</span>;
+        return (
+          <span className="text-xl">{applyStyles(part.slice(1, -1))}</span>
+        );
       }
       if (/^~~(.*?)~~/.test(part)) {
-        return <span className="text-sm">{applyStyles(part.slice(2, -2))}</span>;
+        return (
+          <span className="text-sm">{applyStyles(part.slice(2, -2))}</span>
+        );
       }
       if (/\*\*\*(.*?)\*\*\*/.test(part)) {
         const content = part.replace(/\*\*\*(.*?)\*\*\*/g, "$1");
@@ -266,6 +273,7 @@ const BlogDetails = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <img
+            loading="lazy"
             src={blog.blog_image}
             alt={blog.blog_title}
             className="w-full h-full object-cover"

@@ -1,36 +1,42 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-import yoga from '../../assets/yoga3.webp';
-import meditation from '../../assets/meditation2.webp';
-import puja from '../../assets/puja.webp';
-import mantra from '../../assets/mantra.webp';
+import yoga from "../../assets/yoga3.webp";
+import meditation from "../../assets/meditation2.webp";
+import puja from "../../assets/puja.webp";
+import mantra from "../../assets/mantra.webp";
 
 const Practices = () => {
   const practices = [
     {
       name: "Yoga",
-      description: "Union of individual consciousness with universal consciousness",
-      additionalDescription: "Yoga enhances physical and mental well-being, fostering a deeper connection with self and the universe.",
+      description:
+        "Union of individual consciousness with universal consciousness",
+      additionalDescription:
+        "Yoga enhances physical and mental well-being, fostering a deeper connection with self and the universe.",
       image: yoga,
     },
     {
       name: "Meditation",
-      description: "Practice of focusing the mind on a particular object, thought or activity",
-      additionalDescription: "Meditation brings inner peace, reduces stress, and improves concentration through mindful awareness.",
+      description:
+        "Practice of focusing the mind on a particular object, thought or activity",
+      additionalDescription:
+        "Meditation brings inner peace, reduces stress, and improves concentration through mindful awareness.",
       image: meditation,
     },
     {
       name: "Puja",
       description: "Ritual worship involving offerings to deities",
-      additionalDescription: "Puja is a spiritual practice that deepens devotion, connecting the worshipper to the divine through rituals and offerings.",
+      additionalDescription:
+        "Puja is a spiritual practice that deepens devotion, connecting the worshipper to the divine through rituals and offerings.",
       image: puja,
     },
     {
       name: "Mantra Chanting",
       description: "Repetition of sacred sounds to transform consciousness",
-      additionalDescription: "Mantra chanting helps to focus the mind, enhance positive vibrations, and bring spiritual tranquility.",
+      additionalDescription:
+        "Mantra chanting helps to focus the mind, enhance positive vibrations, and bring spiritual tranquility.",
       image: mantra,
     },
   ];
@@ -60,15 +66,20 @@ const Practices = () => {
               >
                 <div className="relative w-full md:w-1/2 md:h-60">
                   <img
+                    loading="lazy"
                     src={practice.image}
                     alt={practice.name}
                     className="w-full h-full object-cover md:rounded-br-xl"
                   />
                 </div>
                 <div className="p-6 md:w-1/2">
-                  <h3 className="text-xl font-bold text-orange-700 mb-2">{practice.name}</h3>
+                  <h3 className="text-xl font-bold text-orange-700 mb-2">
+                    {practice.name}
+                  </h3>
                   <p className="text-gray-700 mb-4">{practice.description}</p>
-                  <p className="text-gray-600">{practice.additionalDescription}</p>
+                  <p className="text-gray-600">
+                    {practice.additionalDescription}
+                  </p>
                   <button className="text-orange-600 underline hover:text-orange-800 mt-4 transition p-0 bg-transparent border-none cursor-pointer">
                     <a href="/practices">Learn more about {practice.name}</a>
                   </button>

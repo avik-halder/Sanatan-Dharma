@@ -122,6 +122,7 @@ export default function TemplesPage() {
                     className="relative h-52 rounded-lg overflow-hidden group"
                   >
                     <img
+                      loading="lazy"
                       src={item.image || "/placeholder.svg"}
                       alt={item.name}
                       className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
@@ -241,6 +242,7 @@ export default function TemplesPage() {
                   <div className="bg-orange-50 border border-orange-500 rounded-xl overflow-hidden shadow-md hover:shadow-lg h-full">
                     <div className="relative h-60">
                       <img
+                        loading="lazy"
                         src={temple.image || "/placeholder.svg"}
                         alt={temple.name}
                         className="object-cover w-full h-full"

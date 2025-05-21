@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Lakshmi from "../../assets/Deities/Lakshmi.webp";
-import lakshmiPuja from '../../assets/Deities/Lakshmi/Lakshmi Puja.png'
+import lakshmiPuja from "../../assets/Deities/Lakshmi/Lakshmi Puja.png";
 
 import AdiLakshmi from "../../assets/Deities/Lakshmi/Adi Lakshmi.jpg";
 import DhanyaLakshmi from "../../assets/Deities/Lakshmi/Dhanya Lakshmi.jpg";
@@ -70,6 +70,7 @@ function LakshmiPage() {
                 className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={Lakshmi}
                   alt="Goddess Lakshmi"
                   className="w-full h-full object-cover"
@@ -158,6 +159,7 @@ function LakshmiPage() {
                 >
                   <div className="relative h-48 w-48 mx-auto mt-6">
                     <img
+                      loading="lazy"
                       src={form.image}
                       alt={form.name}
                       className="object-cover rounded-full w-full h-full shadow-xl border-2 border-orange-600 rounded-full hover:scale-110 duration-500"
@@ -233,6 +235,7 @@ function LakshmiPage() {
                     <>
                       <span className="flex justify-center">
                         <img
+                          loading="lazy"
                           src={redSaree}
                           alt=""
                           className="w-12 h-12 sm:w-10 sm:h-10"
@@ -344,6 +347,7 @@ function LakshmiPage() {
                 className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:2"
               >
                 <img
+                  loading="lazy"
                   src={lakshmiPuja}
                   alt="Lakshmi Puja During Diwali"
                   className="w-full h-full object-cover"

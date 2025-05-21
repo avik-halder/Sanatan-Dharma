@@ -162,6 +162,7 @@ export default function PracticesPage() {
                 >
                   <div className="relative h-52">
                     <img
+                      loading="lazy"
                       src={practice.image || "/placeholder.svg"}
                       alt={practice.name}
                       className="object-cover w-full h-full"
@@ -258,6 +259,7 @@ export default function PracticesPage() {
                     className="relative h-48 rounded-lg overflow-hidden group"
                   >
                     <img
+                      loading="lazy"
                       src={yogaType.image || "/placeholder.svg"}
                       alt={yogaType.name}
                       className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"

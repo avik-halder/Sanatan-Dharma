@@ -79,6 +79,7 @@ function MahaShivratriPage() {
               >
                 <div className="relative h-[450px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={shivaLingam}
                     alt="Maha Shivratri celebration with Shiva Lingam"
                     className="object-cover w-full h-full"
@@ -266,7 +267,12 @@ function MahaShivratriPage() {
                             <>
                               <span className="flex flex-row items-center gap-2">
                                 Shiva Lingam{" "}
-                                <img src={lingam} alt="" className="w-6 h-6" />
+                                <img
+                                  loading="lazy"
+                                  src={lingam}
+                                  alt=""
+                                  className="w-6 h-6"
+                                />
                               </span>
                             </>
                           ),
@@ -529,6 +535,7 @@ function MahaShivratriPage() {
                 >
                   <div className="relative h-60">
                     <img
+                      loading="lazy"
                       src={region.image}
                       alt={`${region.region} celebrations`}
                       className="object-cover w-full h-full"

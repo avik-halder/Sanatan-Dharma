@@ -72,6 +72,7 @@ const DurgaPage = () => {
                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={Durga}
                   alt="Goddess Durga"
                   className="object-cover w-full h-full"
@@ -167,6 +168,7 @@ const DurgaPage = () => {
                 >
                   <div className="relative h-52 w-52 mx-auto mb-4">
                     <img
+                      loading="lazy"
                       src={form.image || "/placeholder.svg"}
                       alt={form.name}
                       className="object-cover rounded-full"
@@ -386,6 +388,7 @@ const DurgaPage = () => {
                 className="order-1 lg:order-2 relative h-auto rounded-lg overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={durgaPuja}
                   alt="Durga Puja Celebration"
                   className="object-cover"

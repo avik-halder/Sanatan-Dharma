@@ -72,6 +72,7 @@ const UpanishadsPage = () => {
                   className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-lg"
                 >
                   <img
+                    loading="lazy"
                     src={upanishads}
                     alt="Ancient Upanishad manuscript"
                     className="object-cover w-full h-full"
@@ -161,6 +162,7 @@ const UpanishadsPage = () => {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
+                            loading="lazy"
                             src={brihadaranyakaUpanishad}
                             alt="Brihadaranyaka Upanishad"
                             className="object-cover w-full h-full"
@@ -231,6 +233,7 @@ const UpanishadsPage = () => {
                       <div className="md:w-1/3">
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
+                            loading="lazy"
                             src={chandogyaUpanishad}
                             alt="Chandogya Upanishad"
                             className="object-cover w-full h-full"
@@ -757,6 +760,7 @@ const UpanishadsPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={vedas}
                       alt="The Vedas"
                       className="object-cover w-full h-full rounded-lg"
@@ -787,6 +791,7 @@ const UpanishadsPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={epics}
                       alt="The Epics"
                       className="object-cover w-full h-full rounded-lg"
@@ -817,6 +822,7 @@ const UpanishadsPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={puranas}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"

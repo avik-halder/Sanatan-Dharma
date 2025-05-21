@@ -17,7 +17,7 @@ const Festivals = () => {
       image: diwali,
       additional:
         "Diwali is celebrated with lights, fireworks, and prayers to Lakshmi, the goddess of wealth.",
-      link: "/festivals/diwali"
+      link: "/festivals/diwali",
     },
     {
       name: "Holi",
@@ -26,7 +26,7 @@ const Festivals = () => {
       image: holi,
       additional:
         "Holi celebrates the arrival of spring and the victory of good over evil with vibrant colors.",
-      link: "/festivals/holi"
+      link: "/festivals/holi",
     },
     {
       name: "Durga Puja",
@@ -35,7 +35,7 @@ const Festivals = () => {
       image: durgaPuja,
       additional:
         "Durga Puja celebrates the victory of Goddess Durga over the buffalo demon Mahishasura, symbolizing the triumph of good over evil.",
-      link: "/festivals/durga-puja"
+      link: "/festivals/durga-puja",
     },
     {
       name: "Janmashtami",
@@ -44,7 +44,7 @@ const Festivals = () => {
       image: janmashtami,
       additional:
         "Janmashtami marks the birth of Lord Krishna, often celebrated with dancing, singing, and feasts.",
-      link: "/festivals/janmashtami"
+      link: "/festivals/janmashtami",
     },
     {
       name: "Maha Shivaratri",
@@ -53,7 +53,7 @@ const Festivals = () => {
       image: shivratri,
       additional:
         "Maha Shivaratri is a night dedicated to the worship of Lord Shiva, marked by fasting and prayers.",
-      link: "/festivals/shivaratri"
+      link: "/festivals/shivaratri",
     },
     {
       name: "Raksha Bandhan",
@@ -62,7 +62,7 @@ const Festivals = () => {
       image: rakshaBandhan,
       additional:
         "Raksha Bandhan celebrates the bond between brothers and sisters with the tying of a protective thread.",
-      link: "/festivals"
+      link: "/festivals",
     },
   ];
 
@@ -91,6 +91,7 @@ const Festivals = () => {
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
+                    loading="lazy"
                     src={festival.image || "/placeholder.svg"}
                     alt={festival.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -106,7 +107,10 @@ const Festivals = () => {
                   </h3>
                   <p className="text-orange-600 mb-3">{festival.description}</p>
                   <p className="text-gray-600 text-sm">{festival.additional}</p>
-                  <button onClick={() => window.location.href = festival.link} className="text-orange-600 underline hover:text-orange-800 mt-2 p-0 transition">
+                  <button
+                    onClick={() => (window.location.href = festival.link)}
+                    className="text-orange-600 underline hover:text-orange-800 mt-2 p-0 transition"
+                  >
                     Read more
                   </button>
                 </div>

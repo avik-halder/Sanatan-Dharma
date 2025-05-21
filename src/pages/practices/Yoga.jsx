@@ -97,6 +97,7 @@ const YogaPage = () => {
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
                   <img
+                    loading="lazy"
                     src={yoga}
                     alt="Yoga Meditation"
                     className="w-full h-full object-cover"
@@ -384,6 +385,7 @@ const YogaPage = () => {
                         >
                           <div className="relative h-20 w-20 flex-shrink-0">
                             <img
+                              loading="lazy"
                               src={style.image}
                               alt={style.name}
                               className="w-full h-full object-cover rounded-lg"
@@ -444,6 +446,7 @@ const YogaPage = () => {
                         >
                           <div className="relative h-20 w-20 flex-shrink-0">
                             <img
+                              loading="lazy"
                               src={style.image}
                               alt={style.name}
                               className="w-full h-full object-cover rounded-lg"
@@ -504,6 +507,7 @@ const YogaPage = () => {
                         >
                           <div className="relative h-20 w-20 flex-shrink-0">
                             <img
+                              loading="lazy"
                               src={style.image}
                               alt={style.name}
                               className="w-full h-full object-cover rounded-lg"
@@ -564,6 +568,7 @@ const YogaPage = () => {
                         >
                           <div className="relative h-20 w-20 flex-shrink-0">
                             <img
+                              loading="lazy"
                               src={style.image}
                               alt={style.name}
                               className="w-full h-full object-cover rounded-lg"
@@ -719,6 +724,7 @@ const YogaPage = () => {
                     className="relative h-[560px] bottom rounded-xl overflow-hidden shadow-lg"
                   >
                     <img
+                      loading="lazy"
                       src={yoga2}
                       alt="Yoga Practice"
                       className="w-full h-full object-cover"

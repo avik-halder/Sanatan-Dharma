@@ -68,6 +68,7 @@ export default function HanumanPage() {
                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={Hanuman}
                   alt="Lord Hanuman"
                   className="w-full h-full object-cover"
@@ -144,6 +145,7 @@ export default function HanumanPage() {
                 >
                   <div className="relative h-60">
                     <img
+                      loading="lazy"
                       src={story.image}
                       alt={story.title}
                       className="w-full h-full object-cover"
@@ -316,6 +318,7 @@ export default function HanumanPage() {
                 className="relative h-auto rounded-lg overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={HanumanTemple}
                   alt="Hanuman Temple"
                   className="w-full h-full object-cover"

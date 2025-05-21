@@ -46,6 +46,7 @@ const Temples = () => {
 
           <div className="relative h-[500px] mb-12 rounded-xl overflow-hidden">
             <img
+              loading="lazy"
               src={temple}
               alt="Famous Hindu Temple"
               className="w-full h-full object-cover"
@@ -78,6 +79,7 @@ const Temples = () => {
                 className="relative h-60 rounded-lg overflow-hidden group"
               >
                 <img
+                  loading="lazy"
                   src={temple.image}
                   alt={temple.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

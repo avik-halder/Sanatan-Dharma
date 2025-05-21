@@ -93,6 +93,7 @@ const DurgaPujaPage = () => {
                 className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={durgaPuja}
                   alt="Goddess Durga idol during Durga Puja"
                   className="object-cover w-full h-full"
@@ -124,6 +125,7 @@ const DurgaPujaPage = () => {
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                   <img
+                    loading="lazy"
                     src={durgaPuja1}
                     className="object-cover w-full h-full object-[center_75%] md:object-center"
                   />
@@ -213,8 +215,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The one who practices devout austerity, embodying knowledge and wisdom.",
                   color: "Royal Blue",
-                  image:
-                    brahmacharini,
+                  image: brahmacharini,
                 },
                 {
                   day: "Day 3",
@@ -222,8 +223,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The one who wears the moon in her bell, symbolizing bravery and courage.",
                   color: "Yellow",
-                  image:
-                    chandraghanta,
+                  image: chandraghanta,
                 },
                 {
                   day: "Day 4",
@@ -239,8 +239,7 @@ const DurgaPujaPage = () => {
                   description:
                     "Mother of Skanda (Kartikeya), representing motherhood and fertility.",
                   color: "White",
-                  image:
-                    skandamata,
+                  image: skandamata,
                 },
                 {
                   day: "Day 6",
@@ -272,8 +271,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The bestower of supernatural powers and siddhis (perfection).",
                   color: "Purple",
-                  image:
-                    siddhidatri,
+                  image: siddhidatri,
                 },
               ].map((form, index) => (
                 <motion.div
@@ -286,6 +284,7 @@ const DurgaPujaPage = () => {
                 >
                   <div className="relative w-52 h-52 mx-auto mt-6">
                     <img
+                      loading="lazy"
                       src={form.image || "/placeholder.svg"}
                       alt={form.form}
                       className="object-cover w-full h-full rounded-full"
@@ -717,6 +716,7 @@ const DurgaPujaPage = () => {
               >
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={nightDurgaPuja2}
                     alt="Elaborate Durga Puja pandal in Kolkata"
                     className="object-cover w-full h-full"
@@ -724,6 +724,7 @@ const DurgaPujaPage = () => {
                 </div>
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={themedDurgaPuja}
                     alt="Themed Durga Puja pandal"
                     className="object-cover w-full h-full"
@@ -731,6 +732,7 @@ const DurgaPujaPage = () => {
                 </div>
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={traditionalDurgaPuja}
                     alt="Traditional Durga Puja pandal"
                     className="object-cover w-full h-full"
@@ -738,6 +740,7 @@ const DurgaPujaPage = () => {
                 </div>
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={nightDurgaPuja}
                     alt="Illuminated Durga Puja pandal at night"
                     className="object-cover w-full h-full"
@@ -828,6 +831,7 @@ const DurgaPujaPage = () => {
                 >
                   <div className="relative h-48 p-5 pb-0">
                     <img
+                      loading="lazy"
                       src={aspect.image || "/placeholder.svg"}
                       alt={aspect.aspect}
                       className="object-cover w-full h-full rounded-lg"
@@ -933,6 +937,7 @@ const DurgaPujaPage = () => {
                 className="relative h-[400px] rounded-lg overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={durgaPuja2}
                   alt="Spiritual aspect of Durga Puja"
                   className="object-cover w-full h-full"

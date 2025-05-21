@@ -2,11 +2,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import mantraChanting from "../../assets/mantra.webp";
-import mala from '../../assets/Practices/Mantra Chanting/Mala Beads.png'
-import mantraMeditation from '../../assets/Practices/Mantra Chanting/Mantra Meditation.jpg'
-import groupChanting from '../../assets/Practices/Mantra Chanting/Group Chanting.jpg'
-import sacredText from '../../assets/Resources/Vedas/Mundaka_Upanisad_verses_3.2.8_to_3.2.10,_Atharvaveda,_Sanskrit_language,_Devanagari_script.webp'
-
+import mala from "../../assets/Practices/Mantra Chanting/Mala Beads.png";
+import mantraMeditation from "../../assets/Practices/Mantra Chanting/Mantra Meditation.jpg";
+import groupChanting from "../../assets/Practices/Mantra Chanting/Group Chanting.jpg";
+import sacredText from "../../assets/Resources/Vedas/Mundaka_Upanisad_verses_3.2.8_to_3.2.10,_Atharvaveda,_Sanskrit_language,_Devanagari_script.webp";
 
 const MantraChantingPage = () => {
   return (
@@ -73,6 +72,7 @@ const MantraChantingPage = () => {
                 <div className="relative h-[460px] rounded-xl overflow-hidden shadow-lg">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
+                    loading="lazy"
                     src={mantraChanting}
                     alt="Mantra Chanting"
                     className="object-cover w-full h-full"
@@ -204,7 +204,7 @@ const MantraChantingPage = () => {
                 >
                   <div className="relative">
                     {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div> */}
-                    {/* <img
+                    {/* <img loading="lazy"
                       src={mantra.image}
                       alt={mantra.name}
                       className="w-full h-full object-cover"
@@ -342,23 +342,19 @@ const MantraChantingPage = () => {
                   {[
                     {
                       title: "Mala Beads",
-                      image:
-                        mala,
+                      image: mala,
                     },
                     {
                       title: "Mantra Meditation",
-                      image:
-                        mantraMeditation,
+                      image: mantraMeditation,
                     },
                     {
                       title: "Group Chanting",
-                      image:
-                        groupChanting,
+                      image: groupChanting,
                     },
                     {
                       title: "Sacred Texts",
-                      image:
-                        sacredText,
+                      image: sacredText,
                     },
                   ].map((item, index) => (
                     <motion.div
@@ -370,6 +366,7 @@ const MantraChantingPage = () => {
                       className="relative h-80 rounded-lg overflow-hidden group bottom-5"
                     >
                       <img
+                        loading="lazy"
                         src={item.image}
                         alt={item.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

@@ -69,6 +69,7 @@ function KrishnaPage() {
                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={Krishna}
                   alt="Lord Ganesha"
                   className="object-cover w-full h-full"
@@ -157,6 +158,7 @@ function KrishnaPage() {
                 >
                   <div className="relative h-48">
                     <img
+                      loading="lazy"
                       src={story.image}
                       alt={story.title}
                       className="w-full h-full object-cover"
@@ -331,6 +333,7 @@ function KrishnaPage() {
                 className="order-1 lg:order-2 relative h-[500px] rounded-xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={KrishnaTemple}
                   alt="Krishna Temple"
                   className="w-full h-full object-cover"

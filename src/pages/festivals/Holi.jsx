@@ -127,6 +127,7 @@ export default function HoliPage() {
                 className="relative h-[400px] rounded-xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={holi}
                   alt="People celebrating Holi with colorful powders"
                   className="object-cover w-full h-full"
@@ -205,6 +206,7 @@ export default function HoliPage() {
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
+                          loading="lazy"
                           src={holikaPrahlad}
                           alt="Holika Dahan ritual fire"
                           className="object-cover w-full h-full"
@@ -247,6 +249,7 @@ export default function HoliPage() {
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
+                          loading="lazy"
                           src={radhaKrishna}
                           alt="Krishna applying colors to Radha"
                           className="object-cover w-full h-full"
@@ -286,6 +289,7 @@ export default function HoliPage() {
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
+                          loading="lazy"
                           src={kamadeva}
                           alt="Kamadeva, the god of love"
                           className="object-cover w-full h-full"
@@ -354,6 +358,7 @@ export default function HoliPage() {
               >
                 <div className="relative h-64">
                   <img
+                    loading="lazy"
                     src={holikaDahan}
                     alt="Holika Dahan bonfire ceremony"
                     className="object-cover w-full h-full"
@@ -419,6 +424,7 @@ export default function HoliPage() {
               >
                 <div className="relative h-64">
                   <img
+                    loading="lazy"
                     src={rangwaliHoli}
                     alt="People playing with colors during Rangwali Holi"
                     className="object-cover w-full h-full"
@@ -606,6 +612,7 @@ export default function HoliPage() {
               >
                 <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={holiFood}
                     alt="Holi Foods"
                     className="w-full h-full object-cover"
@@ -815,6 +822,7 @@ export default function HoliPage() {
                 className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={holi2}
                   alt="Spiritual aspect of Holi celebration"
                   className="w-full h-full object-cover"

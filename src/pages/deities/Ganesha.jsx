@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import ganesh from "../../assets/Deities/Ganesh.webp";
 import ganeshCaturthi from "../../assets/Festivals/ganesh chaturthi.webp";
 
-import birth from '../../assets/Deities/Ganesh/Birth.jpg'
-import brokenTeeth from '../../assets/Deities/Ganesh/broken teeth.jpg'
-import moon from '../../assets/Deities/Ganesh/Moon Laughter.jpg'
-import race from '../../assets/Deities/Ganesh/Race.jpg'
+import birth from "../../assets/Deities/Ganesh/Birth.jpg";
+import brokenTeeth from "../../assets/Deities/Ganesh/broken teeth.jpg";
+import moon from "../../assets/Deities/Ganesh/Moon Laughter.jpg";
+import race from "../../assets/Deities/Ganesh/Race.jpg";
 
 const GaneshaPage = () => {
   return (
@@ -66,6 +66,7 @@ const GaneshaPage = () => {
                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={ganesh}
                   alt="Lord Ganesha"
                   className="object-cover w-full h-full"
@@ -177,29 +178,25 @@ const GaneshaPage = () => {
                   title: "Birth of Ganesha",
                   description:
                     "According to the most popular version, Goddess Parvati created Ganesha from the turmeric paste off her body to guard her while she bathed. When Shiva returned and was stopped from entering by Ganesha, a fight ensued in which Shiva beheaded him. Learning that the boy was Parvati's son, Shiva replaced his head with that of an elephant, the first creature he found.",
-                  image:
-                    birth,
+                  image: birth,
                 },
                 {
                   title: "The Broken Tusk",
                   description:
                     "When the sage Vyasa needed someone to write down the Mahabharata as he dictated it, Ganesha agreed on the condition that Vyasa would not pause in his recitation. Ganesha's pen broke during the task, so he broke off one of his tusks to continue writing without interruption, demonstrating his dedication to knowledge.",
-                  image:
-                    brokenTeeth,
+                  image: brokenTeeth,
                 },
                 {
                   title: "The Race Around the World",
                   description:
                     "Once, Shiva and Parvati offered a prize to whichever of their sons (Ganesha and Kartikeya) could circle the world first. While Kartikeya set off immediately on his peacock, Ganesha simply circled his parents, explaining that they were his entire world. Impressed by his wisdom, they declared him the winner.",
-                  image:
-                    race,
+                  image: race,
                 },
                 {
                   title: "Moon's Laughter",
                   description:
                     "One night, after consuming many sweets, Ganesha was riding his mouse when the mouse stumbled, causing Ganesha to fall and his belly to burst open, spilling sweets. The moon laughed at this sight, which angered Ganesha. He broke off a piece of his tusk and hurled it at the moon, cursing that no one should look at the moon on Ganesh Chaturthi.",
-                  image:
-                    moon,
+                  image: moon,
                 },
               ].map((story, index) => (
                 <motion.div
@@ -212,6 +209,7 @@ const GaneshaPage = () => {
                 >
                   <div className="relative h-60">
                     <img
+                      loading="lazy"
                       src={story.image || "/placeholder.svg"}
                       alt={story.title}
                       className="object-cover w-full h-full"
@@ -302,6 +300,7 @@ const GaneshaPage = () => {
                 className="order-1 lg:order-2 relative h-[346px] rounded-xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={ganeshCaturthi}
                   alt="Ganesh Chaturthi Celebration"
                   className="object-cover"

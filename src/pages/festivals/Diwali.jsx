@@ -75,6 +75,7 @@ const DiwaliPage = () => {
                 className="relative h-[350px] rounded-2xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={diwali}
                   alt="Diwali Celebration with oil lamps and colorful rangoli"
                   className="object-cover w-full h-full"
@@ -155,6 +156,7 @@ const DiwaliPage = () => {
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
+                          loading="lazy"
                           src={returnOfRama}
                           alt="Lord Rama's return to Ayodhya"
                           className="object-cover w-full h-full"
@@ -192,6 +194,7 @@ const DiwaliPage = () => {
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
+                          loading="lazy"
                           src={krishnaVictory}
                           alt="Krishna defeating Narakasura"
                           className="object-cover w-full h-full"
@@ -227,6 +230,7 @@ const DiwaliPage = () => {
                     <div className="flex flex-col md:flex-row gap-6">
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
+                          loading="lazy"
                           src={lakshmi}
                           alt="Goddess Lakshmi with lotus flowers"
                           className="object-cover w-full h-full"
@@ -432,6 +436,7 @@ const DiwaliPage = () => {
               >
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={rangoli}
                     alt="Colorful Rangoli design for Diwali"
                     className="object-cover w-full h-full"
@@ -439,6 +444,7 @@ const DiwaliPage = () => {
                 </div>
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={gifts}
                     alt="Traditional Diwali sweets and treats"
                     className="object-cover w-full h-full"
@@ -446,6 +452,7 @@ const DiwaliPage = () => {
                 </div>
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={oilLamps}
                     alt="Oil lamps (diyas) lit for Diwali"
                     className="object-cover w-full h-full"
@@ -453,6 +460,7 @@ const DiwaliPage = () => {
                 </div>
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
+                    loading="lazy"
                     src={fireWorks}
                     alt="Fireworks display during Diwali"
                     className="object-cover w-full h-full"
@@ -638,6 +646,7 @@ const DiwaliPage = () => {
                 >
                   <div className="relative h-48">
                     <img
+                      loading="lazy"
                       src={recipe.image || "/placeholder.svg"}
                       alt={recipe.name}
                       className="object-cover w-full h-full"
@@ -751,6 +760,7 @@ const DiwaliPage = () => {
                 className="relative h-[460px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={diwali2}
                   alt="Spiritual aspect of Diwali with meditation and prayer"
                   className="object-cover w-full h-full"

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import Shiva from "../../assets/Deities/Lord_Shiva.webp";
-import shivaFamily from '../../assets/Deities/Shiva/Lord Shiva with family.jpg'
+import shivaFamily from "../../assets/Deities/Shiva/Lord Shiva with family.jpg";
 
 import nataraja from "../../assets/Deities/Shiva/Nataraja.webp";
 import lingam from "../../assets/Deities/Shiva/Lingam.webp";
@@ -70,6 +70,7 @@ export default function ShivaPage() {
                 className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={Shiva}
                   alt="Lord Shiva"
                   className="object-cover w-full h-full"
@@ -234,6 +235,7 @@ export default function ShivaPage() {
                 >
                   <div className="relative lg:h-48">
                     <img
+                      loading="lazy"
                       src={form.image || "/placeholder.svg"}
                       alt={form.name}
                       className="object-cover w-full h-full"
@@ -322,6 +324,7 @@ export default function ShivaPage() {
                 className="order-1 lg:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={shivaFamily}
                   alt="Shiva with Family"
                   className="object-cover w-full h-full"

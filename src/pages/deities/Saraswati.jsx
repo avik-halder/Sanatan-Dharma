@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import Saraswati from "../../assets/Deities/Saraswati.webp";
-import saraswatiPuja from '../../assets/Deities/Saraswati/Saraswati Puja.png'
+import saraswatiPuja from "../../assets/Deities/Saraswati/Saraswati Puja.png";
 
-import origin from '../../assets/Deities/Saraswati/Origin and Creation of Saraswati.jpg'
-import saraswatiRiver from '../../assets/Deities/Saraswati/Saraswati River2.jpg'
-import vedaMata from '../../assets/Deities/Saraswati/Mother of the Vedas.jpg'
-import Vagdevi from '../../assets/Deities/Saraswati/Goddess of Speech.jpg'
+import origin from "../../assets/Deities/Saraswati/Origin and Creation of Saraswati.jpg";
+import saraswatiRiver from "../../assets/Deities/Saraswati/Saraswati River2.jpg";
+import vedaMata from "../../assets/Deities/Saraswati/Mother of the Vedas.jpg";
+import Vagdevi from "../../assets/Deities/Saraswati/Goddess of Speech.jpg";
 
 import veena from "../../assets/Deities/Saraswati/veena.webp";
 
@@ -69,6 +69,7 @@ export default function SaraswatiPage() {
                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={Saraswati}
                   alt="Goddess Saraswati"
                   className="object-cover w-full h-full"
@@ -111,7 +112,12 @@ export default function SaraswatiPage() {
                   // icon: "🎻",
                   icon: (
                     <>
-                      <img src={veena} alt="" className="h-15 w-16 m-2 mb-0" />
+                      <img
+                        loading="lazy"
+                        src={veena}
+                        alt=""
+                        className="h-15 w-16 m-2 mb-0"
+                      />
                     </>
                   ),
                 },
@@ -215,6 +221,7 @@ export default function SaraswatiPage() {
                 >
                   <div className="relative h-60">
                     <img
+                      loading="lazy"
                       src={story.image || "/placeholder.svg"}
                       alt={story.title}
                       className="object-cover w-full h-full"
@@ -322,6 +329,7 @@ export default function SaraswatiPage() {
                 className="order-1 lg:order-2 relative h-[500px] rounded-xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={saraswatiPuja}
                   alt="Saraswati Puja Celebration"
                   className="object-cover w-full h-full"

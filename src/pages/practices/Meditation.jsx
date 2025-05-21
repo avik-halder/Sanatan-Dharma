@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import meditation from "../../assets/meditation2.webp";
-import meditation2 from '../../assets/Practices/Meditation/meditation.jpg'
+import meditation2 from "../../assets/Practices/Meditation/meditation.jpg";
 import trataka from "../../assets/Practices/Meditation/Trataka Meditation.png";
 import hamsa from "../../assets/Practices/Meditation/Hamsa Meditation.jpg";
 import chakra from "../../assets/Practices/Meditation/Chakra Meditation2.jpg";
@@ -74,6 +74,7 @@ const MeditationPage = () => {
                 <div className="relative h-[450px] rounded-xl overflow-hidden shadow-lg">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
+                    loading="lazy"
                     src={meditation}
                     alt="Meditation Practice"
                     className="object-cover w-full h-full"
@@ -214,6 +215,7 @@ const MeditationPage = () => {
                   <div className="relative h-52">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                     <img
+                      loading="lazy"
                       src={technique.image}
                       alt={technique.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -347,18 +349,17 @@ const MeditationPage = () => {
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.2}}
+                  transition={{ duration: 0.4, delay: 0.2 }}
                   className="relative rounded-xl overflow-hidden top-10"
                 >
                   <img
+                    loading="lazy"
                     src={meditation2}
                     alt="Meditation"
                     className="w-full h-full object-cover transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <p className="text-white font-medium p-3">
-                      Meditation
-                    </p>
+                    <p className="text-white font-medium p-3">Meditation</p>
                   </div>
                 </motion.div>
               </motion.div>

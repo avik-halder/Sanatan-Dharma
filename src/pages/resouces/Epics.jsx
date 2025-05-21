@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-import manuScripts from '../../assets/Resources/Epics/Mahabharata.webp'
+import manuScripts from "../../assets/Resources/Epics/Mahabharata.webp";
 import ramayanaScene from "../../assets/Resources/Epics/Rama, Sita and Lakshmana in the forest.webp";
 import mahabharataScene from "../../assets/Resources/Epics/Krishna revealing the Bhagavad Gita to Arjuna.webp";
 
@@ -222,6 +222,7 @@ const EpicsPage = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
+                    loading="lazy"
                     src={manuScripts}
                     alt="Ancient manuscript of Hindu epics"
                     className="object-cover w-full h-full"
@@ -316,6 +317,7 @@ const EpicsPage = () => {
                           <div className="relative h-60 rounded-lg overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                             <img
+                              loading="lazy"
                               src={ramayanaScene}
                               alt="Scene from Ramayana"
                               className="object-cover w-full h-full"
@@ -504,6 +506,7 @@ const EpicsPage = () => {
                           <div className="relative h-60 rounded-lg overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                             <img
+                              loading="lazy"
                               src={mahabharataScene}
                               alt="Scene from Mahabharata"
                               className="object-cover w-full h-full"
@@ -972,6 +975,7 @@ const EpicsPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={vedas}
                       alt="The Vedas"
                       className="object-cover w-full h-full rounded-lg"
@@ -1002,6 +1006,7 @@ const EpicsPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={puranas}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"
@@ -1032,6 +1037,7 @@ const EpicsPage = () => {
                   </div>
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
+                      loading="lazy"
                       src={upanishads}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"

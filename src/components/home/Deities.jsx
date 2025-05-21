@@ -1,31 +1,34 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import LordBramha from '../../assets/Deities/Lord_Bramha.webp';
-import LordVishnu from '../../assets/Deities/Lord_Vishnu.webp';
-import LordShiva from '../../assets/Deities/Lord_Shiva.webp';
+import React from "react";
+import { motion } from "framer-motion";
+import LordBramha from "../../assets/Deities/Lord_Bramha.webp";
+import LordVishnu from "../../assets/Deities/Lord_Vishnu.webp";
+import LordShiva from "../../assets/Deities/Lord_Shiva.webp";
 
 const Deities = () => {
   const deities = [
-    { 
-      name: "Brahma", 
-      role: "The Creator", 
-      description: "Brahma is the creator god, often depicted with four faces representing the Vedas. He creates the universe and all living beings.", 
+    {
+      name: "Brahma",
+      role: "The Creator",
+      description:
+        "Brahma is the creator god, often depicted with four faces representing the Vedas. He creates the universe and all living beings.",
       image: LordBramha,
-      link: "/deities/brahma"
+      link: "/deities/brahma",
     },
-    { 
-      name: "Vishnu", 
-      role: "The Preserver", 
-      description: "Vishnu is the god of preservation, ensuring balance and harmony in the universe. He is often shown holding a conch, chakra, lotus, and mace.", 
+    {
+      name: "Vishnu",
+      role: "The Preserver",
+      description:
+        "Vishnu is the god of preservation, ensuring balance and harmony in the universe. He is often shown holding a conch, chakra, lotus, and mace.",
       image: LordVishnu,
-      link: "/deities/vishnu" 
+      link: "/deities/vishnu",
     },
-    { 
-      name: "Shiva", 
-      role: "The Transformer", 
-      description: "Shiva is the god of destruction and transformation. Known for his asceticism, he represents both destruction and regeneration.", 
+    {
+      name: "Shiva",
+      role: "The Transformer",
+      description:
+        "Shiva is the god of destruction and transformation. Known for his asceticism, he represents both destruction and regeneration.",
       image: LordShiva,
-      link: "/deities/shiva" 
+      link: "/deities/shiva",
     },
   ];
 
@@ -54,17 +57,21 @@ const Deities = () => {
               >
                 <div className="relative w-40 h-40 mx-auto mb-4 hover:scale-110 duration-500">
                   <img
+                    loading="lazy"
                     src={deity.image}
                     alt={deity.name}
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-orange-700 mb-2">{deity.name}</h3>
+                <h3 className="text-xl font-bold text-orange-700 mb-2">
+                  {deity.name}
+                </h3>
                 <p className="text-orange-600">{deity.role}</p>
-                <p className="mt-4 text-gray-700">
-                  {deity.description}
-                </p>
-                <button onClick={() => window.location.href = deity.link} className="mt-2 text-orange-600 underline hover:text-orange-800 transition">
+                <p className="mt-4 text-gray-700">{deity.description}</p>
+                <button
+                  onClick={() => (window.location.href = deity.link)}
+                  className="mt-2 text-orange-600 underline hover:text-orange-800 transition"
+                >
                   Learn more
                 </button>
               </motion.div>
@@ -72,7 +79,10 @@ const Deities = () => {
           </div>
 
           <div className="text-center mt-10">
-            <button onClick={() => window.location.href = "/deities"} className="border border-orange-600 text-white p-2 rounded-lg bg-orange-500 hover:bg-orange-600 transition">
+            <button
+              onClick={() => (window.location.href = "/deities")}
+              className="border border-orange-600 text-white p-2 rounded-lg bg-orange-500 hover:bg-orange-600 transition"
+            >
               Explore More Deities
             </button>
           </div>

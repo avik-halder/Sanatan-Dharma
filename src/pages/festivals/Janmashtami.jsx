@@ -33,6 +33,7 @@ function JanmashtamiPage() {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
+              loading="lazy"
               src={fasting}
               alt="Devotees fasting on Janmashtami"
               className="object-cover w-full h-full"
@@ -70,6 +71,7 @@ function JanmashtamiPage() {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
+              loading="lazy"
               src={midnightCelebrations}
               alt="Midnight celebrations of Krishna's birth"
               className="object-cover w-full h-full"
@@ -108,6 +110,7 @@ function JanmashtamiPage() {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
+              loading="lazy"
               src={dahiHandi}
               alt="Dahi Handi celebration with human pyramid"
               className="object-cover w-full h-full"
@@ -145,6 +148,7 @@ function JanmashtamiPage() {
         <div className="flex flex-col md:flex-row gap-6">
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
+              loading="lazy"
               src={jhankis}
               alt="Jhanki depicting scenes from Krishna's life"
               className="object-cover w-full h-full"
@@ -230,6 +234,7 @@ function JanmashtamiPage() {
                 className="relative h-[400px] rounded-xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={babykrishna}
                   alt="Baby Krishna with butter"
                   className="object-cover w-full h-full"
@@ -261,6 +266,7 @@ function JanmashtamiPage() {
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                   <img
+                    loading="lazy"
                     src={birthStory}
                     alt="The birth of Lord Krishna in prison"
                     className="object-cover w-full h-full object-[center_25%] md:object-center"
@@ -424,8 +430,17 @@ function JanmashtamiPage() {
                   region: "Mathura and Vrindavan",
                   description:
                     "The birthplace of Krishna and the land where he spent his childhood celebrates Janmashtami with unparalleled fervor.",
-                  uniqueTradition:
-                    <>Temples are elaborately decorated, and special <span className="text-orange-600 font-medium">abhishekams</span> (ritual baths) are performed for the deities. The Raas Leela, depicting Krishna's dance with the gopis, is performed with great devotion.</>,
+                  uniqueTradition: (
+                    <>
+                      Temples are elaborately decorated, and special{" "}
+                      <span className="text-orange-600 font-medium">
+                        abhishekams
+                      </span>{" "}
+                      (ritual baths) are performed for the deities. The Raas
+                      Leela, depicting Krishna's dance with the gopis, is
+                      performed with great devotion.
+                    </>
+                  ),
                   image: mathuraVrindavan,
                 },
                 {
@@ -440,24 +455,51 @@ function JanmashtamiPage() {
                   region: "Gujarat",
                   description:
                     "Celebrated as Krishna Janmashtami or Gokulashtami with great enthusiasm.",
-                  uniqueTradition:
-                    <>Devotees perform <span className="text-orange-600 font-medium">Raas Garba</span>, a traditional dance form, and sing devotional songs. Makhan Handi (breaking of a pot filled with butter) is also a popular tradition.</>,
+                  uniqueTradition: (
+                    <>
+                      Devotees perform{" "}
+                      <span className="text-orange-600 font-medium">
+                        Raas Garba
+                      </span>
+                      , a traditional dance form, and sing devotional songs.
+                      Makhan Handi (breaking of a pot filled with butter) is
+                      also a popular tradition.
+                    </>
+                  ),
                   image: raasGarba,
                 },
                 {
                   region: "South India",
                   description:
                     "Known as Gokulashtami or Sri Jayanthi, with unique traditions in different southern states.",
-                  uniqueTradition:
-                    <>In Tamil Nadu, <span className="text-orange-600 font-medium">kolams</span> (rangoli) are drawn at entrances, and homes are decorated with mango leaves. In Andhra Pradesh and Telangana, children dress up as Krishna and Radha.</>,
+                  uniqueTradition: (
+                    <>
+                      In Tamil Nadu,{" "}
+                      <span className="text-orange-600 font-medium">
+                        kolams
+                      </span>{" "}
+                      (rangoli) are drawn at entrances, and homes are decorated
+                      with mango leaves. In Andhra Pradesh and Telangana,
+                      children dress up as Krishna and Radha.
+                    </>
+                  ),
                   image: gokulashtami,
                 },
                 {
                   region: "Eastern India",
                   description:
                     "Celebrated with devotional fervor in states like Odisha, West Bengal, and Assam.",
-                  uniqueTradition:
-                    <>In Odisha, homes and temples prepare <span className="text-orange-600 font-medium">chappan bhog (56 food items)</span> as an offering to Krishna. In Bengal, devotees observe fasting and perform special pujas. In Assam, Krishna's birth is celebrated with naam-kirtans (devotional songs).</>,
+                  uniqueTradition: (
+                    <>
+                      In Odisha, homes and temples prepare{" "}
+                      <span className="text-orange-600 font-medium">
+                        chappan bhog (56 food items)
+                      </span>{" "}
+                      as an offering to Krishna. In Bengal, devotees observe
+                      fasting and perform special pujas. In Assam, Krishna's
+                      birth is celebrated with naam-kirtans (devotional songs).
+                    </>
+                  ),
                   image: chappanBhog,
                 },
                 {
@@ -479,6 +521,7 @@ function JanmashtamiPage() {
                 >
                   <div className="relative h-56">
                     <img
+                      loading="lazy"
                       src={item.image || "/placeholder.svg"}
                       alt={`${item.region} Janmashtami celebrations`}
                       className="object-cover w-full h-full"
@@ -571,6 +614,7 @@ function JanmashtamiPage() {
                 >
                   <div className="relative h-48">
                     <img
+                      loading="lazy"
                       src={item.image || "/placeholder.svg"}
                       alt={`${item.name} - Traditional Janmashtami food`}
                       className="object-cover w-full h-full"
@@ -676,6 +720,7 @@ function JanmashtamiPage() {
                 className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
+                  loading="lazy"
                   src={janmashtami}
                   alt="Spiritual aspect of Janmashtami celebration"
                   className="w-full h-full object-cover"

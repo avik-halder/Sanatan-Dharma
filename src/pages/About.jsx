@@ -62,6 +62,7 @@ export default function AboutPage() {
                 className="order-1 lg:order-2 relative h-[400px] rounded-xl overflow-hidden shadow-lg"
               >
                 <img
+                  loading="lazy"
                   src={temple}
                   alt="Hindu Temple"
                   className="object-cover w-full h-full"
