@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { Sling as Hamburger } from "hamburger-react";
-import logo3 from "../assets/logo.webp";
 
 export default function Navbar() {
   const location = useLocation();

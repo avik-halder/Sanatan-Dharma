@@ -1,12 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import BrahmaImage from "../../assets/Deities/Lord_Bramha.webp";
-import creatingUniverse from "../../assets/Deities/Brahma/brahma creating universe.webp";
-import brahmaSaraswati from "../../assets/Deities/Brahma/brahma with saraswati.webp";
-import brahmaTemple from "../../assets/Deities/Brahma/brahma temple.webp";
-import brahmaMeditating from "../../assets/Deities/Brahma/brahma meditation.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const BrahmaPage = () => {
   return (
@@ -64,7 +59,7 @@ const BrahmaPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={BrahmaImage}
+                  src={imageLinks.brahma}
                   alt="Lord Brahma"
                   className="object-cover w-full h-full"
                 />
@@ -227,11 +222,11 @@ const BrahmaPage = () => {
                 {[
                   {
                     title: "Brahma Creating the Universe",
-                    image: creatingUniverse,
+                    image: imageLinks.creatingUniverse,
                   },
-                  { title: "Brahma with Saraswati", image: brahmaSaraswati },
-                  { title: "Brahma Temple in Pushkar", image: brahmaTemple },
-                  { title: "Brahma in Meditation", image: brahmaMeditating },
+                  { title: "Brahma with Saraswati", image: imageLinks.brahmaSaraswati },
+                  { title: "Brahma Temple in Pushkar", image: imageLinks.brahmaTemple },
+                  { title: "Brahma in Meditation", image: imageLinks.brahmaMeditating },
                 ].map((item, index) => (
                   <motion.div
                     key={item.title}

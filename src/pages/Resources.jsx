@@ -1,25 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-// import vedas from "../assets/Books/vedas.webp";
-// import upanishads from "../assets/Books/upanishads.webp";
-// import epics from "../assets/Books/Ramayana and Mahabharata.webp";
-// import puranas from "../assets/Books/purans.webp";
-
-import vedas from "../assets/Books/Vedas.png";
-import epics from "../assets/Books/Hindu Epics.png";
-import upanishads from "../assets/Books/The Upanishads.png";
-import puranas from "../assets/Books/Puranas.png";
-
-import gita from "../assets/Books/The Bhagavad Gita.webp";
-import upanishad from "../assets/Books/The Upanishads.webp";
-import hinduism from "../assets/Books/HINDUISM_A Very Short Introduction_by Kim Knott.webp";
-import patanjali from "../assets/Books/The Yoga Sutras of Patanjali.webp";
-import hinduMyths from "../assets/Books/Hindu Myths.webp";
-import hinduTemple from "../assets/Books/The Hindu Temple.webp";
-import yogi from "../assets/Books/Autobiography of a Yogi.webp";
-import ramayana from "../assets/Books/The Ramayana.webp";
+import imageLinks from "../utils/ImageLinks";
 
 const formatText = (text) => {
   // Split the text by new lines and replace bold syntax **text** with <strong>text</strong>
@@ -146,7 +128,7 @@ export default function ResourcesPage() {
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
                             loading="lazy"
-                            src={vedas}
+                            src={imageLinks.vedas}
                             alt="Vedas"
                             className="object-cover w-full h-full"
                           />
@@ -215,7 +197,7 @@ export default function ResourcesPage() {
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
                             loading="lazy"
-                            src={upanishads}
+                            src={imageLinks.upanishads}
                             alt="Upanishads"
                             className="object-cover w-full h-full"
                           />
@@ -291,7 +273,7 @@ export default function ResourcesPage() {
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
                             loading="lazy"
-                            src={epics}
+                            src={imageLinks.epics}
                             alt="Hindu Epics"
                             className="object-cover w-full h-full"
                           />
@@ -357,7 +339,7 @@ export default function ResourcesPage() {
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
                             loading="lazy"
-                            src={puranas}
+                            src={imageLinks.puranas}
                             alt="Puranas"
                             className="object-cover w-full h-full"
                           />
@@ -493,56 +475,56 @@ export default function ResourcesPage() {
                   author: "Translated by Eknath Easwaran",
                   description:
                     "A poetic translation of the 700-verse Hindu scripture that is part of the epic Mahabharata.",
-                  image: gita, // Use actual path of the image
+                  image: imageLinks.gita, // Use actual path of the image
                 },
                 {
                   title: "The Upanishads",
                   author: "Translated by Patrick Olivelle",
                   description:
                     "A scholarly translation of the principal Upanishads with detailed notes and commentary.",
-                  image: upanishad, // Use actual path of the image
+                  image: imageLinks.upanishad, // Use actual path of the image
                 },
                 {
                   title: "Hinduism: A Very Short Introduction",
                   author: "Kim Knott",
                   description:
                     "A concise yet comprehensive overview of Hinduism, explaining its practices, beliefs, and history.",
-                  image: hinduism, // Use actual path of the image
+                  image: imageLinks.hinduism, // Use actual path of the image
                 },
                 {
                   title: "The Yoga Sutras of Patanjali",
                   author: "Translated by Edwin F. Bryant",
                   description:
                     "A comprehensive translation and commentary on the foundational text of yoga philosophy.",
-                  image: patanjali, // Use actual path of the image
+                  image: imageLinks.patanjali, // Use actual path of the image
                 },
                 {
                   title: "The Ramayana",
                   author: "Translated by Ramesh Menon",
                   description:
                     "A modern prose rendition of the ancient epic of Rama, making it accessible to contemporary readers.",
-                  image: ramayana, // Use actual path of the image
+                  image: imageLinks.ramayana, // Use actual path of the image
                 },
                 {
                   title: "Hindu Myths",
                   author: "Wendy Doniger",
                   description:
                     "A collection of Hindu myths from the Vedas, Puranas, and epics with insightful analysis.",
-                  image: hinduMyths, // Use actual path of the image
+                  image: imageLinks.hinduMyths, // Use actual path of the image
                 },
                 {
                   title: "Autobiography of a Yogi",
                   author: "Paramahansa Yogananda",
                   description:
                     "A spiritual classic that introduces Hindu spiritual concepts through personal narrative.",
-                  image: yogi, // Use actual path of the image
+                  image: imageLinks.yogi, // Use actual path of the image
                 },
                 {
                   title: "The Hindu Temple",
                   author: "Stella Kramrisch",
                   description:
                     "A classic study of Hindu temple architecture and its symbolic significance.",
-                  image: hinduTemple, // Use actual path of the image
+                  image: imageLinks.hinduTemple, // Use actual path of the image
                 },
               ].map((book, index) => (
                 <motion.div

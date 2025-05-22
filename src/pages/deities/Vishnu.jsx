@@ -1,21 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import Vishnu from "../../assets/Deities/Lord_Vishnu.webp";
-
-import Matsya from "../../assets/Deities/Matsya.webp";
-import Kurma from "../../assets/Deities/Kurma.webp";
-import Varaha from "../../assets/Deities/Varaha.webp";
-import Narasimha from "../../assets/Deities/Narasimha.webp";
-import Vramana from "../../assets/Deities/Vamana.webp";
-import Parashurama from "../../assets/Deities/Parashurama.webp";
-import Ram2 from "../../assets/Deities/Ram2.webp";
-import Krishna from "../../assets/Deities/Krishna.webp";
-import Buddha from "../../assets/Deities/Buddha.webp";
-import Kalki from "../../assets/Deities/Kalki.webp";
-
-import vishnuLakshmi from "../../assets/Deities/Vishnu/Lord Vishnu with Goddess Lakshmi.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 const VishnuPage = () => {
   return (
@@ -74,7 +60,7 @@ const VishnuPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={Vishnu}
+                  src={imageLinks.Vishnu}
                   alt="Lord Vishnu"
                   className="object-cover w-full h-full"
                 />
@@ -173,70 +159,70 @@ const VishnuPage = () => {
                   form: "Fish",
                   description:
                     "Saved the Vedas and Manu (progenitor of humanity) from a great deluge.",
-                  image: Matsya, // Replace with actual path
+                  image: imageLinks.Matsya, // Replace with actual path
                 },
                 {
                   name: "Kurma",
                   form: "Turtle",
                   description:
                     "Supported Mount Mandara during the churning of the cosmic ocean.",
-                  image: Kurma, // Replace with actual path
+                  image: imageLinks.Kurma, // Replace with actual path
                 },
                 {
                   name: "Varaha",
                   form: "Boar",
                   description:
                     "Rescued Earth from the cosmic waters after it was dragged down by the demon Hiranyaksha.",
-                  image: Varaha, // Replace with actual path
+                  image: imageLinks.Varaha, // Replace with actual path
                 },
                 {
                   name: "Narasimha",
                   form: "Man-Lion",
                   description:
                     "Defeated the demon king Hiranyakashipu and saved his devotee Prahlada.",
-                  image: Narasimha, // Replace with actual path
+                  image: imageLinks.Narasimha, // Replace with actual path
                 },
                 {
                   name: "Vamana",
                   form: "Dwarf",
                   description:
                     "Restored cosmic balance by humbling the demon king Bali.",
-                  image: Vramana, // Replace with actual path
+                  image: imageLinks.Vramana, // Replace with actual path
                 },
                 {
                   name: "Parashurama",
                   form: "Warrior with Axe",
                   description:
                     "Defeated the corrupt Kshatriya rulers who had abused their power.",
-                  image: Parashurama, // Replace with actual path
+                  image: imageLinks.Parashurama, // Replace with actual path
                 },
                 {
                   name: "Rama",
                   form: "Perfect Man",
                   description:
                     "Exemplified the ideal human and ruler, defeating the demon king Ravana.",
-                  image: Ram2, // Replace with actual path
+                  image: imageLinks.Ram2, // Replace with actual path
                 },
                 {
                   name: "Krishna",
                   form: "Divine Statesman",
                   description:
                     "Delivered the Bhagavad Gita and played a crucial role in the Mahabharata war.",
-                  image: Krishna, // Replace with actual path
+                  image: imageLinks.Krishna, // Replace with actual path
                 },
                 {
                   name: "Buddha",
                   form: "Enlightened One",
                   description:
                     "Taught compassion and non-violence, reforming religious practices.",
-                  image: Buddha, // Replace with actual path
+                  image: imageLinks.Buddha, // Replace with actual path
                 },
                 {
                   name: "Kalki",
                   form: "Future Avatar",
                   description:
                     "Will appear at the end of Kali Yuga to destroy evil and usher in a new age.",
-                  image: Kalki, // Replace with actual path
+                  image: imageLinks.Kalki, // Replace with actual path
                 },
               ].map((avatar, index) => (
                 <motion.div
@@ -341,7 +327,7 @@ const VishnuPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={vishnuLakshmi}
+                  src={imageLinks.vishnuLakshmi}
                   alt="Vishnu with Lakshmi"
                   className="object-cover w-full h-full"
                 />

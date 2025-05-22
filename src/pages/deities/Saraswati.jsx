@@ -1,16 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import Saraswati from "../../assets/Deities/Saraswati.webp";
-import saraswatiPuja from "../../assets/Deities/Saraswati/Saraswati Puja.png";
-
-import origin from "../../assets/Deities/Saraswati/Origin and Creation of Saraswati.jpg";
-import saraswatiRiver from "../../assets/Deities/Saraswati/Saraswati River2.jpg";
-import vedaMata from "../../assets/Deities/Saraswati/Mother of the Vedas.jpg";
-import Vagdevi from "../../assets/Deities/Saraswati/Goddess of Speech.jpg";
-
-import veena from "../../assets/Deities/Saraswati/veena.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 export default function SaraswatiPage() {
   return (
@@ -70,7 +61,7 @@ export default function SaraswatiPage() {
               >
                 <img
                   loading="lazy"
-                  src={Saraswati}
+                  src={imageLinks.Saraswati}
                   alt="Goddess Saraswati"
                   className="object-cover w-full h-full"
                 />
@@ -114,7 +105,7 @@ export default function SaraswatiPage() {
                     <>
                       <img
                         loading="lazy"
-                        src={veena}
+                        src={imageLinks.veena}
                         alt=""
                         className="h-15 w-16 m-2 mb-0"
                       />
@@ -190,25 +181,25 @@ export default function SaraswatiPage() {
                   title: "Origin and Creation",
                   description:
                     "According to Hindu mythology, Saraswati was born from the forehead of Lord Brahma, the creator. In texts like the Brahmanda Purana and Padma Purana, she is considered Brahma's wife, embodying his active energy (shakti) that helps him in the creation of the universe.",
-                  image: origin,
+                  image: imageLinks.origin,
                 },
                 {
                   title: "River Goddess",
                   description:
                     "In the Rigveda, Saraswati is primarily a river goddess, personifying the sacred Saraswati River, which was considered the boundary between the sacred land of Brahmavarta and the rest of the world. The river is now believed to be extinct or flowing underground.",
-                  image: saraswatiRiver,
+                  image: imageLinks.saraswatiRiver,
                 },
                 {
                   title: "Mother of the Vedas",
                   description:
                     "Saraswati is revered as Vedamata, the mother of the Vedas, as she is believed to have inspired the sages who composed these sacred texts. She is the divine embodiment of the knowledge contained in these ancient scriptures.",
-                  image: vedaMata,
+                  image: imageLinks.vedaMata,
                 },
                 {
                   title: "Goddess of Speech",
                   description:
                     "As Vagdevi, the goddess of speech and eloquence, Saraswati is believed to have given humans the gift of speech and the ability to communicate knowledge. She represents the power of the spoken and written word.",
-                  image: Vagdevi,
+                  image: imageLinks.Vagdevi,
                 },
               ].map((story, index) => (
                 <motion.div
@@ -330,7 +321,7 @@ export default function SaraswatiPage() {
               >
                 <img
                   loading="lazy"
-                  src={saraswatiPuja}
+                  src={imageLinks.saraswatiPuja}
                   alt="Saraswati Puja Celebration"
                   className="object-cover w-full h-full"
                 />

@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import diwali from "../../assets/Festivals/diwali.webp";
-import holi from "../../assets/Festivals/holi.webp";
-import durgaPuja from "../../assets/Festivals/durga_puja.webp";
-import janmashtami from "../../assets/Festivals/janmashtami.webp";
-import shivratri from "../../assets/Festivals/maha_shivratri.webp";
-import rakshaBandhan from "../../assets/Festivals/raksha_bandhan.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const Festivals = () => {
   const festivals = [
@@ -14,7 +8,7 @@ const Festivals = () => {
       name: "Diwali",
       description: "Festival of Lights",
       date: "October/November",
-      image: diwali,
+      image: imageLinks.diwali,
       additional:
         "Diwali is celebrated with lights, fireworks, and prayers to Lakshmi, the goddess of wealth.",
       link: "/festivals/diwali",
@@ -23,7 +17,7 @@ const Festivals = () => {
       name: "Holi",
       description: "Festival of Colors",
       date: "March",
-      image: holi,
+      image: imageLinks.holi,
       additional:
         "Holi celebrates the arrival of spring and the victory of good over evil with vibrant colors.",
       link: "/festivals/holi",
@@ -32,7 +26,7 @@ const Festivals = () => {
       name: "Durga Puja",
       description: "Worship of Goddess Durga",
       date: "September/October",
-      image: durgaPuja,
+      image: imageLinks.durgaPuja,
       additional:
         "Durga Puja celebrates the victory of Goddess Durga over the buffalo demon Mahishasura, symbolizing the triumph of good over evil.",
       link: "/festivals/durga-puja",
@@ -41,7 +35,7 @@ const Festivals = () => {
       name: "Janmashtami",
       description: "Birth of Lord Krishna",
       date: "August/September",
-      image: janmashtami,
+      image: imageLinks.janmashtami,
       additional:
         "Janmashtami marks the birth of Lord Krishna, often celebrated with dancing, singing, and feasts.",
       link: "/festivals/janmashtami",
@@ -50,7 +44,7 @@ const Festivals = () => {
       name: "Maha Shivaratri",
       description: "The Great Night of Shiva",
       date: "February/March",
-      image: shivratri,
+      image: imageLinks.shivaratri,
       additional:
         "Maha Shivaratri is a night dedicated to the worship of Lord Shiva, marked by fasting and prayers.",
       link: "/festivals/shivaratri",
@@ -59,7 +53,7 @@ const Festivals = () => {
       name: "Raksha Bandhan",
       description: "Bond of Protection",
       date: "August",
-      image: rakshaBandhan,
+      image: imageLinks.rakshaBandhan,
       additional:
         "Raksha Bandhan celebrates the bond between brothers and sisters with the tying of a protective thread.",
       link: "/festivals",

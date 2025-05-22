@@ -1,33 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import temple from "../../assets/temple.webp";
-import kashiVishwanath from "../../assets/Temples/Kashi Vishwanath2.webp";
-import meenakshi from "../../assets/Temples/Meenakshi2.webp";
-import akshardham from "../../assets/Temples/Akshardham2.webp";
-import Brihadeeswara from "../../assets/Temples/Brihadeeswara3.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const Temples = () => {
   const temples = [
     {
       name: "Kashi Vishwanath",
       location: "Varanasi, India",
-      image: kashiVishwanath,
+      image: imageLinks.KashiVishwanath,
     },
     {
       name: "Meenakshi Temple",
       location: "Madurai, India",
-      image: meenakshi,
+      image: imageLinks.Meenakshi,
     },
     {
       name: "Akshardham",
       location: "Delhi, India",
-      image: akshardham,
+      image: imageLinks.Akshardham,
     },
     {
       name: "Brihadeeswara Temple",
       location: "Thanjavur, India",
-      image: Brihadeeswara,
+      image: imageLinks.Brihadeeswara,
     },
   ];
 
@@ -47,7 +42,7 @@ const Temples = () => {
           <div className="relative h-[500px] mb-12 rounded-xl overflow-hidden">
             <img
               loading="lazy"
-              src={temple}
+              src={imageLinks.temple}
               alt="Famous Hindu Temple"
               className="w-full h-full object-cover"
             />

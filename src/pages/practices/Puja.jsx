@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
-import dhupa from "../../assets/Practices/Puja/Dhupa.png";
-import traditionalPuja from "../../assets/Practices/Puja/Traditional Puja.png";
-import homePuja from "../../assets/Practices/Puja/Home Puja.png";
+import imageLinks from "../../utils/ImageLinks";
 
 const PujaPage = () => {
   const pujaElements = [
@@ -153,7 +150,7 @@ const PujaPage = () => {
       icon: (
         <>
           <div className="flex justify-center">
-            <img loading="lazy" src={dhupa} alt="" className="h-11 sm:h-10" />
+            <img loading="lazy" src={imageLinks.dhupa} alt="" className="h-11 sm:h-10" />
           </div>
         </>
       ),
@@ -342,7 +339,7 @@ const PujaPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
-                    src={traditionalPuja}
+                    src={imageLinks.traditionalPuja}
                     alt="Puja Ceremony"
                     className="object-cover w-full h-full"
                   />
@@ -500,7 +497,7 @@ const PujaPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
-                    src={homePuja}
+                    src={imageLinks.homePuja}
                     alt="Home Puja Altar"
                     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                   />

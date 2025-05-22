@@ -1,18 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import holi from "../../assets/Festivals/holi.webp";
-import holi2 from "../../assets/Festivals/Holi/Holi 2.jpg";
-
-import holikaPrahlad from "../../assets/Festivals/Holi/Holika & Prahlad.jpg";
-import radhaKrishna from "../../assets/Festivals/Holi/Radha krsihna Playing Holi.jpg";
-import kamadeva from "../../assets/Festivals/Holi/Kamadeva.jpg";
-
-import holikaDahan from "../../assets/Festivals/Holi/Holika Dahan.jpg";
-import rangwaliHoli from "../../assets/Festivals/Holi/Holi.jpg";
-
-import holiFood from "../../assets/Festivals/Holi/Holi Foods.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 export default function HoliPage() {
   const [selectedTab, setSelectedTab] = useState("holika");
@@ -128,7 +117,7 @@ export default function HoliPage() {
               >
                 <img
                   loading="lazy"
-                  src={holi}
+                  src={imageLinks.holi}
                   alt="People celebrating Holi with colorful powders"
                   className="object-cover w-full h-full"
                 />
@@ -207,7 +196,7 @@ export default function HoliPage() {
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
-                          src={holikaPrahlad}
+                          src={imageLinks.holikaPrahlad}
                           alt="Holika Dahan ritual fire"
                           className="object-cover w-full h-full"
                         />
@@ -250,7 +239,7 @@ export default function HoliPage() {
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
-                          src={radhaKrishna}
+                          src={imageLinks.radhaKrishna}
                           alt="Krishna applying colors to Radha"
                           className="object-cover w-full h-full"
                         />
@@ -290,7 +279,7 @@ export default function HoliPage() {
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
-                          src={kamadeva}
+                          src={imageLinks.kamadeva}
                           alt="Kamadeva, the god of love"
                           className="object-cover w-full h-full"
                         />
@@ -359,7 +348,7 @@ export default function HoliPage() {
                 <div className="relative h-64">
                   <img
                     loading="lazy"
-                    src={holikaDahan}
+                    src={imageLinks.holikaDahan}
                     alt="Holika Dahan bonfire ceremony"
                     className="object-cover w-full h-full"
                   />
@@ -425,7 +414,7 @@ export default function HoliPage() {
                 <div className="relative h-64">
                   <img
                     loading="lazy"
-                    src={rangwaliHoli}
+                    src={imageLinks.rangwaliHoli}
                     alt="People playing with colors during Rangwali Holi"
                     className="object-cover w-full h-full"
                   />
@@ -613,7 +602,7 @@ export default function HoliPage() {
                 <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={holiFood}
+                    src={imageLinks.holiFood}
                     alt="Holi Foods"
                     className="w-full h-full object-cover"
                   />
@@ -823,7 +812,7 @@ export default function HoliPage() {
               >
                 <img
                   loading="lazy"
-                  src={holi2}
+                  src={imageLinks.holi2}
                   alt="Spiritual aspect of Holi celebration"
                   className="w-full h-full object-cover"
                 />

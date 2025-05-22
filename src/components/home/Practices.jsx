@@ -1,11 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import yoga from "../../assets/yoga3.webp";
-import meditation from "../../assets/meditation2.webp";
-import puja from "../../assets/puja.webp";
-import mantra from "../../assets/mantra.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const Practices = () => {
   const practices = [
@@ -15,7 +11,7 @@ const Practices = () => {
         "Union of individual consciousness with universal consciousness",
       additionalDescription:
         "Yoga enhances physical and mental well-being, fostering a deeper connection with self and the universe.",
-      image: yoga,
+      image: imageLinks.yoga,
     },
     {
       name: "Meditation",
@@ -23,21 +19,21 @@ const Practices = () => {
         "Practice of focusing the mind on a particular object, thought or activity",
       additionalDescription:
         "Meditation brings inner peace, reduces stress, and improves concentration through mindful awareness.",
-      image: meditation,
+      image: imageLinks.meditation,
     },
     {
       name: "Puja",
       description: "Ritual worship involving offerings to deities",
       additionalDescription:
         "Puja is a spiritual practice that deepens devotion, connecting the worshipper to the divine through rituals and offerings.",
-      image: puja,
+      image: imageLinks.puja,
     },
     {
       name: "Mantra Chanting",
       description: "Repetition of sacred sounds to transform consciousness",
       additionalDescription:
         "Mantra chanting helps to focus the mind, enhance positive vibrations, and bring spiritual tranquility.",
-      image: mantra,
+      image: imageLinks.mantra,
     },
   ];
 

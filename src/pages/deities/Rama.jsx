@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-import Rama from "../../assets/Deities/Ram2.webp";
-// import RamMandir from "../../assets/Temples/Ram Mandir4.png";
-import RamMandir from "../../assets/Temples/Ram Mandir5.webp";
-import tilak from "../../assets/tilak.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 export default function RamaPage() {
   return (
@@ -66,7 +62,7 @@ export default function RamaPage() {
               >
                 <img
                   loading="lazy"
-                  src={Rama}
+                  src={imageLinks.Ram2}
                   alt="Lord Rama"
                   className="object-cover w-full h-full"
                 />
@@ -121,7 +117,7 @@ export default function RamaPage() {
                     <>
                       <img
                         loading="lazy"
-                        src={tilak}
+                        src={imageLinks.tilak}
                         className="h-10 w-13"
                         alt=""
                       />
@@ -248,7 +244,7 @@ export default function RamaPage() {
               >
                 <img
                   loading="lazy"
-                  src={RamMandir}
+                  src={imageLinks.RamMandir}
                   alt="Ram Temple"
                   className="w-full h-full object-cover"
                 />

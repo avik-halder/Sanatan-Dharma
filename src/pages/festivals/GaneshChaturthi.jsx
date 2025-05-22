@@ -1,13 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-import ganeshChaturthi from "../../assets/Festivals/ganesh chaturthi.webp";
-import ganeshChaturthi2 from "../../assets/Festivals/Ganesh Chaturthi/Ganesh Chaturthi.png";
-import ganeshBirth from "../../assets/Festivals/Ganesh Chaturthi/Ganesh Birth.png";
-
-import elephantHead from "../../assets/Festivals/Ganesh Chaturthi/elephant-head.png";
-import tusk from "../../assets/Festivals/Ganesh Chaturthi/tusk.png";
+import imageLinks from "../../utils/ImageLinks";
 
 function GaneshChaturthiPage() {
   const [activeTab, setActiveTab] = useState("birth");
@@ -74,7 +68,7 @@ function GaneshChaturthiPage() {
                 <div className="relative h-full rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={ganeshChaturthi2}
+                    src={imageLinks.ganeshChaturthi2}
                     alt="Ganesh Chaturthi celebration with Lord Ganesha idol"
                     className="object-cover w-full h-full"
                   />
@@ -156,7 +150,7 @@ function GaneshChaturthiPage() {
                       <div className="md:w-1/2 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
-                          src={ganeshBirth}
+                          src={imageLinks.ganeshBirth2}
                           alt="Holika Dahan ritual fire"
                           className="object-cover w-full h-full"
                         />
@@ -276,7 +270,7 @@ function GaneshChaturthiPage() {
                                 Elephant Head{" "}
                                 <img
                                   loading="lazy"
-                                  src={elephantHead}
+                                  src={imageLinks.elephantHead}
                                   alt=""
                                   className="w-5 h-5"
                                 />
@@ -303,7 +297,7 @@ function GaneshChaturthiPage() {
                                 Single Tusk{" "}
                                 <img
                                   loading="lazy"
-                                  src={tusk}
+                                  src={imageLinks.tusk}
                                   alt=""
                                   className="w-5 h-5"
                                 />

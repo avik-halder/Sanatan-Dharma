@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-
-import puranas from "../../assets/Resources/Puranas/Puranas.avif";
-import puranas2 from "../../assets/Resources/Puranas/Page_of_Text,_Folio_from_a_Bhagavata_Purana_(Ancient_Stories_of_the_Lord)_LACMA_M.82.62.1_.webp";
-
-import deviMahatmya from "../../assets/Resources/Puranas/Devimahatmya_(Glory_of_the_Goddess)_manuscript_LACMA_M.88.134.7.webp";
-import samudraManthan from "../../assets/Resources/Puranas/Samudra-Manthan-The-Churning-of-the-Ocean-of-Milk.jpg";
-
-import vedas from "../../assets/Books/Vedas.png";
-import epics from "../../assets/Books/Hindu Epics.png";
-import upanishads from "../../assets/Books/The Upanishads.png";
+import imageLinks from "../../utils/ImageLinks";
 
 const PuranasPage = () => {
   const [activeTab, setActiveTab] = useState("panchalakshana");
@@ -59,7 +50,7 @@ const PuranasPage = () => {
                 >
                   <img
                     loading="lazy"
-                    src={puranas}
+                    src={imageLinks.puranas2}
                     alt="Ancient Purana manuscript"
                     className="object-cover w-full h-full"
                   />
@@ -338,7 +329,7 @@ const PuranasPage = () => {
                         <div className="relative h-64 rounded-xl overflow-hidden mb-6">
                           <img
                             loading="lazy"
-                            src={samudraManthan}
+                            src={imageLinks.samudraManthan}
                             alt="Samudra Manthan"
                             className="object-cover w-full h-full"
                           />
@@ -367,7 +358,7 @@ const PuranasPage = () => {
                         <div className="relative h-64 rounded-xl overflow-hidden mb-6">
                           <img
                             loading="lazy"
-                            src={deviMahatmya}
+                            src={imageLinks.deviMahatmya}
                             alt="Devi Mahatmya"
                             className="object-cover w-full h-full"
                           />
@@ -662,7 +653,7 @@ const PuranasPage = () => {
                     <div className="relative h-64 rounded-xl overflow-hidden shadow-lg mb-6">
                       <img
                         loading="lazy"
-                        src={puranas2}
+                        src={imageLinks.puranas3}
                         alt="Ancient manuscript"
                         className="object-cover w-full h-full"
                       />
@@ -841,7 +832,7 @@ const PuranasPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={vedas}
+                      src={imageLinks.vedas}
                       alt="The Vedas"
                       className="object-cover w-full h-full rounded-lg"
                     />
@@ -872,7 +863,7 @@ const PuranasPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={epics}
+                      src={imageLinks.epics}
                       alt="The Epics"
                       className="object-cover w-full h-full rounded-lg"
                     />
@@ -903,7 +894,7 @@ const PuranasPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={upanishads}
+                      src={imageLinks.upanishads}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"
                     />

@@ -1,23 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import parvati from "../../assets/Deities/Parvati/Parvati.jpg";
-import parvatiTapasya from "../../assets/Deities/Parvati/Parvati Tapasya.png";
-import ganeshBirth from "../../assets/Deities/Parvati/Birth.jpg";
-import ardhanarishvara from "../../assets/Deities/Shiva/Ardhanarishvara.png";
-import shiva from "../../assets/Deities/Parvati/Lord_Shiva.jpg";
-import kartikeya from "../../assets/Deities/Parvati/Lord Kartikeya.jpg";
-import ganesh from "../../assets/Deities/Ganesh/broken teeth.jpg";
-import family from "../../assets/Deities/Parvati/Lord Shiva with family.jpg";
-import worship from "../../assets/Deities/Parvati/Worship of Parvati.jpg";
-
-import gauri from "../../assets/Deities/Parvati/Gauri.jpg";
-import uma from "../../assets/Deities/Parvati/Uma.jpg";
-import kali from "../../assets/Deities/Parvati/Kali.jpg";
-import hemavati from "../../assets/Deities/Parvati/Hemavati.jpg";
-import annapurna from "../../assets/Deities/Parvati/Annapurna.jpg";
-import durga from "../../assets/Deities/Durga.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const ParvatiPage = () => {
   const [activeTab, setActiveTab] = useState("stories");
@@ -90,7 +74,7 @@ const ParvatiPage = () => {
                   <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl">
                     <img
                       loading="lazy"
-                      src={parvati}
+                      src={imageLinks.parvati}
                       alt="Goddess Parvati"
                       className="w-full h-full object-cover"
                     />
@@ -245,7 +229,7 @@ const ParvatiPage = () => {
                             <div className="md:w-1/3 relative h-60 md:h-auto">
                               <img
                                 loading="lazy"
-                                src={parvatiTapasya}
+                                src={imageLinks.parvatiTapasya}
                                 alt="Parvati's Tapasya"
                                 className="w-full h-full object-cover"
                               />
@@ -280,7 +264,7 @@ const ParvatiPage = () => {
                             <div className="md:w-1/3 relative h-60 md:h-auto">
                               <img
                                 loading="lazy"
-                                src={ganeshBirth}
+                                src={imageLinks.ganeshBirth}
                                 alt="Birth of Ganesha"
                                 className="w-full h-full object-cover"
                               />
@@ -315,7 +299,7 @@ const ParvatiPage = () => {
                             <div className="md:w-1/3 relative h-60 md:h-auto">
                               <img
                                 loading="lazy"
-                                src={ardhanarishvara}
+                                src={imageLinks.ardhanarishvara}
                                 alt="Ardhanarishvara"
                                 className="w-full h-full object-cover"
                               />
@@ -360,37 +344,37 @@ const ParvatiPage = () => {
                           name: "Gauri",
                           description:
                             "The fair one, representing purity and austerity. She is worshipped as the embodiment of perfect womanhood.",
-                          image: gauri,
+                          image: imageLinks.gauri,
                         },
                         {
                           name: "Uma",
                           description:
                             "The peaceful and benevolent form, representing light and beauty. The name Uma means 'mother' in many Indian languages.",
-                          image: uma,
+                          image: imageLinks.uma,
                         },
                         {
                           name: "Hemavati",
                           description:
                             "Daughter of the Himalayas, representing the connection to nature and the mountains.",
-                          image: hemavati,
+                          image: imageLinks.hemavati,
                         },
                         {
                           name: "Kali",
                           description:
                             "The fierce form that emerges to combat evil. Though terrifying in appearance, she represents ultimate protection.",
-                          image: kali,
+                          image: imageLinks.kali,
                         },
                         {
                           name: "Annapurna",
                           description:
                             "The goddess of food and nourishment who ensures no one goes hungry. Her name means 'full of food'.",
-                          image: annapurna,
+                          image: imageLinks.annapurna,
                         },
                         {
                           name: "Durga",
                           description:
                             "The warrior goddess who rides a lion and defeats demons, representing the triumph of good over evil.",
-                          image: durga,
+                          image: imageLinks.Durga,
                         },
                       ].map((form, index) => (
                         <motion.div
@@ -435,7 +419,7 @@ const ParvatiPage = () => {
                               <div className="relative h-40 mb-6 w-1/5">
                                 <img
                                   loading="lazy"
-                                  src={family}
+                                  src={imageLinks.family}
                                   alt="Shiva Family"
                                   className="w-50 h-50 object-cover rounded-lg"
                                 />
@@ -472,7 +456,7 @@ const ParvatiPage = () => {
                             <div className="relative h-60">
                               <img
                                 loading="lazy"
-                                src={shiva}
+                                src={imageLinks.shiva}
                                 alt="Lord Shiva"
                                 className="w-full h-full object-cover"
                               />
@@ -503,7 +487,7 @@ const ParvatiPage = () => {
                             <div className="relative h-60">
                               <img
                                 loading="lazy"
-                                src={ganesh}
+                                src={imageLinks.brokenTeeth}
                                 alt="Lord Ganesha"
                                 className="w-full h-full object-cover"
                               />
@@ -537,7 +521,7 @@ const ParvatiPage = () => {
                             <div className="relative h-60">
                               <img
                                 loading="lazy"
-                                src={kartikeya}
+                                src={imageLinks.kartikeya}
                                 alt="Lord Kartikeya"
                                 className="w-full h-full object-cover"
                               />
@@ -655,7 +639,7 @@ const ParvatiPage = () => {
                   <div className="relative h-68 mb-4 rounded-xl overflow-hidden">
                     <img
                       loading="lazy"
-                      src={worship}
+                      src={imageLinks.worship}
                       alt="Parvati Worship"
                       className="w-full h-full object-cover"
                     />

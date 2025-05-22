@@ -1,18 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import Shiva from "../../assets/Deities/Lord_Shiva.webp";
-import shivaFamily from "../../assets/Deities/Shiva/Lord Shiva with family.jpg";
-
-import nataraja from "../../assets/Deities/Shiva/Nataraja.webp";
-import lingam from "../../assets/Deities/Shiva/Lingam.webp";
-import dakshinamurthy from "../../assets/Deities/Shiva/Dakshinamurthy.jpg";
-import ardhanarishvara from "../../assets/Deities/Shiva/Ardhanarishvara.png";
-import bhairava from "../../assets/Deities/Shiva/Bhairava.webp";
-import pashupatinath from "../../assets/Deities/Shiva/Pashupatinath.jpg";
-import chandrashekhara from "../../assets/Deities//Shiva/Chandrashekhara.jpg";
-import mahayogi from "../../assets/Deities/Shiva/Mahayogi.png";
+import imageLinks from "../../utils/ImageLinks";
 
 export default function ShivaPage() {
   return (
@@ -71,7 +60,7 @@ export default function ShivaPage() {
               >
                 <img
                   loading="lazy"
-                  src={Shiva}
+                  src={imageLinks.Shiva}
                   alt="Lord Shiva"
                   className="object-cover w-full h-full"
                 />
@@ -180,49 +169,49 @@ export default function ShivaPage() {
                   name: "Nataraja",
                   description:
                     "The Lord of Dance, performing the cosmic dance of creation and destruction.",
-                  image: nataraja,
+                  image: imageLinks.nataraja,
                 },
                 {
                   name: "Lingam",
                   description:
                     "The abstract representation of Shiva, symbolizing the infinite nature of the divine.",
-                  image: lingam,
+                  image: imageLinks.lingam,
                 },
                 {
                   name: "Dakshinamurthy",
                   description:
                     "The supreme guru, facing south, imparting knowledge to his disciples through silence.",
-                  image: dakshinamurthy,
+                  image: imageLinks.dakshinamurthy,
                 },
                 {
                   name: "Ardhanarishvara",
                   description:
                     "Half male and half female form, representing the unity of masculine and feminine energies.",
-                  image: ardhanarishvara,
+                  image: imageLinks.ardhanarishvara,
                 },
                 {
                   name: "Bhairava",
                   description:
                     "The fierce manifestation of Shiva, associated with annihilation and the passage of time.",
-                  image: bhairava,
+                  image: imageLinks.bhairava,
                 },
                 {
                   name: "Pashupatinath",
                   description:
                     "The Lord of All Beings, protector of animals and all living creatures.",
-                  image: pashupatinath,
+                  image: imageLinks.pashupatinath,
                 },
                 {
                   name: "Chandrashekhara",
                   description:
                     "Shiva adorned with the crescent moon in his hair, representing beauty and time.",
-                  image: chandrashekhara,
+                  image: imageLinks.chandrashekhara,
                 },
                 {
                   name: "Mahayogi",
                   description:
                     "The great ascetic, seated in deep meditation, embodying spiritual discipline.",
-                  image: mahayogi,
+                  image: imageLinks.mahayogi,
                 },
               ].map((form, index) => (
                 <motion.div
@@ -325,7 +314,7 @@ export default function ShivaPage() {
               >
                 <img
                   loading="lazy"
-                  src={shivaFamily}
+                  src={imageLinks.shivaFamily}
                   alt="Shiva with Family"
                   className="object-cover w-full h-full"
                 />

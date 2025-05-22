@@ -1,26 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import diwali from "../../assets/Festivals/diwali.webp";
-import diwali2 from "../../assets/Festivals/Diwali/Diwali Celebration.jpg";
-import returnOfRama from "../../assets/Festivals/Diwali/Return of Lord Rama to Ayodhya.png";
-import krishnaVictory from "../../assets/Festivals/Diwali/Krishna's Victory over Narakasura.png";
-import lakshmi from "../../assets/Deities/Lakshmi.webp";
-
-import rangoli from "../../assets/Festivals/Diwali/Rangoli.jpg";
-import gifts from "../../assets/Festivals/Diwali/Gifts.jpg";
-import fireWorks from "../../assets/Festivals/Diwali/Fireworks.jpg";
-import oilLamps from "../../assets/Festivals/Diwali/Oil lamp.jpg";
-
-import kajuKatli from "../../assets/Festivals/Diwali/Kaju Katli.png";
-import gulabJamun from "../../assets/Festivals/Diwali/Gulab Jamun.png";
-import samosa from "../../assets/Festivals/Diwali/Samosa.png";
-import chakli from "../../assets/Festivals/Diwali/Chakli.png";
-import jalebi from "../../assets/Festivals/Diwali/Jalebi.png";
-import besanLaddo from "../../assets/Festivals/Diwali/Besan Laddo.png";
-import mathri from "../../assets/Festivals/Diwali/Mathri.png";
-import alooTikki from "../../assets/Festivals/Diwali/Aloo Tikki.png";
+import imageLinks from "../../utils/ImageLinks";
 
 const DiwaliPage = () => {
   const [selectedTab, setSelectedTab] = useState("ramayana");
@@ -76,7 +57,7 @@ const DiwaliPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={diwali}
+                  src={imageLinks.diwali}
                   alt="Diwali Celebration with oil lamps and colorful rangoli"
                   className="object-cover w-full h-full"
                 />
@@ -157,7 +138,7 @@ const DiwaliPage = () => {
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
-                          src={returnOfRama}
+                          src={imageLinks.returnOfRama}
                           alt="Lord Rama's return to Ayodhya"
                           className="object-cover w-full h-full"
                         />
@@ -195,7 +176,7 @@ const DiwaliPage = () => {
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
-                          src={krishnaVictory}
+                          src={imageLinks.krishnaVictory}
                           alt="Krishna defeating Narakasura"
                           className="object-cover w-full h-full"
                         />
@@ -231,7 +212,7 @@ const DiwaliPage = () => {
                       <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
-                          src={lakshmi}
+                          src={imageLinks.Lakshmi}
                           alt="Goddess Lakshmi with lotus flowers"
                           className="object-cover w-full h-full"
                         />
@@ -437,7 +418,7 @@ const DiwaliPage = () => {
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={rangoli}
+                    src={imageLinks.rangoli}
                     alt="Colorful Rangoli design for Diwali"
                     className="object-cover w-full h-full"
                   />
@@ -445,7 +426,7 @@ const DiwaliPage = () => {
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={gifts}
+                    src={imageLinks.gifts}
                     alt="Traditional Diwali sweets and treats"
                     className="object-cover w-full h-full"
                   />
@@ -453,7 +434,7 @@ const DiwaliPage = () => {
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={oilLamps}
+                    src={imageLinks.oilLamps}
                     alt="Oil lamps (diyas) lit for Diwali"
                     className="object-cover w-full h-full"
                   />
@@ -461,7 +442,7 @@ const DiwaliPage = () => {
                 <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={fireWorks}
+                    src={imageLinks.fireWorks}
                     alt="Fireworks display during Diwali"
                     className="object-cover w-full h-full"
                   />
@@ -586,54 +567,54 @@ const DiwaliPage = () => {
                   type: "Sweet",
                   description:
                     "Diamond-shaped cashew fudge with a silver foil topping.",
-                  image: kajuKatli,
+                  image: imageLinks.kajuKatli,
                 },
                 {
                   name: "Gulab Jamun",
                   type: "Sweet",
                   description: "Deep-fried milk solids soaked in sugar syrup.",
-                  image: gulabJamun,
+                  image: imageLinks.gulabJamun,
                 },
                 {
                   name: "Samosa",
                   type: "Savory",
                   description:
                     "Triangular pastry filled with spiced potatoes and peas.",
-                  image: samosa,
+                  image: imageLinks.samosa,
                 },
                 {
                   name: "Chakli",
                   type: "Savory",
                   description:
                     "Spiral-shaped crispy snack made from rice and gram flour.",
-                  image: chakli,
+                  image: imageLinks.chakli,
                 },
                 {
                   name: "Jalebi",
                   type: "Sweet",
                   description:
                     "Pretzel-shaped deep-fried batter soaked in sugar syrup.",
-                  image: jalebi,
+                  image: imageLinks.jalebi,
                 },
                 {
                   name: "Besan Ladoo",
                   type: "Sweet",
                   description:
                     "Sweet balls made from roasted gram flour, ghee, and sugar.",
-                  image: besanLaddo,
+                  image: imageLinks.besanLaddo,
                 },
                 {
                   name: "Mathri",
                   type: "Savory",
                   description: "Flaky, spiced crackers made from wheat flour.",
-                  image: mathri,
+                  image: imageLinks.mathri,
                 },
                 {
                   name: "Aloo Tikki",
                   type: "Savory",
                   description:
                     "Spiced potato patties, shallow fried until crispy.",
-                  image: alooTikki,
+                  image: imageLinks.alooTikki,
                 },
               ].map((recipe, index) => (
                 <motion.div
@@ -761,7 +742,7 @@ const DiwaliPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={diwali2}
+                  src={imageLinks.diwali2}
                   alt="Spiritual aspect of Diwali with meditation and prayer"
                   className="object-cover w-full h-full"
                 />

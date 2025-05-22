@@ -1,20 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
-import nagara from "../assets/Temples/nagara2.webp";
-import dravida from "../assets/Temples/dravida2.webp";
-import carvings from "../assets/Temples/carvings.webp";
-import layout from "../assets/Temples/layout2.webp";
-
-import KashiVishwanath from "../assets/Temples/Kashi Vishwanath.webp";
-import Meenakshi from "../assets/Temples/Meenakshi.png";
-import JagannathIN from "../assets/Temples/Jagganath Temple Puri.webp";
-import Brihadeeswara from "../assets/Temples/Brihadeeswara3.webp";
-import Somnath from "../assets/Temples/Somnath Temple.webp";
-import Akshardham from "../assets/Temples/Akshardham2.webp";
-import Dhakeshwari from "../assets/Temples/Dhakeshwari.webp";
-import Kantajew from "../assets/Temples/Kantajew.webp";
-import JagannathBD from "../assets/Temples/Jagganath Temple Chittagong.jpg";
+import imageLinks from "../utils/ImageLinks";
 
 export default function TemplesPage() {
   return (
@@ -108,10 +94,10 @@ export default function TemplesPage() {
                 className="grid grid-cols-2 gap-4"
               >
                 {[
-                  { name: "Nagara Style", image: nagara },
-                  { name: "Dravida Style", image: dravida },
-                  { name: "Temple Carvings", image: carvings },
-                  { name: "Temple Layout", image: layout },
+                  { name: "Nagara Style", image: imageLinks.nagara },
+                  { name: "Dravida Style", image: imageLinks.dravida },
+                  { name: "Temple Carvings", image: imageLinks.carvings },
+                  { name: "Temple Layout", image: imageLinks.layout },
                 ].map((item, index) => (
                   <motion.div
                     key={item.name}
@@ -164,7 +150,7 @@ export default function TemplesPage() {
                   deity: "Lord Shiva",
                   description:
                     "One of the most famous Hindu temples dedicated to Lord Shiva, located on the western bank of the holy river Ganga.",
-                  image: KashiVishwanath,
+                  image: imageLinks.KashiVishwanath2,
                 },
                 {
                   name: "Meenakshi Temple",
@@ -172,7 +158,7 @@ export default function TemplesPage() {
                   deity: "Goddess Meenakshi and Lord Sundareswarar",
                   description:
                     "A historic temple known for its stunning architecture with thousands of colorful sculptures and 14 gateway towers.",
-                  image: Meenakshi,
+                  image: imageLinks.Meenakshi2,
                 },
                 {
                   name: "Jagannath Temple",
@@ -180,7 +166,7 @@ export default function TemplesPage() {
                   deity: "Lord Jagannath",
                   description:
                     "Famous for its annual Rath Yatra (chariot festival) and one of the Char Dham pilgrimage sites.",
-                  image: JagannathIN,
+                  image: imageLinks.JagannathIN,
                 },
                 {
                   name: "Brihadeeswara Temple",
@@ -188,7 +174,7 @@ export default function TemplesPage() {
                   deity: "Lord Shiva",
                   description:
                     "A UNESCO World Heritage Site known for its architectural grandeur and massive Vimana (tower).",
-                  image: Brihadeeswara,
+                  image: imageLinks.Brihadeeswara,
                 },
                 {
                   name: "Somnath Temple",
@@ -196,7 +182,7 @@ export default function TemplesPage() {
                   deity: "Lord Shiva",
                   description:
                     "One of the twelve Jyotirlingas (devotional shrines of Shiva) with a rich and tumultuous history.",
-                  image: Somnath,
+                  image: imageLinks.Somnath,
                 },
                 {
                   name: "Akshardham Temple",
@@ -204,7 +190,7 @@ export default function TemplesPage() {
                   deity: "Swaminarayan",
                   description:
                     "A modern architectural marvel showcasing millennia of traditional Hindu and Indian culture.",
-                  image: Akshardham,
+                  image: imageLinks.Akshardham,
                 },
                 // Added Bangladeshi Temples
                 {
@@ -213,7 +199,7 @@ export default function TemplesPage() {
                   deity: "Goddess Durga",
                   description:
                     "One of the oldest and most significant temples in Dhaka, Bangladesh, dedicated to Goddess Durga.",
-                  image: Dhakeshwari, // Replace with your image
+                  image: imageLinks.Dhakeshwari, // Replace with your image
                 },
                 {
                   name: "Kantajew Temple",
@@ -221,7 +207,7 @@ export default function TemplesPage() {
                   deity: "Lord Krishna",
                   description:
                     "Famous for its beautiful terracotta carvings, this 18th-century temple is a UNESCO World Heritage Site.",
-                  image: Kantajew, // Replace with your image
+                  image: imageLinks.Kantajew, // Replace with your image
                 },
                 {
                   name: "Jagannath Temple",
@@ -229,7 +215,7 @@ export default function TemplesPage() {
                   deity: "Lord Jagannath",
                   description:
                     "A significant temple dedicated to Lord Jagannath in the coastal city of Chittagong.",
-                  image: JagannathBD, // Replace with your image
+                  image: imageLinks.JagannathBD, // Replace with your image
                 },
               ].map((temple, index) => (
                 <motion.div

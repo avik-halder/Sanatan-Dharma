@@ -1,19 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import Krishna from "../../assets/Deities/Krishna/Krishna.jpg";
-
-import KrishnaBirth from "../../assets/Deities/Krishna/Birth.jpg";
-import KrishnaMakhanChor from "../../assets/Deities/Krishna/Baby Krishna with Butter.jpg";
-import KrishnaSlayingDemons from "../../assets/Deities/Krishna/Krishna fighting with Kaliya Nag.png";
-import KrishnaGovardhanHill from "../../assets/Deities/Krishna/Lifting Govardhan Hill.jpg";
-import KrishnaRaasLeela from "../../assets/Deities/Krishna/Raas Leela.jpg";
-import KrishnaKillingKangsa from "../../assets/Deities/Krishna/Kangsa.jpg";
-import KrishnaBhagavadGita from "../../assets/Deities/Krishna/Bhagavad Gita.jpg";
-import Vaikuntha from "../../assets/Deities/Krishna/Ascension to Vaikuntha.jpg";
-
-import KrishnaTemple from "../../assets/Deities/Krishna/Dwarkadhish Temple.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 function KrishnaPage() {
   return (
@@ -70,7 +58,7 @@ function KrishnaPage() {
               >
                 <img
                   loading="lazy"
-                  src={Krishna}
+                  src={imageLinks.Krishna2}
                   alt="Lord Ganesha"
                   className="object-cover w-full h-full"
                 />
@@ -103,49 +91,49 @@ function KrishnaPage() {
                   title: "Birth and Childhood",
                   description:
                     "Born in a prison to Devaki and Vasudeva in Mathura, Krishna was smuggled to Gokul to be raised by foster parents Yashoda and Nanda to escape his uncle Kangsa who sought to kill him.",
-                  image: KrishnaBirth,
+                  image: imageLinks.KrishnaBirth,
                 },
                 {
                   title: "Butter Thief",
                   description:
                     "As a child, Krishna was known for his mischievous pranks, particularly stealing butter (makhan) from homes in the village, earning him the nickname 'Makhan Chor' (butter thief).",
-                  image: KrishnaMakhanChor,
+                  image: imageLinks.KrishnaMakhanChor,
                 },
                 {
                   title: "Slaying of Demons",
                   description:
                     "Throughout his childhood, Krishna slayed many demons sent by Kangsa, including Putana, Trinavarta, Aghasura, and Bakasura, showcasing his divine powers from an early age.",
-                  image: KrishnaSlayingDemons,
+                  image: imageLinks.KrishnaSlayingDemons,
                 },
                 {
                   title: "Lifting Govardhan Hill",
                   description:
                     "When Lord Indra sent torrential rains to flood Vrindavan, Krishna lifted the entire Govardhan Hill on his little finger to provide shelter to the villagers and their cattle.",
-                  image: KrishnaGovardhanHill,
+                  image: imageLinks.KrishnaGovardhanHill,
                 },
                 {
                   title: "Raas Leela",
                   description:
                     "The divine dance performed by Krishna with the gopis (cowherd girls) of Vrindavan, symbolizing the loving relationship between God and the devotee's soul.",
-                  image: KrishnaRaasLeela,
+                  image: imageLinks.KrishnaRaasLeela,
                 },
                 {
                   title: "Killing of Kangsa",
                   description:
                     "Krishna fulfilled the prophecy by killing his evil uncle Kangsa and freeing his parents and the people of Mathura from his tyrannical rule.",
-                  image: KrishnaKillingKangsa,
+                  image: imageLinks.KrishnaKillingKangsa,
                 },
                 {
                   title: "The Bhagavad Gita",
                   description:
                     "On the battlefield of Kurukshetra, Krishna served as Arjuna's charioteer and imparted the eternal wisdom of the Bhagavad Gita, a cornerstone of Hindu philosophy.",
-                  image: KrishnaBhagavadGita,
+                  image: imageLinks.KrishnaBhagavadGita,
                 },
                 {
                   title: "Ascension to Vaikuntha",
                   description:
                     "After fulfilling his divine mission on Earth, Krishna returned to his celestial abode Vaikuntha, leaving behind his teachings and the legacy of his divine play (leela).",
-                  image: Vaikuntha,
+                  image: imageLinks.Vaikuntha,
                 },
               ].map((story, index) => (
                 <motion.div
@@ -334,7 +322,7 @@ function KrishnaPage() {
               >
                 <img
                   loading="lazy"
-                  src={KrishnaTemple}
+                  src={imageLinks.KrishnaTemple}
                   alt="Krishna Temple"
                   className="w-full h-full object-cover"
                 />

@@ -1,14 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import puja from "../assets/Practices/puja.webp";
-import meditation from "../assets/meditation3.webp";
-import mantra from "../assets/Practices/mantra2.webp";
-
-import hatha from "../assets/Practices/hatha_yoga.webp";
-import kundalini from "../assets/Practices/kuldalini_yoga.webp";
-import bhakti from "../assets/Practices/bhakti_yoga.webp";
-import jnana from "../assets/Practices/jnana_yoga.webp";
+import imageLinks from "../utils/ImageLinks";
 
 export default function PracticesPage() {
   return (
@@ -118,7 +110,7 @@ export default function PracticesPage() {
                     "Aarti (waving of lamps)",
                     "Receiving blessings",
                   ],
-                  image: puja,
+                  image: imageLinks.puja2,
                   link: "/practices/puja",
                 },
                 {
@@ -133,7 +125,7 @@ export default function PracticesPage() {
                     "Maintaining awareness",
                     "Gradual deepening of practice",
                   ],
-                  image: meditation,
+                  image: imageLinks.meditation2,
                   link: "/practices/meditation",
                 },
                 {
@@ -148,7 +140,7 @@ export default function PracticesPage() {
                     "Using mala beads for counting",
                     "Maintaining focus and devotion",
                   ],
-                  image: mantra,
+                  image: imageLinks.mantra2,
                   link: "/practices/mantra-chanting",
                 },
               ].map((practice, index) => (
@@ -245,10 +237,10 @@ export default function PracticesPage() {
                 className="grid grid-cols-2 gap-4"
               >
                 {[
-                  { name: "Hatha Yoga", image: hatha },
-                  { name: "Kundalini Yoga", image: kundalini },
-                  { name: "Bhakti Yoga", image: bhakti },
-                  { name: "Jnana Yoga", image: jnana },
+                  { name: "Hatha Yoga", image: imageLinks.hatha },
+                  { name: "Kundalini Yoga", image: imageLinks.kundalini },
+                  { name: "Bhakti Yoga", image: imageLinks.bhakti },
+                  { name: "Jnana Yoga", image: imageLinks.jnana },
                 ].map((yogaType, index) => (
                   <motion.div
                     key={yogaType.name}

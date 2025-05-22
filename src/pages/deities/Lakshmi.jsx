@@ -1,19 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import Lakshmi from "../../assets/Deities/Lakshmi.webp";
-import lakshmiPuja from "../../assets/Deities/Lakshmi/Lakshmi Puja.png";
-
-import AdiLakshmi from "../../assets/Deities/Lakshmi/Adi Lakshmi.jpg";
-import DhanyaLakshmi from "../../assets/Deities/Lakshmi/Dhanya Lakshmi.jpg";
-import DhairyaLakshmi from "../../assets/Deities/Lakshmi/Dhairya Lakshmi.jpg";
-import GajaLakshmi from "../../assets/Deities/Lakshmi/Gaja Lakshmi.jpg";
-import SantanaLakshmi from "../../assets/Deities/Lakshmi/Santana Lakshmi.jpg";
-import VijayaLakshmi from "../../assets/Deities/Lakshmi/Vijaya Lakshmi.jpg";
-import VidyaLakshmi from "../../assets/Deities/Lakshmi/Vidya Lakshmi.jpg";
-import DhanaLakshmi from "../../assets/Deities/Lakshmi/Dhana Lakshmi.jpg";
-
-import redSaree from "../../assets/Deities/Lakshmi/saree.png";
+import imageLinks from "../../utils/ImageLinks";
 
 function LakshmiPage() {
   return (
@@ -71,7 +58,7 @@ function LakshmiPage() {
               >
                 <img
                   loading="lazy"
-                  src={Lakshmi}
+                  src={imageLinks.Lakshmi}
                   alt="Goddess Lakshmi"
                   className="w-full h-full object-cover"
                 />
@@ -104,49 +91,49 @@ function LakshmiPage() {
                   name: "Adi Lakshmi",
                   description:
                     "The primordial form of Lakshmi, representing the original source of all wealth and prosperity.",
-                  image: AdiLakshmi,
+                  image: imageLinks.AdiLakshmi,
                 },
                 {
                   name: "Dhanya Lakshmi",
                   description:
                     "The goddess of agricultural wealth, representing the bounty of harvests and grains.",
-                  image: DhanyaLakshmi,
+                  image: imageLinks.DhanyaLakshmi,
                 },
                 {
                   name: "Dhairya Lakshmi",
                   description:
                     "The goddess of courage and patience, bestowing the wealth of inner strength and fortitude.",
-                  image: DhairyaLakshmi,
+                  image: imageLinks.DhairyaLakshmi,
                 },
                 {
                   name: "Gaja Lakshmi",
                   description:
                     "The goddess of animal wealth, depicted with elephants symbolizing royal power and abundance.",
-                  image: GajaLakshmi,
+                  image: imageLinks.GajaLakshmi,
                 },
                 {
                   name: "Santana Lakshmi",
                   description:
                     "The goddess of progeny, bestowing the wealth of children and family prosperity.",
-                  image: SantanaLakshmi,
+                  image: imageLinks.SantanaLakshmi,
                 },
                 {
                   name: "Vijaya Lakshmi",
                   description:
                     "The goddess of victory, bestowing success in endeavors and triumph over obstacles.",
-                  image: VijayaLakshmi,
+                  image: imageLinks.VijayaLakshmi,
                 },
                 {
                   name: "Vidya Lakshmi",
                   description:
                     "The goddess of knowledge and wisdom, representing the wealth of learning and education.",
-                  image: VidyaLakshmi,
+                  image: imageLinks.VidyaLakshmi,
                 },
                 {
                   name: "Dhana Lakshmi",
                   description:
                     "The goddess of monetary wealth, bestowing material prosperity and financial abundance.",
-                  image: DhanaLakshmi,
+                  image: imageLinks.DhanaLakshmi,
                 },
               ].map((form, index) => (
                 <motion.div
@@ -236,7 +223,7 @@ function LakshmiPage() {
                       <span className="flex justify-center">
                         <img
                           loading="lazy"
-                          src={redSaree}
+                          src={imageLinks.redSaree}
                           alt=""
                           className="w-12 h-12 sm:w-10 sm:h-10"
                         />
@@ -348,7 +335,7 @@ function LakshmiPage() {
               >
                 <img
                   loading="lazy"
-                  src={lakshmiPuja}
+                  src={imageLinks.lakshmiPuja}
                   alt="Lakshmi Puja During Diwali"
                   className="w-full h-full object-cover"
                 />

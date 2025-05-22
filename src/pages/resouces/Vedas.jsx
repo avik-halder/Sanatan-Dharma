@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-
-import epics from "../../assets/Books/Hindu Epics.png";
-import upanishads from "../../assets/Books/The Upanishads.png";
-import puranas from "../../assets/Books/Puranas.png";
-
-import rigveda from "../../assets/Resources/Vedas/Aitareya_Upanishad,_Sanskrit,_Rigveda,_Devanagari_script,_1865_CE_manuscript.webp";
-import yajurveda from "../../assets/Resources/Vedas/1200-1000_BCE,_Vajasneyi_samhita_sample_i,_Shukla_Yajurveda,_Sanskrit,_Devanagari.webp";
-import samaveda from "../../assets/Resources/Vedas/1672_CE_manuscript_copy,_10th_century_BCE_Samaveda_Kauthuma_Samhita_Veyagana,_Schoyen_Collection_Norway.webp";
-import atharvaveda from "../../assets/Resources/Vedas/Mundaka_Upanisad_verses_3.2.8_to_3.2.10,_Atharvaveda,_Sanskrit_language,_Devanagari_script.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const VedasPage = () => {
   const [activeTab, setActiveTab] = useState("rigveda");
@@ -64,7 +56,7 @@ const VedasPage = () => {
                 >
                   <img
                     loading="lazy"
-                    src={rigveda}
+                    src={imageLinks.rigveda}
                     alt="Ancient Vedic manuscript"
                     className="object-cover w-full h-full"
                   />
@@ -132,7 +124,7 @@ const VedasPage = () => {
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
                             loading="lazy"
-                            src={rigveda}
+                            src={imageLinks.rigveda}
                             alt="Rigveda"
                             className="object-cover w-full h-full"
                           />
@@ -216,7 +208,7 @@ const VedasPage = () => {
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
                             loading="lazy"
-                            src={yajurveda}
+                            src={imageLinks.yajurveda}
                             alt="Yajurveda"
                             className="object-cover w-full h-full"
                           />
@@ -299,7 +291,7 @@ const VedasPage = () => {
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
                             loading="lazy"
-                            src={samaveda}
+                            src={imageLinks.samaveda}
                             alt="Samaveda"
                             className="object-cover w-full h-full"
                           />
@@ -384,7 +376,7 @@ const VedasPage = () => {
                         <div className="relative h-60 rounded-lg overflow-hidden shadow-md">
                           <img
                             loading="lazy"
-                            src={atharvaveda}
+                            src={imageLinks.atharvaveda}
                             alt="Atharvaveda"
                             className="object-cover w-full h-full"
                           />
@@ -745,7 +737,7 @@ const VedasPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={upanishads}
+                      src={imageLinks.upanishads}
                       alt="The Upanishads"
                       className="object-cover rounded-lg w-full h-full"
                     />
@@ -776,7 +768,7 @@ const VedasPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={epics}
+                      src={imageLinks.epics}
                       alt="The Epics"
                       className="object-cover w-full h-full rounded-lg"
                     />
@@ -807,7 +799,7 @@ const VedasPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={puranas}
+                      src={imageLinks.puranas}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"
                     />

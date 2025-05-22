@@ -1,19 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import Durga from "../../assets/Deities/Durga.webp";
-import durgaPuja from "../../assets/Deities/Durga/Durga Puja.webp";
-
-import shailaputri from "../../assets/Deities/Durga/ok/Shailaputri.jpg";
-import brahmacharini from "../../assets/Deities/Durga/ok/Brahmacharini.jpg";
-import chandraghanta from "../../assets/Deities/Durga/ok/Chandraghanta.jpg";
-import kushmanda from "../../assets/Deities/Durga/ok/Kushmanda.jpg";
-import skandamata from "../../assets/Deities/Durga/ok/Skandamata.jpg";
-import katyayani from "../../assets/Deities/Durga/ok/Katyayani.jpg";
-import kalaratri from "../../assets/Deities/Durga/ok/Kalaratri.jpg";
-import mahagauri from "../../assets/Deities/Durga/ok/Mahagauri.jpg";
-import siddhidatri from "../../assets/Deities/Durga/ok/Siddhidatri.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 const DurgaPage = () => {
   return (
@@ -73,7 +61,7 @@ const DurgaPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={Durga}
+                  src={imageLinks.Durga}
                   alt="Goddess Durga"
                   className="object-cover w-full h-full"
                 />
@@ -107,55 +95,55 @@ const DurgaPage = () => {
                   name: "Shailaputri",
                   description:
                     "The daughter of the mountains, representing the power of Brahma, Vishnu, and Shiva.",
-                  image: shailaputri,
+                  image: imageLinks.shailaputri,
                 },
                 {
                   name: "Brahmacharini",
                   description:
                     "The one who practices devout austerity, symbolizing love and loyalty.",
-                  image: brahmacharini,
+                  image: imageLinks.brahmacharini,
                 },
                 {
                   name: "Chandraghanta",
                   description:
                     "The one who bears the moon in her bell, representing beauty and bravery.",
-                  image: chandraghanta,
+                  image: imageLinks.chandraghanta,
                 },
                 {
                   name: "Kushmanda",
                   description:
                     "The creator of the universe, whose laugh created the cosmic egg.",
-                  image: kushmanda,
+                  image: imageLinks.kushmanda,
                 },
                 {
                   name: "Skandamata",
                   description:
                     "The mother of Skanda (Kartikeya), representing motherhood.",
-                  image: skandamata,
+                  image: imageLinks.skandamata,
                 },
                 {
                   name: "Katyayani",
                   description:
                     "The warrior form born to sage Katyayana, created to destroy the demon Mahishasura.",
-                  image: katyayani,
+                  image: imageLinks.katyayani,
                 },
                 {
                   name: "Kalaratri",
                   description:
                     "The destroyer of darkness and ignorance, with dark complexion, disheveled hair.",
-                  image: kalaratri,
+                  image: imageLinks.kalaratri,
                 },
                 {
                   name: "Mahagauri",
                   description:
                     "The extremely fair one, symbolizing purity and cleanliness.",
-                  image: mahagauri,
+                  image: imageLinks.mahagauri,
                 },
                 {
                   name: "Siddhidatri",
                   description:
                     "The bestower of supernatural powers, worshipped by all gods, sages, and demons.",
-                  image: siddhidatri,
+                  image: imageLinks.siddhidatri,
                 },
               ].map((form, index) => (
                 <motion.div
@@ -385,11 +373,11 @@ const DurgaPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="order-1 lg:order-2 relative h-auto rounded-lg overflow-hidden shadow-lg"
+                className="order-1 lg:order-2 relative h-auto rounded-xl overflow-hidden shadow-lg"
               >
                 <img
                   loading="lazy"
-                  src={durgaPuja}
+                  src={imageLinks.durgaPuja}
                   alt="Durga Puja Celebration"
                   className="object-cover"
                 />

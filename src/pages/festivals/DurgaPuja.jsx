@@ -1,31 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import durgaPuja from "../../assets/Festivals/durga_puja.webp";
-import durgaPuja1 from "../../assets/Festivals/DurgaPuja/DurgaPuja1.png";
-import durgaPuja2 from "../../assets/Festivals/DurgaPuja/Durga Puja.jpg";
-import themedDurgaPuja from "../../assets/Festivals/DurgaPuja/Themed Durga Pandal.png";
-import traditionalDurgaPuja from "../../assets/Festivals/DurgaPuja/Traditional Durga Pandal.jpg";
-import nightDurgaPuja from "../../assets/Festivals/DurgaPuja/Durga Puja at Night.jpg";
-import nightDurgaPuja2 from "../../assets/Festivals/DurgaPuja/Mahisasur Mardini.jpg";
-
-import dhunuciDance from "../../assets/Festivals/DurgaPuja/Dhunuci Dance.jpg";
-import food from "../../assets/Festivals/DurgaPuja/Durga Puja Food.jpg";
-import fashion from "../../assets/Festivals/DurgaPuja/Fashion.png";
-import artsAndCrafts from "../../assets/Festivals/DurgaPuja/Durga Puja Arts and Crafts.jpg";
-import literatureAndPublishing from "../../assets/Festivals/DurgaPuja/Literature and Publishing.jpg";
-import communityBonding from "../../assets/Festivals/DurgaPuja/Durga Puja Community Bonding.jpg";
-
-import shailaputri from "../../assets/Deities/Durga/ok/Shailaputri.jpg";
-import brahmacharini from "../../assets/Deities/Durga/ok/Brahmacharini.jpg";
-import chandraghanta from "../../assets/Deities/Durga/ok/Chandraghanta.jpg";
-import kushmanda from "../../assets/Deities/Durga/ok/Kushmanda.jpg";
-import skandamata from "../../assets/Deities/Durga/ok/Skandamata.jpg";
-import katyayani from "../../assets/Deities/Durga/ok/Katyayani.jpg";
-import kalaratri from "../../assets/Deities/Durga/ok/Kalaratri.jpg";
-import mahagauri from "../../assets/Deities/Durga/ok/Mahagauri.jpg";
-import siddhidatri from "../../assets/Deities/Durga/ok/Siddhidatri.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 const DurgaPujaPage = () => {
   const [selectedTab, setSelectedTab] = useState("day1");
@@ -94,7 +70,7 @@ const DurgaPujaPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={durgaPuja}
+                  src={imageLinks.durgaPuja}
                   alt="Goddess Durga idol during Durga Puja"
                   className="object-cover w-full h-full"
                 />
@@ -126,7 +102,7 @@ const DurgaPujaPage = () => {
                 <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                   <img
                     loading="lazy"
-                    src={durgaPuja1}
+                    src={imageLinks.durgaPuja1}
                     className="object-cover w-full h-full object-[center_75%] md:object-center"
                   />
                 </div>
@@ -207,7 +183,7 @@ const DurgaPujaPage = () => {
                   description:
                     "Daughter of the mountains, representing the power of Brahma, Vishnu, and Shiva.",
                   color: "Red",
-                  image: shailaputri,
+                  image: imageLinks.shailaputri,
                 },
                 {
                   day: "Day 2",
@@ -215,7 +191,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The one who practices devout austerity, embodying knowledge and wisdom.",
                   color: "Royal Blue",
-                  image: brahmacharini,
+                  image: imageLinks.brahmacharini,
                 },
                 {
                   day: "Day 3",
@@ -223,7 +199,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The one who wears the moon in her bell, symbolizing bravery and courage.",
                   color: "Yellow",
-                  image: chandraghanta,
+                  image: imageLinks.chandraghanta,
                 },
                 {
                   day: "Day 4",
@@ -231,7 +207,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The creator of the universe, whose laugh created the cosmic egg (Brahmanda).",
                   color: "Green",
-                  image: kushmanda,
+                  image: imageLinks.kushmanda,
                 },
                 {
                   day: "Day 5",
@@ -239,7 +215,7 @@ const DurgaPujaPage = () => {
                   description:
                     "Mother of Skanda (Kartikeya), representing motherhood and fertility.",
                   color: "White",
-                  image: skandamata,
+                  image: imageLinks.skandamata,
                 },
                 {
                   day: "Day 6",
@@ -247,7 +223,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The warrior form born to sage Katyayana, symbolizing courage.",
                   color: "Orange",
-                  image: katyayani,
+                  image: imageLinks.katyayani,
                 },
                 {
                   day: "Day 7",
@@ -255,7 +231,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The destroyer of darkness and ignorance, the fiercest form of the goddess.",
                   color: "Black",
-                  image: kalaratri,
+                  image: imageLinks.kalaratri,
                 },
                 {
                   day: "Day 8",
@@ -263,7 +239,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The fair one who symbolizes purity, serenity, and tranquility.",
                   color: "Pink",
-                  image: mahagauri,
+                  image: imageLinks.mahagauri,
                 },
                 {
                   day: "Day 9",
@@ -271,7 +247,7 @@ const DurgaPujaPage = () => {
                   description:
                     "The bestower of supernatural powers and siddhis (perfection).",
                   color: "Purple",
-                  image: siddhidatri,
+                  image: imageLinks.siddhidatri,
                 },
               ].map((form, index) => (
                 <motion.div
@@ -717,7 +693,7 @@ const DurgaPujaPage = () => {
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={nightDurgaPuja2}
+                    src={imageLinks.nightDurgaPuja2}
                     alt="Elaborate Durga Puja pandal in Kolkata"
                     className="object-cover w-full h-full"
                   />
@@ -725,7 +701,7 @@ const DurgaPujaPage = () => {
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={themedDurgaPuja}
+                    src={imageLinks.themedDurgaPuja}
                     alt="Themed Durga Puja pandal"
                     className="object-cover w-full h-full"
                   />
@@ -733,7 +709,7 @@ const DurgaPujaPage = () => {
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={traditionalDurgaPuja}
+                    src={imageLinks.traditionalDurgaPuja}
                     alt="Traditional Durga Puja pandal"
                     className="object-cover w-full h-full"
                   />
@@ -741,7 +717,7 @@ const DurgaPujaPage = () => {
                 <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={nightDurgaPuja}
+                    src={imageLinks.nightDurgaPuja}
                     alt="Illuminated Durga Puja pandal at night"
                     className="object-cover w-full h-full"
                   />
@@ -778,7 +754,7 @@ const DurgaPujaPage = () => {
                     "Cultural programs featuring classical and folk music, dance performances, and theatrical productions are organized at pandals.",
                   highlight:
                     "Dhunuchi dance, performed with earthen lamps filled with burning coconut husks and incense, is a special feature of the evening aartis.",
-                  image: dhunuciDance,
+                  image: imageLinks.dhunuciDance,
                 },
                 {
                   aspect: "Food",
@@ -786,7 +762,7 @@ const DurgaPujaPage = () => {
                     "Food is an integral part of Durga Puja celebrations, with special bhog (food offerings) prepared and distributed to devotees.",
                   highlight:
                     "Traditional Bengali dishes like khichuri, labra (mixed vegetable curry), payesh (rice pudding), and mishti (sweets) are must-haves during the festival.",
-                  image: food,
+                  image: imageLinks.food,
                 },
                 {
                   aspect: "Fashion",
@@ -794,7 +770,7 @@ const DurgaPujaPage = () => {
                     "People dress in their finest clothes, with new outfits often purchased specifically for the occasion.",
                   highlight:
                     "Women traditionally wear red and white sarees, especially on Dashami, while men wear kurtas or traditional Bengali attire like dhoti-punjabi.",
-                  image: fashion,
+                  image: imageLinks.fashion,
                 },
                 {
                   aspect: "Art and Crafts",
@@ -802,7 +778,7 @@ const DurgaPujaPage = () => {
                     "The creation of Durga idols is itself a major art form, with skilled artisans working for months to create the perfect representation of the goddess.",
                   highlight:
                     "The idol-making hub of Kumartuli in Kolkata is famous for its traditional clay artisans who create thousands of Durga idols each year.",
-                  image: artsAndCrafts,
+                  image: imageLinks.artsAndCrafts,
                 },
                 {
                   aspect: "Literature and Publishing",
@@ -810,7 +786,7 @@ const DurgaPujaPage = () => {
                     "Special Puja editions of magazines and books are published, featuring works by renowned authors and new talents alike.",
                   highlight:
                     "These 'Pujabarshikis' (annual Puja publications) are eagerly awaited and collected by literature enthusiasts.",
-                  image: literatureAndPublishing,
+                  image: imageLinks.literatureAndPublishing,
                 },
                 {
                   aspect: "Community Bonding",
@@ -818,7 +794,7 @@ const DurgaPujaPage = () => {
                     "The festival brings together people from all walks of life, transcending social, economic, and religious boundaries.",
                   highlight:
                     "It's common for people to visit friends and relatives, exchange gifts, and seek blessings from elders during this time.",
-                  image: communityBonding,
+                  image: imageLinks.communityBonding,
                 },
               ].map((aspect, index) => (
                 <motion.div
@@ -938,7 +914,7 @@ const DurgaPujaPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={durgaPuja2}
+                  src={imageLinks.durgaPuja2}
                   alt="Spiritual aspect of Durga Puja"
                   className="object-cover w-full h-full"
                 />

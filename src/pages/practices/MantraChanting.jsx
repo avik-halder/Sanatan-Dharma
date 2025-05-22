@@ -1,11 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
-import mantraChanting from "../../assets/mantra.webp";
-import mala from "../../assets/Practices/Mantra Chanting/Mala Beads.png";
-import mantraMeditation from "../../assets/Practices/Mantra Chanting/Mantra Meditation.jpg";
-import groupChanting from "../../assets/Practices/Mantra Chanting/Group Chanting.jpg";
-import sacredText from "../../assets/Resources/Vedas/Mundaka_Upanisad_verses_3.2.8_to_3.2.10,_Atharvaveda,_Sanskrit_language,_Devanagari_script.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const MantraChantingPage = () => {
   return (
@@ -73,7 +68,7 @@ const MantraChantingPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
-                    src={mantraChanting}
+                    src={imageLinks.mantra}
                     alt="Mantra Chanting"
                     className="object-cover w-full h-full"
                   />
@@ -342,19 +337,19 @@ const MantraChantingPage = () => {
                   {[
                     {
                       title: "Mala Beads",
-                      image: mala,
+                      image: imageLinks.mala,
                     },
                     {
                       title: "Mantra Meditation",
-                      image: mantraMeditation,
+                      image: imageLinks.mantraMeditation,
                     },
                     {
                       title: "Group Chanting",
-                      image: groupChanting,
+                      image: imageLinks.groupChanting,
                     },
                     {
                       title: "Sacred Texts",
-                      image: sacredText,
+                      image: imageLinks.atharvaveda,
                     },
                   ].map((item, index) => (
                     <motion.div

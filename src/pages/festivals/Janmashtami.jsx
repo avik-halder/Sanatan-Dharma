@@ -1,28 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-import babykrishna from "../../assets/Festivals/Janmashtami/Baby Krishna with Butter.png";
-import birthStory from "../../assets/Festivals/Janmashtami/Birth Story of Krishna.png";
-import janmashtami from "../../assets/Festivals/janmashtami.webp";
-
-import fasting from "../../assets/Festivals/Janmashtami/Fasting.png";
-import midnightCelebrations from "../../assets/Festivals/Janmashtami/Midnight Celebrations.png";
-import jhankis from "../../assets/Festivals/Janmashtami/Jhankis.png";
-
-import mathuraVrindavan from "../../assets/Festivals/Janmashtami/Mathura and Vrindavan.png";
-import raasGarba from "../../assets/Festivals/Janmashtami/Raas Garba.png";
-import dahiHandi from "../../assets/Festivals/Janmashtami/Dahi Handi.png";
-import gokulashtami from "../../assets/Festivals/Janmashtami/Gokulashtami.png";
-import chappanBhog from "../../assets/Festivals/Janmashtami/Chappan Bhog.png";
-import northernIndia from "../../assets/Festivals/Janmashtami/Northern India.png";
-
-import makhanMishri from "../../assets/Festivals/Janmashtami/Makhan Mishri.png";
-import panjiri from "../../assets/Festivals/Janmashtami/Panjiri.png";
-import charnamrit from "../../assets/Festivals/Janmashtami/Charnamrit.png";
-import dhaniyaPanjiri from "../../assets/Festivals/Janmashtami/Dhaniya Panjiri.png";
-import makhanaKheer from "../../assets/Festivals/Janmashtami/Makhana Kheer.png";
-import gopalkala from "../../assets/Festivals/Janmashtami/Gopalkala.png";
+import imageLinks from "../../utils/ImageLinks";
 
 function JanmashtamiPage() {
   const [activeTab, setActiveTab] = useState("fasting");
@@ -34,7 +13,7 @@ function JanmashtamiPage() {
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
-              src={fasting}
+              src={imageLinks.fasting}
               alt="Devotees fasting on Janmashtami"
               className="object-cover w-full h-full"
             />
@@ -72,7 +51,7 @@ function JanmashtamiPage() {
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
-              src={midnightCelebrations}
+              src={imageLinks.midnightCelebrations}
               alt="Midnight celebrations of Krishna's birth"
               className="object-cover w-full h-full"
             />
@@ -111,7 +90,7 @@ function JanmashtamiPage() {
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
-              src={dahiHandi}
+              src={imageLinks.dahiHandi}
               alt="Dahi Handi celebration with human pyramid"
               className="object-cover w-full h-full"
             />
@@ -149,7 +128,7 @@ function JanmashtamiPage() {
           <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
-              src={jhankis}
+              src={imageLinks.jhankis}
               alt="Jhanki depicting scenes from Krishna's life"
               className="object-cover w-full h-full"
             />
@@ -235,7 +214,7 @@ function JanmashtamiPage() {
               >
                 <img
                   loading="lazy"
-                  src={babykrishna}
+                  src={imageLinks.babykrishna}
                   alt="Baby Krishna with butter"
                   className="object-cover w-full h-full"
                 />
@@ -267,7 +246,7 @@ function JanmashtamiPage() {
                 <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
                   <img
                     loading="lazy"
-                    src={birthStory}
+                    src={imageLinks.birthStory}
                     alt="The birth of Lord Krishna in prison"
                     className="object-cover w-full h-full object-[center_25%] md:object-center"
                   />
@@ -441,7 +420,7 @@ function JanmashtamiPage() {
                       performed with great devotion.
                     </>
                   ),
-                  image: mathuraVrindavan,
+                  image: imageLinks.mathuraVrindavan,
                 },
                 {
                   region: "Maharashtra",
@@ -449,7 +428,7 @@ function JanmashtamiPage() {
                     "Known for the energetic Dahi Handi celebrations that take place a day after Janmashtami, called Gopalkala.",
                   uniqueTradition:
                     "Women draw footprints with rice flour from the entrance of the house to the pooja room, symbolizing Krishna's entry into their homes.",
-                  image: dahiHandi,
+                  image: imageLinks.dahiHandi,
                 },
                 {
                   region: "Gujarat",
@@ -466,7 +445,7 @@ function JanmashtamiPage() {
                       also a popular tradition.
                     </>
                   ),
-                  image: raasGarba,
+                  image: imageLinks.raasGarba,
                 },
                 {
                   region: "South India",
@@ -483,7 +462,7 @@ function JanmashtamiPage() {
                       children dress up as Krishna and Radha.
                     </>
                   ),
-                  image: gokulashtami,
+                  image: imageLinks.gokulashtami,
                 },
                 {
                   region: "Eastern India",
@@ -500,7 +479,7 @@ function JanmashtamiPage() {
                       birth is celebrated with naam-kirtans (devotional songs).
                     </>
                   ),
-                  image: chappanBhog,
+                  image: imageLinks.chappanBhog,
                 },
                 {
                   region: "Northern India",
@@ -508,7 +487,7 @@ function JanmashtamiPage() {
                     "Celebrated with great enthusiasm in states like Uttar Pradesh, Rajasthan, and Punjab.",
                   uniqueTradition:
                     "In Uttar Pradesh, especially in Mathura and Vrindavan, elaborate processions and performances are held. In Rajasthan, temples are decorated with flowers and lights, and special sweets are prepared.",
-                  image: northernIndia,
+                  image: imageLinks.northernIndia,
                 },
               ].map((item, index) => (
                 <motion.div
@@ -571,37 +550,37 @@ function JanmashtamiPage() {
                   name: "Makhan Mishri",
                   description:
                     "White butter mixed with crystallized sugar, representing Krishna's love for butter.",
-                  image: makhanMishri,
+                  image: imageLinks.makhanMishri,
                 },
                 {
                   name: "Panjiri",
                   description:
                     "A sweet dish made with whole wheat flour, ghee, sugar, and dry fruits, offering energy during fasting.",
-                  image: panjiri,
+                  image: imageLinks.panjiri,
                 },
                 {
                   name: "Charnamrit",
                   description:
                     "A sacred drink made of milk, yogurt, honey, sugar, and tulsi leaves, offered to Lord Krishna.",
-                  image: charnamrit,
+                  image: imageLinks.charnamrit,
                 },
                 {
                   name: "Dhaniya Panjiri",
                   description:
                     "A nutritious sweet made with roasted coriander seeds, dry fruits, and sugar.",
-                  image: dhaniyaPanjiri,
+                  image: imageLinks.dhaniyaPanjiri,
                 },
                 {
                   name: "Makhana Kheer",
                   description:
                     "A pudding made with fox nuts, milk, and sugar, commonly prepared during fasting.",
-                  image: makhanaKheer,
+                  image: imageLinks.makhanaKheer,
                 },
                 {
                   name: "Gopalkala",
                   description:
                     "A mixture of flattened rice, yogurt, cucumber, and spices, popular in Maharashtra.",
-                  image: gopalkala,
+                  image: imageLinks.gopalkala,
                 },
               ].map((item, index) => (
                 <motion.div
@@ -721,7 +700,7 @@ function JanmashtamiPage() {
               >
                 <img
                   loading="lazy"
-                  src={janmashtami}
+                  src={imageLinks.janmashtami}
                   alt="Spiritual aspect of Janmashtami celebration"
                   className="w-full h-full object-cover"
                 />

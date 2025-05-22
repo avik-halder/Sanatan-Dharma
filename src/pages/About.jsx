@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import temple from "../assets/temple.webp";
+import imageLinks from "../utils/ImageLinks";
 
 export default function AboutPage() {
   return (
@@ -63,7 +63,7 @@ export default function AboutPage() {
               >
                 <img
                   loading="lazy"
-                  src={temple}
+                  src={imageLinks.temple}
                   alt="Hindu Temple"
                   className="object-cover w-full h-full"
                 />

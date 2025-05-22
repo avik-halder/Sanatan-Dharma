@@ -1,17 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-
-import upanishads from "../../assets/Resources/Upanishads/Chandogya_Upanishad_sample_iii,_Samaveda,_Sanskrit,_Devanagari_script,_1865_CE_manuscript.webp";
-import brihadaranyakaUpanishad from "../../assets/Resources/Upanishads/Brihadaranyaka_Upanishad_verses_1.3.1_to_1.3.4,_Shatapatha_Brahmana,_Shukla_Yajurveda,_Sanskrit,_Devanagari.webp";
-import chandogyaUpanishad from "../../assets/Resources/Upanishads/Chandogya_Upanishad_verses_1.1.1-1.1.9,_Samaveda,_Sanskrit,_Devanagari_script,_1849_CE_manuscript.webp";
-
-// import vedas from "../../assets/Books/vedas.webp";
-// import epics from "../../assets/Books/Ramayana and Mahabharata.webp";
-// import puranas from "../../assets/Books/purans.webp";
-
-import vedas from "../../assets/Books/Vedas.png";
-import epics from "../../assets/Books/Hindu Epics.png";
-import puranas from "../../assets/Books/Puranas.png";
+import imageLinks from "../../utils/ImageLinks";
 
 const UpanishadsPage = () => {
   const [activeTab, setActiveTab] = useState("brihadaranyaka");
@@ -73,7 +62,7 @@ const UpanishadsPage = () => {
                 >
                   <img
                     loading="lazy"
-                    src={upanishads}
+                    src={imageLinks.upanishads2}
                     alt="Ancient Upanishad manuscript"
                     className="object-cover w-full h-full"
                   />
@@ -163,7 +152,7 @@ const UpanishadsPage = () => {
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
                             loading="lazy"
-                            src={brihadaranyakaUpanishad}
+                            src={imageLinks.brihadaranyakaUpanishad}
                             alt="Brihadaranyaka Upanishad"
                             className="object-cover w-full h-full"
                           />
@@ -234,7 +223,7 @@ const UpanishadsPage = () => {
                         <div className="relative h-60 rounded-lg overflow-hidden">
                           <img
                             loading="lazy"
-                            src={chandogyaUpanishad}
+                            src={imageLinks.chandogyaUpanishad}
                             alt="Chandogya Upanishad"
                             className="object-cover w-full h-full"
                           />
@@ -761,7 +750,7 @@ const UpanishadsPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={vedas}
+                      src={imageLinks.vedas}
                       alt="The Vedas"
                       className="object-cover w-full h-full rounded-lg"
                     />
@@ -792,7 +781,7 @@ const UpanishadsPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={epics}
+                      src={imageLinks.epics}
                       alt="The Epics"
                       className="object-cover w-full h-full rounded-lg"
                     />
@@ -823,7 +812,7 @@ const UpanishadsPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={puranas}
+                      src={imageLinks.puranas}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"
                     />

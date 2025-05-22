@@ -1,6 +1,6 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
-import templeImage from "../../assets/temple.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center fixed"
         style={{
-          backgroundImage: `url(${templeImage})`,
+          backgroundImage: `url(${imageLinks.temple})`,
           backgroundSize: "auto 100%",
           filter: "blur(2px)",
           WebkitMaskImage:

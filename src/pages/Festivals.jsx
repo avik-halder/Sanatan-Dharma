@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
-import diwali from "../assets/Festivals/diwali.webp";
-import holi from "../assets/Festivals/holi.webp";
-import durgaPuja from "../assets/Festivals/durga_puja.webp";
-import janmashtami from "../assets/Festivals/janmashtami.webp";
-import mahaShivaratri from "../assets/Festivals/maha_shivratri.webp";
-import ganeshChaturthi from "../assets/Festivals/ganesh chaturthi.webp";
+import imageLinks from "../utils/ImageLinks";
 
 export default function FestivalsPage() {
   const [selectedTab, setSelectedTab] = useState("spring");
@@ -52,7 +46,7 @@ export default function FestivalsPage() {
                     "Celebrating the victory of Goddess Durga over the demon Mahishasura",
                   date: "September/October",
                   duration: "5 days",
-                  image: durgaPuja,
+                  image: imageLinks.durgaPuja,
                   link: "festivals/durga-puja",
                 },
                 {
@@ -61,7 +55,7 @@ export default function FestivalsPage() {
                     "Festival of Lights celebrating the victory of light over darkness and good over evil",
                   date: "October/November",
                   duration: "5 days",
-                  image: diwali,
+                  image: imageLinks.diwali,
                   link: "festivals/diwali",
                 },
                 {
@@ -70,7 +64,7 @@ export default function FestivalsPage() {
                     "Festival of Colors celebrating the arrival of spring and the triumph of good over evil",
                   date: "March",
                   duration: "2 days",
-                  image: holi,
+                  image: imageLinks.holi,
                   link: "festivals/holi",
                 },
                 {
@@ -79,7 +73,7 @@ export default function FestivalsPage() {
                     "Celebration of Lord Krishna's birth with fasting, devotional songs, and reenactments",
                   date: "August/September",
                   duration: "1 day",
-                  image: janmashtami,
+                  image: imageLinks.janmashtami,
                   link: "festivals/janmashtami",
                 },
                 {
@@ -88,7 +82,7 @@ export default function FestivalsPage() {
                     "The Great Night of Shiva, marked by fasting, meditation, and all-night vigils",
                   date: "February/March",
                   duration: "1 day",
-                  image: mahaShivaratri,
+                  image: imageLinks.shivaratri,
                   link: "festivals/shivaratri",
                 },
                 {
@@ -97,7 +91,7 @@ export default function FestivalsPage() {
                     "Celebration of Lord Ganesha's birth with elaborate installations and processions",
                   date: "August/September",
                   duration: "10 days",
-                  image: ganeshChaturthi,
+                  image: imageLinks.ganeshCaturthi,
                   link: "festivals/ganesh-chaturthi",
                 },
               ].map((festival, index) => (

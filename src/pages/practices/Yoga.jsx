@@ -1,28 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
-import yoga from "../../assets/Practices/Yoga/Ancient Yoga.png";
-import yoga2 from "../../assets/Practices/Yoga/Yoga.jpg";
-
-import raja from "../../assets/Practices/Yoga/Classical/Raja Yoga.png";
-import jnana from "../../assets/Practices/Yoga/Classical/Jnana Yoga.png";
-import karma from "../../assets/Practices/Yoga/Classical/Karma Yoga.png";
-import bhaktiClassical from "../../assets/Practices/Yoga/Classical/Bhakti Yoga.png";
-
-import bhaktiDevotional from "../../assets/Practices/Yoga/Devotional/Bhakti Yoga.png";
-import nada from "../../assets/Practices/Yoga/Devotional/Nada Yoga.png";
-import sidhha from "../../assets/Practices/Yoga/Devotional/Sidhha Yoga.png";
-import mantra from "../../assets/Practices/Yoga/Devotional/Mantra Yoga.png";
-
-import hatha from "../../assets/Practices/Yoga/Physical/Hatha Yoga.png";
-import kundalini from "../../assets/Practices/Yoga/Physical/Kundalini Yoga.png";
-import tantra from "../../assets/Practices/Yoga/Physical/Tantra Yoga.png";
-import kriya from "../../assets/Practices/Yoga/Physical/Kriya Yoga.png";
-
-import iyengar from "../../assets/Practices/Yoga/Modern/Iyengar Yoga.png";
-import ashtanga from "../../assets/Practices/Yoga/Modern/Ashtanga Yoga.png";
-import vinyasa from "../../assets/Practices/Yoga/Modern/Vinyasa Yoga.png";
-import restorative from "../../assets/Practices/Yoga/Modern/Restorative Yoga.png";
+import imageLinks from "../../utils/ImageLinks";
 
 const YogaPage = () => {
   const [activeTab, setActiveTab] = useState("classical");
@@ -98,7 +76,7 @@ const YogaPage = () => {
                 >
                   <img
                     loading="lazy"
-                    src={yoga}
+                    src={imageLinks.yoga2}
                     alt="Yoga Meditation"
                     className="w-full h-full object-cover"
                   />
@@ -355,25 +333,25 @@ const YogaPage = () => {
                           name: "Raja Yoga",
                           description:
                             "The 'royal path' of meditation and mind control, following Patanjali's eight-limbed system to achieve samadhi.",
-                          image: raja,
+                          image: imageLinks.raja,
                         },
                         {
                           name: "Jñāna Yoga",
                           description:
                             "The path of knowledge and wisdom, using philosophical inquiry and self-analysis to discern the true nature of reality.",
-                          image: jnana,
+                          image: imageLinks.jnana2,
                         },
                         {
                           name: "Karma Yoga",
                           description:
                             "The yoga of selfless action, performing one's duties without attachment to results as a form of spiritual practice.",
-                          image: karma,
+                          image: imageLinks.karma,
                         },
                         {
                           name: "Bhakti Yoga",
                           description:
                             "The path of devotion and love, focusing on surrender and worship of the divine to achieve union.",
-                          image: bhaktiClassical,
+                          image: imageLinks.bhaktiClassical,
                         },
                       ].map((style, index) => (
                         <motion.div
@@ -416,25 +394,25 @@ const YogaPage = () => {
                           name: "Bhakti Yoga",
                           description:
                             "Focused on devotional practices like kirtan (devotional singing), japa (mantra repetition), and puja (ritual worship).",
-                          image: bhaktiDevotional,
+                          image: imageLinks.bhaktiDevotional,
                         },
                         {
                           name: "Nada Yoga",
                           description:
                             "The yoga of sound, using music and sound vibrations to achieve spiritual transformation and consciousness expansion.",
-                          image: nada,
+                          image: imageLinks.nada,
                         },
                         {
                           name: "Siddha Yoga",
                           description:
                             "A spiritual path that emphasizes the awakening of kundalini energy through the grace of a perfected master (siddha guru).",
-                          image: sidhha,
+                          image: imageLinks.sidhha,
                         },
                         {
                           name: "Mantra Yoga",
                           description:
                             "The practice of chanting sacred sounds, syllables, or verses to transform consciousness and connect with divine energy.",
-                          image: mantra,
+                          image: imageLinks.mantra4,
                         },
                       ].map((style, index) => (
                         <motion.div
@@ -477,25 +455,25 @@ const YogaPage = () => {
                           name: "Hatha Yoga",
                           description:
                             "The foundation of most physical yoga practices, focusing on asanas (postures) and pranayama (breath control) to prepare the body for meditation.",
-                          image: hatha,
+                          image: imageLinks.hatha2,
                         },
                         {
                           name: "Kundalini Yoga",
                           description:
                             "Focuses on awakening the kundalini energy at the base of the spine through specific breathing techniques, mantras, and asanas.",
-                          image: kundalini,
+                          image: imageLinks.kundalini2,
                         },
                         {
                           name: "Tantra Yoga",
                           description:
                             "A complex system that uses ritual, meditation, and physical practices to transform consciousness and achieve spiritual liberation.",
-                          image: tantra,
+                          image: imageLinks.tantra,
                         },
                         {
                           name: "Kriya Yoga",
                           description:
                             "A set of energization, breathing, and meditation techniques to accelerate spiritual development and achieve a state of spiritual awareness.",
-                          image: kriya,
+                          image: imageLinks.kriya,
                         },
                       ].map((style, index) => (
                         <motion.div
@@ -538,25 +516,25 @@ const YogaPage = () => {
                           name: "Iyengar Yoga",
                           description:
                             "Emphasizes precise alignment and the use of props to help practitioners achieve correct posture and alignment.",
-                          image: iyengar,
+                          image: imageLinks.iyengar,
                         },
                         {
                           name: "Ashtanga Yoga",
                           description:
                             "A rigorous style that follows a specific sequence of postures linked by breath, building internal heat and detoxifying the body.",
-                          image: ashtanga,
+                          image: imageLinks.ashtanga,
                         },
                         {
                           name: "Vinyasa Yoga",
                           description:
                             "A flowing style that synchronizes movement with breath, creating a dynamic and creative practice.",
-                          image: vinyasa,
+                          image: imageLinks.vinyasa,
                         },
                         {
                           name: "Restorative Yoga",
                           description:
                             "A gentle, therapeutic style that uses props to support the body in passive poses, promoting deep relaxation and healing.",
-                          image: restorative,
+                          image: imageLinks.restorative,
                         },
                       ].map((style, index) => (
                         <motion.div
@@ -725,7 +703,7 @@ const YogaPage = () => {
                   >
                     <img
                       loading="lazy"
-                      src={yoga2}
+                      src={imageLinks.yoga3}
                       alt="Yoga Practice"
                       className="w-full h-full object-cover"
                     />

@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import LordBramha from "../../assets/Deities/Lord_Bramha.webp";
-import LordVishnu from "../../assets/Deities/Lord_Vishnu.webp";
-import LordShiva from "../../assets/Deities/Lord_Shiva.webp";
+import imageLinks from "../../utils/ImageLinks";
 
 const Deities = () => {
   const deities = [
@@ -11,7 +9,7 @@ const Deities = () => {
       role: "The Creator",
       description:
         "Brahma is the creator god, often depicted with four faces representing the Vedas. He creates the universe and all living beings.",
-      image: LordBramha,
+      image: imageLinks.brahma,
       link: "/deities/brahma",
     },
     {
@@ -19,7 +17,7 @@ const Deities = () => {
       role: "The Preserver",
       description:
         "Vishnu is the god of preservation, ensuring balance and harmony in the universe. He is often shown holding a conch, chakra, lotus, and mace.",
-      image: LordVishnu,
+      image: imageLinks.Vishnu,
       link: "/deities/vishnu",
     },
     {
@@ -27,7 +25,7 @@ const Deities = () => {
       role: "The Transformer",
       description:
         "Shiva is the god of destruction and transformation. Known for his asceticism, he represents both destruction and regeneration.",
-      image: LordShiva,
+      image: imageLinks.Shiva,
       link: "/deities/shiva",
     },
   ];

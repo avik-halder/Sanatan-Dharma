@@ -1,16 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-import shivaLingam from "../../assets/Festivals/Maha Shivaratri/Shiva Lingam.jpg";
-import lingam from "../../assets/Festivals/Maha Shivaratri/lingam.png";
-
-import northIndia from "../../assets/Festivals/Maha Shivaratri/Kashi Vishwanath.jpg";
-import centralIndia from "../../assets/Festivals/Maha Shivaratri/Mahakaleshwar Jyotirlinga.jpg";
-import southIndia from "../../assets/Festivals/Maha Shivaratri/Brihadeeswarar.jpg";
-import nepal from "../../assets/Festivals/Maha Shivaratri/Pashupatinath.jpg";
-import bangladesh from "../../assets/Temples/Dhakeshwari.webp";
-import sriLanka from "../../assets/Festivals/Maha Shivaratri/Naguleswaram.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 function MahaShivratriPage() {
   // State to manage active tab
@@ -80,7 +71,7 @@ function MahaShivratriPage() {
                 <div className="relative h-[450px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
-                    src={shivaLingam}
+                    src={imageLinks.shivaLingam}
                     alt="Maha Shivratri celebration with Shiva Lingam"
                     className="object-cover w-full h-full"
                   />
@@ -269,7 +260,7 @@ function MahaShivratriPage() {
                                 Shiva Lingam{" "}
                                 <img
                                   loading="lazy"
-                                  src={lingam}
+                                  src={imageLinks.lingam}
                                   alt=""
                                   className="w-6 h-6"
                                 />
@@ -429,7 +420,7 @@ function MahaShivratriPage() {
                       from Shiva's life.
                     </div>
                   ),
-                  image: northIndia,
+                  image: imageLinks.northIndia,
                 },
                 {
                   region: "Central India",
@@ -447,7 +438,7 @@ function MahaShivratriPage() {
                       celebrations.
                     </div>
                   ),
-                  image: centralIndia,
+                  image: imageLinks.centralIndia,
                 },
                 {
                   region: "South India",
@@ -468,7 +459,7 @@ function MahaShivratriPage() {
                       cultural programs are organized to mark the occasion.
                     </div>
                   ),
-                  image: southIndia,
+                  image: imageLinks.southIndia,
                 },
                 {
                   region: "Nepal",
@@ -486,7 +477,7 @@ function MahaShivratriPage() {
                       is legally consumed by sadhus during this festival.
                     </div>
                   ),
-                  image: nepal,
+                  image: imageLinks.nepal,
                 },
                 {
                   region: "Bangladesh",
@@ -505,7 +496,7 @@ function MahaShivratriPage() {
                       presence of Lord Shiva.
                     </div>
                   ),
-                  image: bangladesh,
+                  image: imageLinks.bangladesh,
                 },
                 {
                   region: "Sri Lanka",
@@ -522,7 +513,7 @@ function MahaShivratriPage() {
                       milk, fruits, and flowers to the Shiva Lingam.
                     </div>
                   ),
-                  image: sriLanka,
+                  image: imageLinks.sriLanka,
                 },
               ].map((region, index) => (
                 <motion.div

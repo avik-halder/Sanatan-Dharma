@@ -1,16 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import Hanuman from "../../assets/Deities/Hanuman/hanuman2.jpg";
-
-import HanumanTemple from "../../assets/Deities/Hanuman/Jakhu Temple_Hanuman Temple.webp";
-
-import Childhood from "../../assets/Deities/Hanuman/Childhood and the Sun.jpg";
-import MeetingRama from "../../assets/Deities/Hanuman/Meeting Lord Rama.jpg";
-import LeapToLanka from "../../assets/Deities/Hanuman/Leap to Lanka.jpg";
-import FindingSita from "../../assets/Deities/Hanuman/Finding Sita.jpg";
-import BurningLanka from "../../assets/Deities/Hanuman/Burning of Lanka.jpg";
-import SanjeevaniMountain from "../../assets/Deities/Hanuman/Sanjeevani Mountain.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 export default function HanumanPage() {
   return (
@@ -69,7 +59,7 @@ export default function HanumanPage() {
               >
                 <img
                   loading="lazy"
-                  src={Hanuman}
+                  src={imageLinks.Hanuman}
                   alt="Lord Hanuman"
                   className="w-full h-full object-cover"
                 />
@@ -102,37 +92,37 @@ export default function HanumanPage() {
                   title: "Childhood and the Sun",
                   description:
                     "As a child, Hanuman mistook the sun for a ripe fruit and leaped to catch it. This alarmed the gods, and Indra struck him with a thunderbolt, injuring his chin (hanu), thus giving him the name 'Hanuman'. Lord Brahma and other gods, impressed by his courage, blessed him with numerous powers and gifts.",
-                  image: Childhood,
+                  image: imageLinks.Childhood,
                 },
                 {
                   title: "Meeting Lord Rama",
                   description:
                     "Hanuman first met Lord Rama and his brother Lakshmana when they were searching for Sita in the forest. Disguised as a Brahmin, Hanuman tested their character before revealing his true form and pledging his service to their cause.",
-                  image: MeetingRama,
+                  image: imageLinks.MeetingRama,
                 },
                 {
                   title: "Leap to Lanka",
                   description:
                     "When the search party needed to cross the ocean to reach Lanka, Hanuman took a mighty leap, expanding his body to an enormous size. He overcame various obstacles during this journey, including the demoness Surasa and Simhika, showcasing his intelligence and strength.",
-                  image: LeapToLanka,
+                  image: imageLinks.LeapToLanka,
                 },
                 {
                   title: "Finding Sita",
                   description:
                     "In Lanka, Hanuman shrunk himself to a tiny size to search for Sita undetected. He found her in Ashoka Vatika, identified himself as Rama's messenger, and offered her reassurance and Rama's ring as proof of his identity.",
-                  image: FindingSita,
+                  image: imageLinks.FindingSita,
                 },
                 {
                   title: "Burning of Lanka",
                   description:
                     "After being captured by Ravana's forces, Hanuman allowed himself to be bound and brought before the demon king. When Ravana ordered his tail to be set on fire, Hanuman expanded his tail and used it to set much of Lanka ablaze before escaping.",
-                  image: BurningLanka,
+                  image: imageLinks.BurningLanka,
                 },
                 {
                   title: "Bringing the Sanjeevani Mountain",
                   description:
                     "When Lakshmana was severely wounded in battle, Hanuman was sent to fetch the life-saving Sanjeevani herb from the Himalayas. Unable to identify the specific herb, he uprooted and carried the entire mountain back to the battlefield, saving Lakshmana's life.",
-                  image: SanjeevaniMountain,
+                  image: imageLinks.SanjeevaniMountain,
                 },
               ].map((story, index) => (
                 <motion.div
@@ -319,7 +309,7 @@ export default function HanumanPage() {
               >
                 <img
                   loading="lazy"
-                  src={HanumanTemple}
+                  src={imageLinks.HanumanTemple}
                   alt="Hanuman Temple"
                   className="w-full h-full object-cover"
                 />

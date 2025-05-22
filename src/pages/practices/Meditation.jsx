@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
-import meditation from "../../assets/meditation2.webp";
-import meditation2 from "../../assets/Practices/Meditation/meditation.jpg";
-import trataka from "../../assets/Practices/Meditation/Trataka Meditation.png";
-import hamsa from "../../assets/Practices/Meditation/Hamsa Meditation.jpg";
-import chakra from "../../assets/Practices/Meditation/Chakra Meditation2.jpg";
-import kundalini from "../../assets/Practices/Meditation/Kundalini Meditation.jpg";
-import transcendental from "../../assets/Practices/Meditation/Transcendental Meditation.jpg";
-import yogaNidra from "../../assets/Practices/Meditation/Yoga Nidra.jpg";
+import imageLinks from "../../utils/ImageLinks";
 
 const MeditationPage = () => {
   return (
@@ -75,7 +67,7 @@ const MeditationPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
-                    src={meditation}
+                    src={imageLinks.meditation}
                     alt="Meditation Practice"
                     className="object-cover w-full h-full"
                   />
@@ -136,7 +128,7 @@ const MeditationPage = () => {
                     "Calms the mind",
                     "Develops willpower",
                   ],
-                  image: trataka,
+                  image: imageLinks.trataka,
                 },
                 {
                   name: "So'ham/Hamsa Meditation",
@@ -149,7 +141,7 @@ const MeditationPage = () => {
                     "Connects to universal consciousness",
                     "Accessible for beginners",
                   ],
-                  image: hamsa,
+                  image: imageLinks.hamsa,
                 },
                 {
                   name: "Chakra Meditation",
@@ -162,7 +154,7 @@ const MeditationPage = () => {
                     "Promotes holistic healing",
                     "Awakens spiritual energy",
                   ],
-                  image: chakra,
+                  image: imageLinks.chakra,
                 },
                 {
                   name: "Kundalini Meditation",
@@ -175,7 +167,7 @@ const MeditationPage = () => {
                     "Enhances intuition",
                     "Promotes spiritual transformation",
                   ],
-                  image: kundalini,
+                  image: imageLinks.kundalini3,
                 },
                 {
                   name: "Transcendental Meditation",
@@ -188,7 +180,7 @@ const MeditationPage = () => {
                     "Improves brain function",
                     "Accessible and systematic approach",
                   ],
-                  image: transcendental,
+                  image: imageLinks.transcendental,
                 },
                 {
                   name: "Yoga Nidra (Yogic Sleep)",
@@ -201,7 +193,7 @@ const MeditationPage = () => {
                     "Enhances creativity",
                     "Facilitates healing",
                   ],
-                  image: yogaNidra,
+                  image: imageLinks.yogaNidra,
                 },
               ].map((technique, index) => (
                 <motion.div
@@ -354,7 +346,7 @@ const MeditationPage = () => {
                 >
                   <img
                     loading="lazy"
-                    src={meditation2}
+                    src={imageLinks.meditation3}
                     alt="Meditation"
                     className="w-full h-full object-cover transition-transform duration-500"
                   />

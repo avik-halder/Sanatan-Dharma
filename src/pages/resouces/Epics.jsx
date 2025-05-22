@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-
-import manuScripts from "../../assets/Resources/Epics/Mahabharata.webp";
-import ramayanaScene from "../../assets/Resources/Epics/Rama, Sita and Lakshmana in the forest.webp";
-import mahabharataScene from "../../assets/Resources/Epics/Krishna revealing the Bhagavad Gita to Arjuna.webp";
-
-import vedas from "../../assets/Books/Vedas.png";
-import puranas from "../../assets/Books/Puranas.png";
-import upanishads from "../../assets/Books/The Upanishads.png";
+import imageLinks from "../../utils/ImageLinks";
 
 const EpicsPage = () => {
   const [activeTab, setActiveTab] = useState("ramayana");
@@ -215,7 +208,7 @@ const EpicsPage = () => {
               </div>
               <div className="md:w-1/2">
                 <motion.div
-                  className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg"
+                  className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
@@ -223,7 +216,7 @@ const EpicsPage = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
-                    src={manuScripts}
+                    src={imageLinks.manuScripts}
                     alt="Ancient manuscript of Hindu epics"
                     className="object-cover w-full h-full"
                   />
@@ -318,7 +311,7 @@ const EpicsPage = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                             <img
                               loading="lazy"
-                              src={ramayanaScene}
+                              src={imageLinks.ramayanaScene}
                               alt="Scene from Ramayana"
                               className="object-cover w-full h-full"
                             />
@@ -507,7 +500,7 @@ const EpicsPage = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                             <img
                               loading="lazy"
-                              src={mahabharataScene}
+                              src={imageLinks.mahabharataScene}
                               alt="Scene from Mahabharata"
                               className="object-cover w-full h-full"
                             />
@@ -976,7 +969,7 @@ const EpicsPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={vedas}
+                      src={imageLinks.vedas}
                       alt="The Vedas"
                       className="object-cover w-full h-full rounded-lg"
                     />
@@ -1007,7 +1000,7 @@ const EpicsPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={puranas}
+                      src={imageLinks.puranas}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"
                     />
@@ -1038,7 +1031,7 @@ const EpicsPage = () => {
                   <div className="relative h-52 w-full p-4 pb-0">
                     <img
                       loading="lazy"
-                      src={upanishads}
+                      src={imageLinks.upanishads}
                       alt="The Puranas"
                       className="object-cover w-full h-full rounded-lg"
                     />
