@@ -175,7 +175,7 @@ export default function ShivaPage() {
                   name: "Lingam",
                   description:
                     "The abstract representation of Shiva, symbolizing the infinite nature of the divine.",
-                  image: imageLinks.lingam,
+                  image: imageLinks.lingam_shiva,
                 },
                 {
                   name: "Dakshinamurthy",

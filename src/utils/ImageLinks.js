@@ -29,7 +29,7 @@ const imageLinks = {
     Shiva: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858797/Lord_Shiva_ymuvso.webp",
     shivaFamily: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858846/Lord_Shiva_with_family_olpfnx.webp",
     nataraja: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858846/Nataraja_n3j3tz.webp",
-    lingam: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858845/Lingam_letdrb.webp",
+    lingam_shiva: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858845/Lingam_letdrb.webp",
     dakshinamurthy: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858845/Dakshinamurthy_y18moh.webp",
     ardhanarishvara: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858844/Ardhanarishvara_oxsaur.webp",
     bhairava: "https://res.cloudinary.com/dvvkytr5n/image/upload/v1747858845/Bhairava_ibeabs.webp",
