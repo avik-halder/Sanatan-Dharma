@@ -15,12 +15,7 @@ const BlogDetails = () => {
   const [translationLoading, setTranslationLoading] = useState(false);
   const [sourceLanguage, setSourceLanguage] = useState(null);
   const [targetLanguage, setTargetLanguage] = useState(null);
-
-  const APIkey =
-    "2Ah2hYh9WbUVxrf07UT6rMrj13BPxQAYWD5K844dOJWluNyjenFnJQQJ99BEACqBBLyXJ3w3AAAbACOG2mpy";
-  const endpoint = "https://api.cognitive.microsofttranslator.com";
-  const location = "southeastasia";
-
+  
   useEffect(() => {
     const fetchBlogDetails = async () => {
       try {
@@ -107,6 +102,20 @@ const BlogDetails = () => {
     );
   };
 
+  const getTranslationConfig = async () => {
+  try {
+    const response = await fetch("https://sanatan-dharma-backend-nste.onrender.com/translate");
+    if (!response.ok) throw new Error("Failed to fetch config");
+
+    const config = await response.json();
+    return config; // { endpoint, api_key, region }
+  } catch (error) {
+    console.error("Error fetching translation config:", error);
+    alert("Error fetching translation configuration.");
+    return null;
+  }
+};
+
   const translateBlog = async () => {
     if (isTranslated && translatedBlog) {
       setIsTranslated(false);
@@ -127,6 +136,11 @@ const BlogDetails = () => {
           textToTranslate[key] = blog[key];
         }
       });
+
+      const config = await getTranslationConfig();
+      if (!config) return;
+      const { api_key, region, endpoint } = config;
+
       const newTranslatedBlog = { ...blog };
       for (const [key, text] of Object.entries(textToTranslate)) {
         const response = await axios({
@@ -134,8 +148,8 @@ const BlogDetails = () => {
           url: "/translate",
           method: "post",
           headers: {
-            "Ocp-Apim-Subscription-Key": APIkey,
-            "Ocp-Apim-Subscription-Region": location,
+            "Ocp-Apim-Subscription-Key": api_key,
+            "Ocp-Apim-Subscription-Region": region,
             "Content-type": "application/json",
             "X-ClientTraceId": uuidv4(),
           },
