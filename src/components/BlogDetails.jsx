@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaLanguage } from "react-icons/fa";
-import axios from "axios";
-import { v4 as uuidv4 } from "uuid"; // Install uuid if you haven't: npm install uuid
 
 const BlogDetails = () => {
   const { blogId } = useParams();
@@ -15,11 +13,6 @@ const BlogDetails = () => {
   const [translationLoading, setTranslationLoading] = useState(false);
   const [sourceLanguage, setSourceLanguage] = useState(null);
   const [targetLanguage, setTargetLanguage] = useState(null);
-
-  const APIkey =
-    "2Ah2hYh9WbUVxrf07UT6rMrj13BPxQAYWD5K844dOJWluNyjenFnJQQJ99BEACqBBLyXJ3w3AAAbACOG2mpy";
-  const endpoint = "https://api.cognitive.microsofttranslator.com";
-  const location = "southeastasia";
 
   useEffect(() => {
     const fetchBlogDetails = async () => {
@@ -108,62 +101,55 @@ const BlogDetails = () => {
   };
 
   const translateBlog = async () => {
-    if (isTranslated && translatedBlog) {
-      setIsTranslated(false);
+  if (isTranslated && translatedBlog) {
+    setIsTranslated(false);
+    return;
+  }
+
+  setTranslationLoading(true);
+
+  try {
+    if (translatedBlog) {
+      setIsTranslated(true);
+      setTranslationLoading(false);
       return;
     }
-    setTranslationLoading(true);
-    try {
-      if (translatedBlog) {
-        setIsTranslated(true);
-        setTranslationLoading(false);
-        return;
+
+    const textToTranslate = {
+      blog_title: blog.blog_title,
+      blog_subtitle: blog.blog_subtitle,
+    };
+
+    Object.keys(blog).forEach((key) => {
+      if (key.startsWith("para") && blog[key]) {
+        textToTranslate[key] = blog[key];
       }
-      const textToTranslate = {};
-      textToTranslate.blog_title = blog.blog_title;
-      textToTranslate.blog_subtitle = blog.blog_subtitle;
-      Object.keys(blog).forEach((key) => {
-        if (key.startsWith("para") && blog[key]) {
-          textToTranslate[key] = blog[key];
-        }
-      });
-      const newTranslatedBlog = { ...blog };
-      for (const [key, text] of Object.entries(textToTranslate)) {
-        const response = await axios({
-          baseURL: endpoint,
-          url: "/translate",
-          method: "post",
-          headers: {
-            "Ocp-Apim-Subscription-Key": APIkey,
-            "Ocp-Apim-Subscription-Region": location,
-            "Content-type": "application/json",
-            "X-ClientTraceId": uuidv4(),
-          },
-          params: {
-            "api-version": "3.0",
-            from: sourceLanguage,
-            to: targetLanguage,
-          },
-          data: [
-            {
-              text: text,
-            },
-          ],
-          responseType: "json",
-        });
-        const translatedText = response.data[0].translations[0].text;
-        newTranslatedBlog[key] = translatedText;
-        await new Promise((resolve) => setTimeout(resolve, 300));
-      }
-      setTranslatedBlog(newTranslatedBlog);
-      setIsTranslated(true);
-    } catch (error) {
-      console.error("Translation error:", error);
-      alert("Translation failed. Please try again later.");
-    } finally {
-      setTranslationLoading(false);
-    }
-  };
+    });
+
+    const response = await fetch("/api/translate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        textToTranslate,
+        sourceLanguage,
+        targetLanguage,
+      }),
+    });
+
+    const data = await response.json();
+
+    setTranslatedBlog({ ...blog, ...data.translatedBlog });
+    setIsTranslated(true);
+  } catch (error) {
+    console.error("Translation error:", error);
+    alert("Translation failed. Please try again later.");
+  } finally {
+    setTranslationLoading(false);
+  }
+};
+
 
   if (loading) {
     return (
