@@ -87,7 +87,7 @@ export default function DeitiesPage() {
     <div className="min-h-screen">
       <main>
         <section className="py-16 mt-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -168,7 +168,7 @@ export default function DeitiesPage() {
 
         {/* Section for Major Deities with Tabs */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -307,7 +307,7 @@ export default function DeitiesPage() {
 
         {/* Section for Avatars of Vishnu */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -329,7 +329,11 @@ export default function DeitiesPage() {
                 { name: "Matsya", form: "Fish", image: imageLinks.Matsya },
                 { name: "Kurma", form: "Turtle", image: imageLinks.Kurma },
                 { name: "Varaha", form: "Boar", image: imageLinks.Varaha },
-                { name: "Narasimha", form: "Man-Lion", image: imageLinks.Narasimha },
+                {
+                  name: "Narasimha",
+                  form: "Man-Lion",
+                  image: imageLinks.Narasimha,
+                },
                 { name: "Vamana", form: "Dwarf", image: imageLinks.Vramana },
                 {
                   name: "Parashurama",
@@ -337,9 +341,21 @@ export default function DeitiesPage() {
                   image: imageLinks.Parashurama,
                 },
                 { name: "Rama", form: "Perfect Man", image: imageLinks.Ram2 },
-                { name: "Krishna", form: "Divine Statesman", image: imageLinks.Krishna },
-                { name: "Buddha", form: "Enlightened One", image: imageLinks.Buddha },
-                { name: "Kalki", form: "Future Avatar", image: imageLinks.Kalki },
+                {
+                  name: "Krishna",
+                  form: "Divine Statesman",
+                  image: imageLinks.Krishna,
+                },
+                {
+                  name: "Buddha",
+                  form: "Enlightened One",
+                  image: imageLinks.Buddha,
+                },
+                {
+                  name: "Kalki",
+                  form: "Future Avatar",
+                  image: imageLinks.Kalki,
+                },
               ].map((avatar, index) => (
                 <motion.div
                   key={avatar.name}

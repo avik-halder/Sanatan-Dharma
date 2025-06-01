@@ -9,7 +9,7 @@ const YogaPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Introduction Section */}
             <motion.div
               className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
@@ -110,7 +110,7 @@ const YogaPage = () => {
 
         {/* Eight Limbs Section */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               className="text-center mb-12"
               initial={{ opacity: 0, y: 20 }}
@@ -267,7 +267,7 @@ const YogaPage = () => {
         </section>
 
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Yoga Styles Section */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -571,7 +571,7 @@ const YogaPage = () => {
         </section>
 
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Benefits Section */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -579,7 +579,7 @@ const YogaPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <div className="container mx-auto px-4">
+              <div className="w-full px-4 lg:px-32 3xl:px-40">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div>
                     <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">

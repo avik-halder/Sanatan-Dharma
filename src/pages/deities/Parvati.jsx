@@ -29,7 +29,7 @@ const ParvatiPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Introduction Section */}
             <motion.section
               initial={{ opacity: 0 }}
@@ -176,7 +176,7 @@ const ParvatiPage = () => {
 
         {/* Mythology and Stories Section with Tabs */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -571,7 +571,7 @@ const ParvatiPage = () => {
 
         {/* Worship and Festivals Section */}
         <section className="py-12 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

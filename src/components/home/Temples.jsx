@@ -28,7 +28,7 @@ const Temples = () => {
 
   return (
     <section id="temples" className="py-16 bg-orange-100">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4 lg:px-32 3xl:px-40">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

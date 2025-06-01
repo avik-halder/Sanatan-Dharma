@@ -150,7 +150,12 @@ const PujaPage = () => {
       icon: (
         <>
           <div className="flex justify-center">
-            <img loading="lazy" src={imageLinks.dhupa} alt="" className="h-11 sm:h-10" />
+            <img
+              loading="lazy"
+              src={imageLinks.dhupa}
+              alt=""
+              className="h-11 sm:h-10"
+            />
           </div>
         </>
       ),
@@ -280,7 +285,7 @@ const PujaPage = () => {
       <main>
         {/* Introduction Section */}
         <section className="py-12 md:py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 mb-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -372,7 +377,7 @@ const PujaPage = () => {
 
         {/* Elements of Puja */}
         <section className="py-16 bg-orange-100 relative overflow-hidden">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               className="text-center mb-12"
               initial={{ opacity: 0 }}
@@ -430,7 +435,7 @@ const PujaPage = () => {
 
         {/* Home Puja Setup */}
         <section className="py-16 relative overflow-hidden">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
@@ -531,7 +536,7 @@ const PujaPage = () => {
 
         {/* Daily Practice Timeline */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               className="text-center mb-12"
               initial={{ opacity: 0 }}

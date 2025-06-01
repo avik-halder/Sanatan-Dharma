@@ -8,7 +8,7 @@ export default function PracticesPage() {
       <main>
         {/* Page Header */}
         <section className="py-16 mt-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function PracticesPage() {
 
         {/* Daily Practices Section */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -188,7 +188,7 @@ export default function PracticesPage() {
 
         {/* Yoga Practices Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}

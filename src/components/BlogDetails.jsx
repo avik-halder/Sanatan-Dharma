@@ -15,7 +15,7 @@ const BlogDetails = () => {
   const [translationLoading, setTranslationLoading] = useState(false);
   const [sourceLanguage, setSourceLanguage] = useState(null);
   const [targetLanguage, setTargetLanguage] = useState(null);
-  
+
   useEffect(() => {
     const fetchBlogDetails = async () => {
       try {
@@ -103,18 +103,20 @@ const BlogDetails = () => {
   };
 
   const getTranslationConfig = async () => {
-  try {
-    const response = await fetch("https://sanatan-dharma-backend-nste.onrender.com/translate");
-    if (!response.ok) throw new Error("Failed to fetch config");
+    try {
+      const response = await fetch(
+        "https://sanatan-dharma-backend-nste.onrender.com/translate"
+      );
+      if (!response.ok) throw new Error("Failed to fetch config");
 
-    const config = await response.json();
-    return config; // { endpoint, api_key, region }
-  } catch (error) {
-    console.error("Error fetching translation config:", error);
-    alert("Error fetching translation configuration.");
-    return null;
-  }
-};
+      const config = await response.json();
+      return config; // { endpoint, api_key, region }
+    } catch (error) {
+      console.error("Error fetching translation config:", error);
+      alert("Error fetching translation configuration.");
+      return null;
+    }
+  };
 
   const translateBlog = async () => {
     if (isTranslated && translatedBlog) {
@@ -237,7 +239,7 @@ const BlogDetails = () => {
 
   return (
     <section id="blog-details" className="py-16 px-4 mt-16">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4 lg:px-32 3xl:px-40">
         {/* MOBILE VIEW DATE/TITLE/SUBTITLE */}
         <div className="block md:hidden mb-6">
           <div className="text-orange-800 font-semibold mb-3 italic flex items-center">

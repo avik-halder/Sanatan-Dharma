@@ -9,7 +9,7 @@ const DurgaPage = () => {
       <main>
         {/* Goddess Durga Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -57,7 +57,7 @@ const DurgaPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
+                className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -72,7 +72,7 @@ const DurgaPage = () => {
 
         {/* Durga's Nine Forms */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -175,7 +175,7 @@ const DurgaPage = () => {
         </section>
 
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -296,7 +296,7 @@ const DurgaPage = () => {
 
         {/* Worship and Festivals */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}

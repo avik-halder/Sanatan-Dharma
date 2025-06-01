@@ -25,7 +25,9 @@ export default function ContactPage() {
 
     // Simulate API call
     setTimeout(() => {
-      alert("Message sent! Thank you for contacting us. We'll respond shortly.");
+      alert(
+        "Message sent! Thank you for contacting us. We'll respond shortly."
+      );
       setFormData({
         name: "",
         email: "",
@@ -41,7 +43,7 @@ export default function ContactPage() {
       <main>
         {/* Page Header */}
         <section className="py-16 mt-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +51,9 @@ export default function ContactPage() {
               transition={{ duration: 0.5 }}
               className="text-center mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">Contact Us</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+                Contact Us
+              </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
                 Get in touch with our team for questions, feedback, or support
               </p>
@@ -63,11 +67,14 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">Get in Touch</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+                  Get in Touch
+                </h2>
                 <p className="text-gray-700 mb-8">
-                  Have questions about Hindu traditions, practices, or resources? Want to provide feedback or suggest
-                  content for our website? We'd love to hear from you! Fill out the form, and our team will get back to
-                  you as soon as possible.
+                  Have questions about Hindu traditions, practices, or
+                  resources? Want to provide feedback or suggest content for our
+                  website? We'd love to hear from you! Fill out the form, and
+                  our team will get back to you as soon as possible.
                 </p>
 
                 {/* Contact Details */}
@@ -91,7 +98,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-orange-700">Email</h3>
-                      <p className="text-gray-700">sanatandharma.info.contact@gmail.com</p>
+                      <p className="text-gray-700">
+                        sanatandharma.info.contact@gmail.com
+                      </p>
                     </div>
                   </div>
 
@@ -180,12 +189,20 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <form onSubmit={handleSubmit} className="bg-orange-100 border-[1px] border-orange-500 p-6 rounded-lg shadow-md">
-                  <h2 className="text-2xl font-bold text-orange-800 mb-6">Send a Message</h2>
+                <form
+                  onSubmit={handleSubmit}
+                  className="bg-orange-100 border-[1px] border-orange-500 p-6 rounded-lg shadow-md"
+                >
+                  <h2 className="text-2xl font-bold text-orange-800 mb-6">
+                    Send a Message
+                  </h2>
 
                   <div className="space-y-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="name"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Your Name
                       </label>
                       <input
@@ -200,7 +217,10 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Email Address
                       </label>
                       <input
@@ -216,7 +236,10 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="subject"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Subject
                       </label>
                       <select
@@ -236,7 +259,10 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label
+                        htmlFor="message"
+                        className="block text-sm font-medium text-gray-700 mb-1"
+                      >
                         Message
                       </label>
                       <textarea
@@ -267,7 +293,7 @@ export default function ContactPage() {
 
         {/* Frequently Asked Questions Section */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -275,9 +301,12 @@ export default function ContactPage() {
               transition={{ duration: 0.5 }}
               className="text-center mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+                Frequently Asked Questions
+              </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
-                Find answers to common questions about Hinduism and our resources
+                Find answers to common questions about Hinduism and our
+                resources
               </p>
             </motion.div>
 
@@ -317,7 +346,9 @@ export default function ContactPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="mb-6 bg-orange-50 border-[1px] border-orange-500 p-6 rounded-xl shadow-md"
                 >
-                  <h3 className="text-lg font-bold text-orange-700 mb-2">{faq.question}</h3>
+                  <h3 className="text-lg font-bold text-orange-700 mb-2">
+                    {faq.question}
+                  </h3>
                   <p className="text-gray-700">{faq.answer}</p>
                 </motion.div>
               ))}

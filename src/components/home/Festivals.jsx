@@ -62,7 +62,7 @@ const Festivals = () => {
 
   return (
     <section id="festivals" className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4 lg:px-32 3xl:px-40">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

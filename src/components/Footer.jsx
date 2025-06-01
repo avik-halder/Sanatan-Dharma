@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-orange-900 text-orange-100 py-12 pb-8">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4 lg:px-32 3xl:px-40">
         {/* Main footer grid layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center sm:text-left">
           {/* Column 1: SanatanaDharma Info */}
@@ -163,7 +163,7 @@ const Footer = () => {
           {/* Column 4: Contact Us */}
           <div>
             <h3 className="font-bold mb-4 lg:text-xl">Contact Us</h3>
-            <address className="not-italic md:text-sm lg:text-base space-y-4">
+            <address className="not-italic md:text-sm lg:text-base space-y-4 text-center items-center">
               <p className="flex items-center gap-2">
                 <FaMapMarkerAlt className="inline h-5 w-5 text-orange-200" />
                 Faridpur Sadar, Faridpur, Bangladesh
@@ -171,7 +171,7 @@ const Footer = () => {
               <p className="flex items-center gap-2">
                 <FaEnvelope className="inline h-5 w-5 text-orange-200" />
                 <span className="text-sm">
-                  sanatandharma.info.contact@gmail.com
+                  sanatandharma.info. contact@gmail.com
                 </span>
               </p>
               <p className="flex items-center gap-2">

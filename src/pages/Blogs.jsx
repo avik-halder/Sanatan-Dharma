@@ -63,7 +63,7 @@ const AllBlogs = () => {
 
   return (
     <section id="all-blogs" className="py-20 mt-16">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4 lg:px-32 3xl:px-40">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-orange-800 mb-8">
           All Blogs
         </h2>

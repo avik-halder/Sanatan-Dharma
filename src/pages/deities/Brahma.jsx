@@ -9,7 +9,7 @@ const BrahmaPage = () => {
       <main>
         {/* Page Header */}
         <section className="py-10 lg:py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -70,7 +70,7 @@ const BrahmaPage = () => {
 
         {/* Symbolism and Significance */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -147,7 +147,7 @@ const BrahmaPage = () => {
 
         {/* Mythology and Stories */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -224,9 +224,18 @@ const BrahmaPage = () => {
                     title: "Brahma Creating the Universe",
                     image: imageLinks.creatingUniverse,
                   },
-                  { title: "Brahma with Saraswati", image: imageLinks.brahmaSaraswati },
-                  { title: "Brahma Temple in Pushkar", image: imageLinks.brahmaTemple },
-                  { title: "Brahma in Meditation", image: imageLinks.brahmaMeditating },
+                  {
+                    title: "Brahma with Saraswati",
+                    image: imageLinks.brahmaSaraswati,
+                  },
+                  {
+                    title: "Brahma Temple in Pushkar",
+                    image: imageLinks.brahmaTemple,
+                  },
+                  {
+                    title: "Brahma in Meditation",
+                    image: imageLinks.brahmaMeditating,
+                  },
                 ].map((item, index) => (
                   <motion.div
                     key={item.title}

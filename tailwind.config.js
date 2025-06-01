@@ -12,7 +12,10 @@ export default {
         maitree: ['"Maitree"', 'serif'],
         bungee: ['"Bungee Spice"', 'cursive'],
         underdog: ['"Underdog"', 'sans-serif'],
-      }
+      },
+      screens: {
+        '3xl': '1800px', 
+      },
     },
   },
   plugins: [],

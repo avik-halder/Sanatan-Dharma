@@ -9,7 +9,7 @@ const PuranasPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Introduction Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ const PuranasPage = () => {
 
         {/* 18 Maha Puranas Section */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -155,7 +155,7 @@ const PuranasPage = () => {
 
         {/* Content and Themes Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -610,7 +610,7 @@ const PuranasPage = () => {
 
         {/* Historical Context Section */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -744,7 +744,7 @@ const PuranasPage = () => {
 
         {/* Modern Relevance Section */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -805,7 +805,7 @@ const PuranasPage = () => {
 
         {/* Explore Other Texts Section */}
         <section className="py-16 bg-orange-100">
-          <div className="container mx-auto px-4">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
