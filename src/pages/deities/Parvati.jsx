@@ -102,7 +102,7 @@ const ParvatiPage = () => {
 
         {/* Symbolism Section */}
         <section className="py-10 lg:py-16 bg-orange-100">
-          <div className="container px-4 mx-auto">
+          <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
