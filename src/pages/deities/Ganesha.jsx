@@ -8,19 +8,20 @@ const GaneshaPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         {/* Description and Image */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
                 <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
                   Lord Ganesha
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-8 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 lg:mb-8 text-center md:text-start">
                   The Remover of Obstacles and Lord of Beginnings
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -56,7 +57,7 @@ const GaneshaPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
+                className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -70,7 +71,7 @@ const GaneshaPage = () => {
         </section>
 
         {/* Symbolism Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -147,14 +148,14 @@ const GaneshaPage = () => {
         </section>
 
         {/* Mythology Section */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 Mythology and Stories
@@ -221,9 +222,9 @@ const GaneshaPage = () => {
         </section>
 
         {/* Worship and Festivals */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -290,7 +291,7 @@ const GaneshaPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="order-1 lg:order-2 relative h-[346px] rounded-xl overflow-hidden shadow-lg"
+                className="order-1 lg:order-2 relative lg:h-[346px] rounded-xl overflow-hidden shadow-lg"
               >
                 <img
                   loading="lazy"

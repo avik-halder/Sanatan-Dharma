@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 const MantraChantingPage = () => {
@@ -9,7 +10,7 @@ const MantraChantingPage = () => {
         {/* Introduction Section */}
         <section className="py-10 lg:py-16 relative overflow-hidden">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -64,7 +65,7 @@ const MantraChantingPage = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-2 order-1 lg:order-2 flex items-end"
               >
-                <div className="relative h-[460px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-[460px] rounded-xl overflow-hidden shadow-lg">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
@@ -82,7 +83,7 @@ const MantraChantingPage = () => {
             </div>
             {/* Sacred Quote */}
             <motion.div
-              className="mt-16 p-8 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-500 rounded-xl shadow-xl text-center"
+              className="mt-8 lg:mt-16 p-8 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-500 rounded-xl shadow-xl text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -100,16 +101,16 @@ const MantraChantingPage = () => {
         </section>
 
         {/* Significant Mantras Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
-              className="text-center mb-12"
+              className="text-center mb-6 lg:mb-12"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 relative inline-block mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4 relative inline-block mx-auto">
                 Significant Mantras
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -240,9 +241,9 @@ const MantraChantingPage = () => {
         </section>
 
         {/* Practicing Mantra Chanting Section */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -250,7 +251,7 @@ const MantraChantingPage = () => {
                 transition={{ duration: 0.8 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 relative">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 lg:mb-6 relative text-center lg:text-start">
                   Practicing Mantra Chanting
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -305,24 +306,26 @@ const MantraChantingPage = () => {
                   </div>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <motion.a
-                    href="/practices"
+                  <motion.span
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-md">
-                      Back to Practices
-                    </button>
-                  </motion.a>
-                  <motion.a
-                    href="/practices/yoga"
+                    <Link to={"/practices"}>
+                      <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-md">
+                        Back to Practices
+                      </button>
+                    </Link>
+                  </motion.span>
+                  <motion.span
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md">
-                      Explore Yoga
-                    </button>
-                  </motion.a>
+                    <Link to={"/practices/puja"}>
+                      <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md">
+                        Explore Puja
+                      </button>
+                    </Link>
+                  </motion.span>
                 </div>
               </motion.div>
 
@@ -358,7 +361,7 @@ const MantraChantingPage = () => {
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
-                      className="relative h-80 rounded-lg overflow-hidden group bottom-5"
+                      className="relative md:h-80 rounded-lg overflow-hidden group bottom-5"
                     >
                       <img
                         loading="lazy"

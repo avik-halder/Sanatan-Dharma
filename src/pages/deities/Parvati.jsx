@@ -28,24 +28,25 @@ const ParvatiPage = () => {
   return (
     <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Introduction Section */}
-            <motion.section
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="mb-16"
-            >
-              <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="md:w-1/2">
-                  <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
-                    Goddess Parvati
-                  </h1>
-                  <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 md:mb-8 text-center lg:text-start">
-                    The divine mother, consort of Lord Shiva, and embodiment of
-                    feminine energy
-                  </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
+              >
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
+                  Goddess Parvati
+                </h1>
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 md:mb-8 text-center lg:text-start">
+                  The divine mother, consort of Lord Shiva, and embodiment of
+                  feminine energy
+                </h2>
+                <div className="space-y-4 text-gray-700">
                   <p className="text-gray-700 mb-4">
                     Parvati, also known as Uma, is the Hindu goddess of
                     fertility, love, beauty, marriage, children, and devotion.
@@ -65,24 +66,24 @@ const ParvatiPage = () => {
                     Lord Kartikeya.
                   </p>
                 </div>
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className="md:w-1/2 relative"
-                >
-                  <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl">
-                    <img
-                      loading="lazy"
-                      src={imageLinks.parvati}
-                      alt="Goddess Parvati"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </motion.div>
-              </div>
-            </motion.section>
-            {/* Sacred Quote */}
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="relative order-1 lg:order-2"
+              >
+                <div className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-xl">
+                  <img
+                    loading="lazy"
+                    src={imageLinks.parvati}
+                    alt="Goddess Parvati"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </motion.div>
+            </div>
             <motion.div
               className="mt-16 p-7 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-500 rounded-xl shadow-xl text-center"
               initial={{ opacity: 0, y: 20 }}
@@ -100,7 +101,7 @@ const ParvatiPage = () => {
         </section>
 
         {/* Symbolism Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="container px-4 mx-auto">
             <motion.section
               initial={{ opacity: 0 }}
@@ -175,7 +176,7 @@ const ParvatiPage = () => {
         </section>
 
         {/* Mythology and Stories Section with Tabs */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}
@@ -570,7 +571,7 @@ const ParvatiPage = () => {
         </section>
 
         {/* Worship and Festivals Section */}
-        <section className="py-12 bg-orange-100">
+        <section className="py-10 lg:py-12 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}

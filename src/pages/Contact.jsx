@@ -19,30 +19,39 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, subject: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      alert(
-        "Message sent! Thank you for contacting us. We'll respond shortly."
-      );
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
+  try {
+    const response = await fetch("https://sanatan-dharma-backend-nste.onrender.com/send_contact_email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert("✅ Message sent! Thank you for contacting us.");
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } else {
+      const data = await response.json();
+      alert("❌ Failed to send message: " + data.detail);
+    }
+  } catch (error) {
+    alert("🚨 Error sending message: " + error.message);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-16">
       <main>
         {/* Page Header */}
-        <section className="py-16 mt-16">
+        <section className="py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

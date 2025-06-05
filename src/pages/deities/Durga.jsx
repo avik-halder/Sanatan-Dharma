@@ -8,9 +8,9 @@ const DurgaPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         {/* Goddess Durga Section */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -18,10 +18,10 @@ const DurgaPage = () => {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Goddess Durga
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-8 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 lg:mb-8 text-center lg:text-start">
                   The Divine Mother and Destroyer of Evil
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -71,7 +71,7 @@ const DurgaPage = () => {
         </section>
 
         {/* Durga's Nine Forms */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -154,7 +154,7 @@ const DurgaPage = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-orange-50 border border-orange-500 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
                 >
-                  <div className="relative h-52 w-52 mx-auto mb-4">
+                  <div className="relative w-32 lg:w-52 mx-auto mb-4">
                     <img
                       loading="lazy"
                       src={form.image || "/placeholder.svg"}
@@ -174,7 +174,7 @@ const DurgaPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -295,7 +295,7 @@ const DurgaPage = () => {
         </section>
 
         {/* Worship and Festivals */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div

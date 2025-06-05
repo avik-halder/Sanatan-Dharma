@@ -86,16 +86,16 @@ export default function DeitiesPage() {
   return (
     <div className="min-h-screen">
       <main>
-        <section className="py-16 mt-16">
+        <section className="py-16 mt-8 lg:mt-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 lg:mb-12"
             >
-              <h2 className="text-2xl md:text-4xl font-bold text-orange-800 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-2 lg:mb-4">
                 The Divine Trinity
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -147,7 +147,7 @@ export default function DeitiesPage() {
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 text">
                     <h3 className="text-xl font-bold text-orange-700 mb-1">
                       {deity.name}
                     </h3>
@@ -229,9 +229,9 @@ export default function DeitiesPage() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: index * 0.1 }}
-                      className="flex flex-col md:flex-row gap-6 bg-orange-50 border-[1px] border-orange-500 rounded-lg overflow-hidden shadow-md"
+                      className="flex flex-col md:flex-row gap-6 bg-orange-50 border border-orange-500 rounded-xl overflow-hidden shadow-md"
                     >
-                      <div className="relative w-full md:w-1/3 h-60">
+                      <div className="relative w-full md:w-1/3 md:h-60">
                         <img
                           loading="lazy"
                           src={deity.image || "/placeholder.svg"}

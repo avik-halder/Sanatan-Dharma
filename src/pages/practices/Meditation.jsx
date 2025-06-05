@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 const MeditationPage = () => {
@@ -9,7 +10,7 @@ const MeditationPage = () => {
         {/* Introduction Section */}
         <section className="py-10 lg:py-16 relative overflow-hidden">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12 mb-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -63,7 +64,7 @@ const MeditationPage = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-2 order-1 lg:order-2"
               >
-                <div className="relative h-[450px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-[450px] rounded-xl overflow-hidden shadow-lg">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
@@ -81,7 +82,7 @@ const MeditationPage = () => {
             </div>
             {/* Sacred Quote */}
             <motion.div
-              className="mt-16 p-8 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-500 rounded-xl shadow-xl text-center"
+              className="mt-8 lg:mt-16 p-8 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-500 rounded-xl shadow-xl text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -309,24 +310,26 @@ const MeditationPage = () => {
                   </div>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <motion.a
-                    href="/practices"
+                  <motion.span
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-md">
-                      Back to Practices
-                    </button>
-                  </motion.a>
-                  <motion.a
-                    href="/practices/mantra-chanting"
+                    <Link to={"/practices"}>
+                      <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-md">
+                        Back to Practices
+                      </button>
+                    </Link>
+                  </motion.span>
+                  <motion.span
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md">
-                      Explore Mantra Chanting
-                    </button>
-                  </motion.a>
+                    <Link to={"/practices/mantra-chanting"}>
+                      <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md">
+                        Explore Mantra Chanting
+                      </button>
+                    </Link>
+                  </motion.span>
                 </div>
               </motion.div>
 

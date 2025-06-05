@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import imageLinks from "../utils/ImageLinks";
 
 export default function PracticesPage() {
@@ -7,14 +8,14 @@ export default function PracticesPage() {
     <div className="min-h-screen">
       <main>
         {/* Page Header */}
-        <section className="py-16 mt-16">
+        <section className="py-10 lg:py-16 mt-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 lg:mb-12"
             >
               <h2 className="text-2xl md:text-4xl font-bold text-orange-800 mb-4">
                 Paths to Spiritual Realization
@@ -25,7 +26,7 @@ export default function PracticesPage() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
                   name: "Bhakti Yoga",
@@ -64,12 +65,11 @@ export default function PracticesPage() {
                     <div className="text-4xl mb-2">{path.icon}</div>
                     <h3 className="text-xl text-orange-700">{path.name}</h3>
                     <p className="text-gray-700 mt-2">{path.description}</p>
-                    <button
-                      onClick={() => (window.location.href = "/practices/yoga")}
-                      className="text-orange-600 mt-4 p-0 underline"
-                    >
-                      Learn more
-                    </button>
+                    <Link to={"/practices/yoga"}>
+                      <button className="text-orange-600 mt-4 p-0 underline">
+                        Learn more
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
               ))}
@@ -78,14 +78,14 @@ export default function PracticesPage() {
         </section>
 
         {/* Daily Practices Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 Daily Practices
@@ -173,12 +173,11 @@ export default function PracticesPage() {
                         <li key={i}>{step}</li>
                       ))}
                     </ul>
-                    <button
-                      onClick={() => (window.location.href = practice.link)}
-                      className="text-orange-600 mt-4 p-0 underline"
-                    >
-                      Learn more about {practice.name}
-                    </button>
+                    <Link to={practice.link}>
+                      <button className="text-orange-600 mt-4 p-0 underline">
+                        Learn more about {practice.name}
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
               ))}
@@ -187,16 +186,17 @@ export default function PracticesPage() {
         </section>
 
         {/* Yoga Practices Section */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 text-center lg:text-left">
                   Yoga: Union of Body, Mind, and Spirit
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -221,12 +221,11 @@ export default function PracticesPage() {
                     samadhi (enlightenment).
                   </p>
                 </div>
-                <button
-                  onClick={() => (window.location.href = "/practices/yoga")}
-                  className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded"
-                >
-                  Explore Yoga Practices
-                </button>
+                <Link to={"/practices/yoga"}>
+                  <button className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded">
+                    Explore Yoga Practices
+                  </button>
+                </Link>
               </motion.div>
 
               <motion.div
@@ -234,7 +233,7 @@ export default function PracticesPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="grid grid-cols-2 gap-4"
+                className="grid grid-cols-2 gap-4 order-1 lg:order-2"
               >
                 {[
                   { name: "Hatha Yoga", image: imageLinks.hatha },

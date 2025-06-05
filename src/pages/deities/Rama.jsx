@@ -1,24 +1,26 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 export default function RamaPage() {
   return (
     <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Lord Rama
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-8 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 lg:mb-8 text-center lg:text-start">
                   The ideal Man and King, embodiment of dharma
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -58,7 +60,7 @@ export default function RamaPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
+                className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -71,7 +73,7 @@ export default function RamaPage() {
           </div>
         </section>
 
-        <section className="py-12 bg-orange-100">
+        <section className="py-8 lg:py-12 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -80,7 +82,7 @@ export default function RamaPage() {
               transition={{ duration: 0.5 }}
               className="text-center mb-10"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Symbolism and Attributes
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -144,16 +146,16 @@ export default function RamaPage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-16">
+        <section className="py-8 lg:py-12 md:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-10"
+              className="text-center mb-6 lg:mb-10"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 The Ramayana
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -165,16 +167,17 @@ export default function RamaPage() {
         </section>
 
         {/* Worship Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 text-center lg:text-start">
                   Worship and Significance
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -222,16 +225,16 @@ export default function RamaPage() {
                   </p>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <a href="/deities">
+                  <Link to={"/deities"}>
                     <button className="border border-orange-600 text-orange-600 px-4 py-2 rounded-md">
                       Back to Deities
                     </button>
-                  </a>
-                  <a href="/deities/hanuman">
+                  </Link>
+                  <Link to={"/deities/hanuman"}>
                     <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md">
                       Explore Lord Hanuman
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
 
@@ -240,7 +243,7 @@ export default function RamaPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[400px] rounded-lg overflow-hidden shadow-lg"
+                className="relative lg:h-[400px] rounded-lg overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -249,7 +252,7 @@ export default function RamaPage() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex justify-start items-end">
-                  <p className="text-orange-100 text-lg font-medium p-3 pr-4">
+                  <p className="text-orange-100 lg:text-lg font-medium p-3 pr-4">
                     Ram Mandir, Ayodhaya
                   </p>
                 </div>

@@ -16,19 +16,19 @@ export default function FestivalsPage() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-16">
       <main>
         {/* Page Header */}
-        <section className="py-16 mt-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Major Festivals
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -135,16 +135,16 @@ export default function FestivalsPage() {
         </section>
 
         {/* Festival Calendar Section */}
-        <section className="py-16 bg-orange-100" id="festival-calendar">
+        <section className="py-8 lg:py-16 bg-orange-100" id="festival-calendar">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Festival Calendar
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -154,7 +154,7 @@ export default function FestivalsPage() {
             </motion.div>
 
             {/* Centered Tabs Navigation */}
-            <div className="max-w-2xl mx-auto mb-4">
+            <div className="max-w-4xl mx-auto mb-4">
               <div className="relative right-0">
                 <ul
                   className="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-lg bg-orange-200"
@@ -211,7 +211,7 @@ export default function FestivalsPage() {
 
             {/* Tab Content with Fixed Width */}
             <div className="flex justify-center">
-              <div className="max-w-2xl w-full">
+              <div className="max-w-4xl w-full">
                 {selectedTab === "spring" && (
                   <div className="grid gap-8 bg-white border-[1px] border-orange-500 p-6 rounded-md shadow-md">
                     {[

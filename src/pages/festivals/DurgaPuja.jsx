@@ -10,9 +10,9 @@ const DurgaPujaPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         {/* Significance of Durga Puja */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -20,10 +20,10 @@ const DurgaPujaPage = () => {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Durga Puja
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   Celebrating the victory of Goddess Durga over the demon
                   Mahishasura.
                 </h2>
@@ -66,7 +66,7 @@ const DurgaPujaPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
+                className="relative lg:h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -80,14 +80,14 @@ const DurgaPujaPage = () => {
         </section>
 
         {/* Mythological Origin */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 lg:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 Mythological Origin
@@ -157,16 +157,16 @@ const DurgaPujaPage = () => {
         </section>
 
         {/* The Nine Forms of Durga */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 The Nine Forms of Durga
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -258,7 +258,7 @@ const DurgaPujaPage = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-orange-100 border border-orange-500 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
                 >
-                  <div className="relative w-52 h-52 mx-auto mt-6">
+                  <div className="relative w-52 md:w-32 lg:w-52  mx-auto mt-6">
                     <img
                       loading="lazy"
                       src={form.image || "/placeholder.svg"}
@@ -292,14 +292,14 @@ const DurgaPujaPage = () => {
         </section>
 
         {/* The Five-Day Celebration Section with Tabs */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="container max-w-4xl mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 md:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 The Five-Day Celebration
@@ -608,9 +608,9 @@ const DurgaPujaPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 lg;py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -618,7 +618,7 @@ const DurgaPujaPage = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="order-2 lg:order-2"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 text-center lg:text-start">
                   Durga Puja Pandals
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -690,7 +690,7 @@ const DurgaPujaPage = () => {
                 transition={{ duration: 0.5 }}
                 className="order-1 lg:order-1 grid grid-cols-2 gap-4"
               >
-                <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative h-[180px] md:h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.nightDurgaPuja2}
@@ -698,7 +698,7 @@ const DurgaPujaPage = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative h-[180px] md:h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.themedDurgaPuja}
@@ -706,7 +706,7 @@ const DurgaPujaPage = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative h-[180px] md:h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.traditionalDurgaPuja}
@@ -714,7 +714,7 @@ const DurgaPujaPage = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative h-[180px] md:h-[250px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.nightDurgaPuja}
@@ -727,16 +727,16 @@ const DurgaPujaPage = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Cultural Celebrations
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -830,9 +830,9 @@ const DurgaPujaPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-8 items-center md:items-start lg:items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -840,7 +840,7 @@ const DurgaPujaPage = () => {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center md:text-start">
                   Spiritual Significance
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -910,7 +910,7 @@ const DurgaPujaPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[400px] rounded-lg overflow-hidden shadow-lg order-1 lg:order-2"
+                className="relative lg:h-[400px] rounded-lg overflow-hidden shadow-lg order-1 md:order-2"
               >
                 <img
                   loading="lazy"

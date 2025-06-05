@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 function LakshmiPage() {
@@ -67,7 +68,7 @@ function LakshmiPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -144,7 +145,7 @@ function LakshmiPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-orange-50 border border-orange-500 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow text-center"
                 >
-                  <div className="relative h-48 w-48 mx-auto mt-6">
+                  <div className="relative w-40 lg:w-48 mx-auto mt-6">
                     <img
                       loading="lazy"
                       src={form.image}
@@ -164,7 +165,7 @@ function LakshmiPage() {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -311,18 +312,18 @@ function LakshmiPage() {
                   </p>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <a
-                    href="/deities"
+                  <Link
+                    to="/deities"
                     className="px-4 py-2 border border-orange-600 text-orange-600 rounded-md"
                   >
                     Back to Deities
-                  </a>
-                  <a
-                    href="/deities/saraswati"
+                  </Link>
+                  <Link
+                    to="/deities/saraswati"
                     className="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-md"
                   >
                     Explore Goddess Saraswati
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
 

@@ -9,19 +9,20 @@ const DiwaliPage = () => {
   return (
     <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16">
+        <section className="py-8 lg:y-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Diwali - Festival of Lights
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   Celebrating the triumph of light over darkness and good over
                   evil
                 </h2>
@@ -53,7 +54,7 @@ const DiwaliPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[350px] rounded-2xl overflow-hidden shadow-lg"
+                className="relative lg:h-[350px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -66,16 +67,16 @@ const DiwaliPage = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Mythological Origins
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -244,16 +245,16 @@ const DiwaliPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 The Five Days of Diwali
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -336,17 +337,17 @@ const DiwaliPage = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="order-1 lg:order-2"
+                className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 text-center lg:text-start">
                   Diwali Celebrations
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -413,9 +414,9 @@ const DiwaliPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="order-2 lg:order-1 grid grid-cols-2 gap-4"
+                className="order-1 lg:order-2 grid grid-cols-2 gap-4"
               >
-                <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.rangoli}
@@ -423,7 +424,7 @@ const DiwaliPage = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.gifts}
@@ -431,7 +432,7 @@ const DiwaliPage = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.oilLamps}
@@ -439,7 +440,7 @@ const DiwaliPage = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="relative h-[215px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-[215px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.fireWorks}
@@ -452,16 +453,16 @@ const DiwaliPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Regional Variations
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -542,16 +543,16 @@ const DiwaliPage = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Diwali Recipes
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -625,7 +626,7 @@ const DiwaliPage = () => {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="bg-orange-50 border border-orange-500 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
                 >
-                  <div className="relative h-48">
+                  <div className="relative lg:h-48">
                     <img
                       loading="lazy"
                       src={recipe.image || "/placeholder.svg"}
@@ -656,9 +657,9 @@ const DiwaliPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -666,7 +667,7 @@ const DiwaliPage = () => {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center lg:text-start">
                   Spiritual Significance
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -738,7 +739,7 @@ const DiwaliPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[460px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
+                className="relative lg:h-[460px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"

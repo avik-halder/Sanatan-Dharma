@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 const YogaPage = () => {
@@ -8,21 +9,21 @@ const YogaPage = () => {
   return (
     <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Introduction Section */}
             <motion.div
-              className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+              className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div>
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+              <div className="order-2 lg:order-1">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Yoga: The Path to Union
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 lg:mb-6 text-center lg:text-start">
                   Explore the ancient practice that harmonizes body, mind, and
                   spirit
                 </h2>
@@ -67,9 +68,9 @@ const YogaPage = () => {
                 </motion.div>
               </div>
 
-              <div>
+              <div className="order-1 lg:order-2">
                 <motion.div
-                  className="relative h-[570px] rounded-2xl overflow-hidden shadow-lg"
+                  className="relative lg:h-[570px] rounded-2xl overflow-hidden shadow-lg"
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
@@ -93,7 +94,7 @@ const YogaPage = () => {
 
             {/* Sacred Quote */}
             <motion.div
-              className="mt-16 p-8 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-500 rounded-xl shadow-xl text-center"
+              className="mt-8 lg:mt-16 p-8 bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-500 rounded-xl shadow-xl text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -109,10 +110,10 @@ const YogaPage = () => {
         </section>
 
         {/* Eight Limbs Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -266,7 +267,7 @@ const YogaPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Yoga Styles Section */}
             <motion.div
@@ -570,7 +571,7 @@ const YogaPage = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Benefits Section */}
             <motion.div
@@ -579,10 +580,10 @@ const YogaPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <div className="w-full px-4 lg:px-32 3xl:px-40">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+              <div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
+                  <div className="order-2 lg:order-1">
+                    <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 lg:mb-6 text-center lg:text-start">
                       Benefits of Yoga Practice
                     </h2>
                     <div className="space-y-4 text-gray-700">
@@ -674,24 +675,26 @@ const YogaPage = () => {
                       </div>
                     </div>
                     <div className="mt-6 flex flex-wrap gap-4">
-                      <motion.a
-                        href="/practices"
+                      <motion.span
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-md">
-                          Back to Practices
-                        </button>
-                      </motion.a>
-                      <motion.a
-                        href="/practices/meditation"
+                        <Link to={"/practices"}>
+                          <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2 rounded-md">
+                            Back to Practices
+                          </button>
+                        </Link>
+                      </motion.span>
+                      <motion.span
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md">
-                          Explore Meditation
-                        </button>
-                      </motion.a>
+                        <Link to={"/practices/meditation"}>
+                          <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md">
+                            Explore Meditation
+                          </button>
+                        </Link>
+                      </motion.span>
                     </div>
                   </div>
                   <motion.div
@@ -699,7 +702,7 @@ const YogaPage = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="relative h-[560px] bottom rounded-xl overflow-hidden shadow-lg"
+                    className="relative lg:h-[560px] bottom rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
                   >
                     <img
                       loading="lazy"

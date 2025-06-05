@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 const PujaPage = () => {
@@ -146,7 +147,6 @@ const PujaPage = () => {
         "Fragrant resins",
         "Purification intention",
       ],
-      // icon: "🧉",
       icon: (
         <>
           <div className="flex justify-center">
@@ -284,19 +284,19 @@ const PujaPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         {/* Introduction Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-10 md:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12 mb-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="lg:col-span-3 order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Puja: Sacred Ritual Worship
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   Explore the devotional practice of offering reverence to the
                   divine
                 </h2>
@@ -340,7 +340,7 @@ const PujaPage = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-2 order-1 lg:order-2"
               >
-                <div className="relative h-[450px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-[450px] rounded-xl overflow-hidden shadow-lg">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
                     loading="lazy"
@@ -376,16 +376,16 @@ const PujaPage = () => {
         </section>
 
         {/* Elements of Puja */}
-        <section className="py-16 bg-orange-100 relative overflow-hidden">
+        <section className="py-8 lg:py-16 bg-orange-100 relative overflow-hidden">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 relative inline-block mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4 relative inline-block mx-auto">
                 Elements of Puja
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -434,9 +434,9 @@ const PujaPage = () => {
         </section>
 
         {/* Home Puja Setup */}
-        <section className="py-16 relative overflow-hidden">
+        <section className="py-8 lg:py-16 relative overflow-hidden">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -444,7 +444,7 @@ const PujaPage = () => {
                 transition={{ duration: 0.6 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 relative">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 relative text-center lg:text-start">
                   Setting Up a Home Puja
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -472,22 +472,22 @@ const PujaPage = () => {
                   </div>
                 </div>
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <a href="/practices">
+                  <Link to={"/practices"}>
                     <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 group px-4 py-2 rounded-md flex items-center transition-colors duration-300">
                       <span className="group-hover:-translate-x-1 transition-transform duration-300">
                         ←
                       </span>
                       <span className="ml-2">Back to Practices</span>
                     </button>
-                  </a>
-                  <a href="/practices/mantra-chanting">
+                  </Link>
+                  <Link to={"/practices/mantra-chanting"}>
                     <button className="bg-orange-600 hover:bg-orange-700 text-white group px-4 py-2 rounded-md flex items-center transition-colors duration-300">
                       <span>Explore Mantra Chanting</span>
                       <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">
                         →
                       </span>
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
 
@@ -497,7 +497,7 @@ const PujaPage = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="relative h-[500px] rounded-xl overflow-hidden shadow-lg group mb-12"
+                  className="relative lg:h-[500px] rounded-xl overflow-hidden shadow-lg group mb-8 lg:mb-12"
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                   <img
@@ -535,7 +535,7 @@ const PujaPage = () => {
         </section>
 
         {/* Daily Practice Timeline */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg;py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               className="text-center mb-12"

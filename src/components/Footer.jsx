@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center sm:text-left">
           {/* Column 1: SanatanaDharma Info */}
           <div>
-            <h3 className="font-bold text-xl lg:text-2xl mb-4">
+            <h3 className="font-bold text-2xl lg:text-2xl mb-4">
               SanatanaDharma
             </h3>
             <p className="text-orange-200 mb-4 text-sm lg:text-base">
@@ -58,7 +58,7 @@ const Footer = () => {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="font-bold mb-4 lg:text-xl">Quick Links</h3>
+            <h3 className="font-bold mb-4 text-xl lg:text-xl">Quick Links</h3>
             <ul className="space-y-2 text-sm lg:text-base">
               <li>
                 <a href="/about" className="hover:text-white transition-colors">
@@ -110,8 +110,8 @@ const Footer = () => {
 
           {/* Column 3: Resources */}
           <div>
-            <h3 className="font-bold mb-4 lg:text-xl">Resources</h3>
-            <ul className="space-y-2 md:text-sm lg:text-base">
+            <h3 className="font-bold mb-4 text-xl lg:text-xl">Resources</h3>
+            <ul className="space-y-2 text-sm lg:text-base">
               <li>
                 <a
                   href="/resources"
@@ -162,17 +162,23 @@ const Footer = () => {
 
           {/* Column 4: Contact Us */}
           <div>
-            <h3 className="font-bold mb-4 lg:text-xl">Contact Us</h3>
-            <address className="not-italic md:text-sm lg:text-base space-y-4 text-center items-center">
+            <h3 className="font-bold mb-4 text-xl">Contact Us</h3>
+            <address className="not-italic text-sm lg:text-base space-y-4 flex flex-col items-center sm:items-start">
               <p className="flex items-center gap-2">
                 <FaMapMarkerAlt className="inline h-5 w-5 text-orange-200" />
                 Faridpur Sadar, Faridpur, Bangladesh
               </p>
               <p className="flex items-center gap-2">
                 <FaEnvelope className="inline h-5 w-5 text-orange-200" />
-                <span className="text-sm">
-                  sanatandharma.info. contact@gmail.com
-                </span>
+                <Link
+                  to={"mailto:sanatandharma.info.contact@gmail.com"}
+                  className="text-sm"
+                >
+                  sanatandharma.info.contact@gmail.com
+                </Link>
+                {/* <span className="text-sm">
+                  sanatandharma.info.contact@gmail.com
+                </span> */}
               </p>
               <p className="flex items-center gap-2">
                 <FaPhone className="inline h-5 w-5 text-orange-200" />

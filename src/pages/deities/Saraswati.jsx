@@ -8,19 +8,20 @@ export default function SaraswatiPage() {
     <div className="min-h-screen mt-16">
       <main>
         {/* Goddess of Wisdom Section */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Goddess Saraswati
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-8 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 lg:mb-8 text-center lg:text-start">
                   The Divine Goddess of Knowledge, Music, Arts, and Learning
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -57,7 +58,7 @@ export default function SaraswatiPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[500px] rounded-2xl overflow-hidden shadow-lg"
+                className="relative lg:h-[500px] rounded-2xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -71,7 +72,7 @@ export default function SaraswatiPage() {
         </section>
 
         {/* Symbolism and Attributes Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -157,7 +158,7 @@ export default function SaraswatiPage() {
         </section>
 
         {/* Mythology and Significance Section */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -231,7 +232,7 @@ export default function SaraswatiPage() {
         </section>
 
         {/* Worship and Festivals Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -241,7 +242,7 @@ export default function SaraswatiPage() {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 text-center lg:text-start">
                   Worship and Festivals
                 </h2>
                 <div className="space-y-4 text-gray-700">
