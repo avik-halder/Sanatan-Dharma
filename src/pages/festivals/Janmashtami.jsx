@@ -10,7 +10,7 @@ function JanmashtamiPage() {
     fasting: (
       <div className="bg-orange-100 border border-orange-500 rounded-lg p-6 shadow-md">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+          <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
               src={imageLinks.fasting}
@@ -48,7 +48,7 @@ function JanmashtamiPage() {
     midnight: (
       <div className="bg-orange-100 border border-orange-500 rounded-lg p-6 shadow-md">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+          <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
               src={imageLinks.midnightCelebrations}
@@ -87,7 +87,7 @@ function JanmashtamiPage() {
     dahiHandi: (
       <div className="bg-orange-100 border border-orange-500 rounded-lg p-6 shadow-md">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+          <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
               src={imageLinks.dahiHandi}
@@ -125,7 +125,7 @@ function JanmashtamiPage() {
     jhankis: (
       <div className="bg-orange-100 border border-orange-500 rounded-lg p-6 shadow-md">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+          <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
             <img
               loading="lazy"
               src={imageLinks.jhankis}
@@ -164,19 +164,20 @@ function JanmashtamiPage() {
     <div className="min-h-screen mt-16">
       <main>
         {/* The Significance of Janmashtami */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Janmashtami
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   Celebrating the divine birth of Lord Krishna, the eighth
                   avatar of Vishnu
                 </h2>
@@ -210,7 +211,7 @@ function JanmashtamiPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[400px] rounded-xl overflow-hidden shadow-lg"
+                className="relative lg:h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -224,16 +225,16 @@ function JanmashtamiPage() {
         </section>
 
         {/* The Birth Story of Krishna */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 The Birth Story of Krishna
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -243,7 +244,7 @@ function JanmashtamiPage() {
 
             <div className="bg-orange-50 border border-orange-500 rounded-xl p-6 shadow-md max-w-4xl mx-auto">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+                <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
                   <img
                     loading="lazy"
                     src={imageLinks.birthStory}
@@ -305,16 +306,16 @@ function JanmashtamiPage() {
         </section>
 
         {/* Janmashtami Celebrations */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Janmashtami Celebrations
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -348,7 +349,8 @@ function JanmashtamiPage() {
                       onClick={() => setActiveTab("midnight")}
                       role="tab"
                     >
-                      Midnight Celebrations
+                      <span className="hidden md:block">Midnight Celebrations</span>
+                      <span className="block md:hidden">Midnight</span>
                     </button>
                   </li>
                   <li className="z-30 flex-auto text-center">
@@ -385,16 +387,16 @@ function JanmashtamiPage() {
         </section>
 
         {/* Regional Celebrations */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Regional Celebrations
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -527,16 +529,16 @@ function JanmashtamiPage() {
         </section>
 
         {/* Traditional Foods */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Traditional Foods
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -591,7 +593,7 @@ function JanmashtamiPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-orange-100 border border-orange-500 rounded-xl overflow-hidden shadow-md"
                 >
-                  <div className="relative h-48">
+                  <div className="relative lg:h-48">
                     <img
                       loading="lazy"
                       src={item.image || "/placeholder.svg"}
@@ -612,9 +614,9 @@ function JanmashtamiPage() {
         </section>
 
         {/* Spiritual Significance */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -622,7 +624,7 @@ function JanmashtamiPage() {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center lg:text-start">
                   Spiritual Significance
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -696,7 +698,7 @@ function JanmashtamiPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
+                className="relative md:h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"

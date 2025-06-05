@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen mt-16">
       <main>
-        <section className="text-center pt-16">
+        <section className="text-center pt-8 md:pt-12 lg:pt-16">
           <h1 className="text-3xl md:text-4xl font-bold text-orange-800">
             ॐ About Hinduism 卐
           </h1>
@@ -16,9 +16,9 @@ export default function AboutPage() {
         </section>
 
         {/* What is Hinduism Section */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -73,19 +73,19 @@ export default function AboutPage() {
         </section>
 
         {/* Core Beliefs Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 Core Beliefs and Principles
               </h2>
-              <p className="text-orange-700 max-w-3xl mx-auto">
+              <p className="text-orange-700 max-w-2xl mx-auto">
                 Hinduism embraces a diverse range of philosophies and practices,
                 but several core principles are widely shared.
               </p>
@@ -150,7 +150,7 @@ export default function AboutPage() {
         </section>
 
         {/* Historical Timeline Section */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

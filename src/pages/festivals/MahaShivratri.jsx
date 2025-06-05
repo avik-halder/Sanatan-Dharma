@@ -11,19 +11,19 @@ function MahaShivratriPage() {
     <div className="min-h-screen mt-16">
       <main>
         {/* Page Header */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="lg:col-span-3 order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Maha Shivratri
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   The Great Night of Shiva - A celebration of Lord Shiva, the
                   destroyer and transformer
                 </h2>
@@ -68,7 +68,7 @@ function MahaShivratriPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-2 order-1 lg:order-2"
               >
-                <div className="relative h-[450px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative h-[300px] lg:h-[450px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.shivaLingam}
@@ -82,14 +82,14 @@ function MahaShivratriPage() {
         </section>
 
         {/* Mythology and Significance Section with Tabs */}
-        <section className="py-12 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-10"
+              className="text-center mb-8 md:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 Mythology and Significance
@@ -115,7 +115,8 @@ function MahaShivratriPage() {
                       onClick={() => setActiveTab("stories")}
                       role="tab"
                     >
-                      Mythological Stories
+                      <span className="hidden md:block">Mythological Stories</span>
+                      <span className="block md:hidden">Stories</span>
                     </button>
                   </li>
                   <li className="z-30 flex-auto text-center">
@@ -126,7 +127,8 @@ function MahaShivratriPage() {
                       onClick={() => setActiveTab("significance")}
                       role="tab"
                     >
-                      Spiritual Significance
+                      <span className="hidden md:block">Spiritual Significance</span>
+                      <span className="block md:hidden">Spiritual</span>
                     </button>
                   </li>
                   <li className="z-30 flex-auto text-center">
@@ -137,7 +139,8 @@ function MahaShivratriPage() {
                       onClick={() => setActiveTab("symbols")}
                       role="tab"
                     >
-                      Symbols and Meanings
+                      <span className="hidden md:block">Symbols and Meanings</span>
+                      <span className="block md:hidden">Symbols</span>
                     </button>
                   </li>
                 </ul>
@@ -305,16 +308,16 @@ function MahaShivratriPage() {
         </section>
 
         {/* Celebrations and Rituals Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-10"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Celebrations and Rituals
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -381,16 +384,16 @@ function MahaShivratriPage() {
         </section>
 
         {/* Regional Celebrations Section */}
-        <section className="py-12 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-10"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Regional Celebrations
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -524,7 +527,7 @@ function MahaShivratriPage() {
                   transition={{ duration: 0.5 }}
                   className="bg-orange-50 border border-orange-500 rounded-xl overflow-hidden shadow-md"
                 >
-                  <div className="relative h-60">
+                  <div className="relative h-52 md:h-60">
                     <img
                       loading="lazy"
                       src={region.image}
@@ -541,7 +544,7 @@ function MahaShivratriPage() {
                 </motion.div>
               ))}
             </div>
-            <div className="mt-6 flex flex-wrap gap-4 justify-center">
+            <div className="mt-6 flex flex-wrap gap-4 justify-start md:justify-center">
               <Link to="/festivals">
                 <button className="border border-orange-600 text-orange-600 hover:bg-orange-50 p-2 rounded">
                   Back to Festivals

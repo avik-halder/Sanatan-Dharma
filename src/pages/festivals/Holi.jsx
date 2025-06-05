@@ -70,19 +70,20 @@ export default function HoliPage() {
     <div className="min-h-screen mt-16">
       <main>
         {/* Page Header */}
-        <section className="py-16">
+        <section className="py-10 pt-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Holi - Festival of Colors
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   Celebrating the arrival of spring and the triumph of good over
                   evil
                 </h2>
@@ -113,7 +114,7 @@ export default function HoliPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[400px] rounded-xl overflow-hidden shadow-lg"
+                className="relative lg:h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"
@@ -127,16 +128,16 @@ export default function HoliPage() {
         </section>
 
         {/* Mythological Origins Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Mythological Origins
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -193,7 +194,7 @@ export default function HoliPage() {
                 {selectedTab === "holika" && (
                   <div className="bg-white rounded-lg p-6 shadow-md">
                     <div className="flex flex-col md:flex-row gap-6">
-                      <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+                      <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
                           src={imageLinks.holikaPrahlad}
@@ -236,7 +237,7 @@ export default function HoliPage() {
                 {selectedTab === "krishna" && (
                   <div className="bg-white rounded-lg p-6 shadow-md">
                     <div className="flex flex-col md:flex-row gap-6">
-                      <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+                      <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
                           src={imageLinks.radhaKrishna}
@@ -276,7 +277,7 @@ export default function HoliPage() {
                 {selectedTab === "kamadeva" && (
                   <div className="bg-white rounded-lg p-6 shadow-md">
                     <div className="flex flex-col md:flex-row gap-6">
-                      <div className="md:w-1/3 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+                      <div className="md:w-1/3 relative h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
                           src={imageLinks.kamadeva}
@@ -320,16 +321,16 @@ export default function HoliPage() {
         </section>
 
         {/* How Holi is Celebrated */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 How Holi is Celebrated
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -345,7 +346,7 @@ export default function HoliPage() {
                 transition={{ duration: 0.5 }}
                 className="bg-orange-100 border border-orange-500 rounded-xl overflow-hidden shadow-md"
               >
-                <div className="relative h-64">
+                <div className="relative lg:h-64">
                   <img
                     loading="lazy"
                     src={imageLinks.holikaDahan}
@@ -411,7 +412,7 @@ export default function HoliPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="bg-orange-100 border border-orange-500 rounded-xl overflow-hidden shadow-md"
               >
-                <div className="relative h-64">
+                <div className="relative lg:h-64">
                   <img
                     loading="lazy"
                     src={imageLinks.rangwaliHoli}
@@ -474,16 +475,16 @@ export default function HoliPage() {
         </section>
 
         {/* Regional Holi Celebrations */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Regional Holi Celebrations
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -523,17 +524,17 @@ export default function HoliPage() {
         </section>
 
         {/* Traditional Holi Foods */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="order-1 lg:order-2"
+                className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 text-center lg:text-start">
                   Traditional Holi Foods
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -597,9 +598,9 @@ export default function HoliPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="order-2 lg:order-1"
+                className="order-1 lg:order-2"
               >
-                <div className="relative h-[500px] rounded-xl overflow-hidden shadow-lg">
+                <div className="relative md:h-[300px] lg:h-[500px] rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.holiFood}
@@ -613,16 +614,16 @@ export default function HoliPage() {
         </section>
 
         {/* Colors of Holi */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Colors of Holi
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -729,9 +730,9 @@ export default function HoliPage() {
         </section>
 
         {/* Spiritual Significance */}
-        <section className="py-16">
+        <section className="py-8 pt-5 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -739,7 +740,7 @@ export default function HoliPage() {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center lg:text-start">
                   Spiritual Significance
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -808,7 +809,7 @@ export default function HoliPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
+                className="relative md:h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"

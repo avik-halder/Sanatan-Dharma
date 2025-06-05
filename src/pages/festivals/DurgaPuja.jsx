@@ -832,7 +832,7 @@ const DurgaPujaPage = () => {
 
         <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-8 items-center md:items-start lg:items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-8 items-center md:items-start lg:items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -840,7 +840,7 @@ const DurgaPujaPage = () => {
                 transition={{ duration: 0.5 }}
                 className="order-2 lg:order-1"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center md:text-start">
+                <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center lg:text-start">
                   Spiritual Significance
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -910,7 +910,7 @@ const DurgaPujaPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative lg:h-[400px] rounded-lg overflow-hidden shadow-lg order-1 md:order-2"
+                className="relative md:h-[400px] rounded-lg overflow-hidden shadow-lg order-1 lg:order-2"
               >
                 <img
                   loading="lazy"

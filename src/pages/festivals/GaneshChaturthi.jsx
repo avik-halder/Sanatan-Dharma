@@ -9,19 +9,19 @@ function GaneshChaturthiPage() {
     <div className="min-h-screen mt-16">
       <main>
         {/* Page Header */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="lg:col-span-3 order-2 lg:order-1"
               >
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   Ganesh Chaturthi
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   The birth celebration of Lord Ganesha, the remover of
                   obstacles and god of new beginnings
                 </h2>
@@ -65,7 +65,7 @@ function GaneshChaturthiPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-2 order-1 lg:order-2"
               >
-                <div className="relative h-full rounded-xl overflow-hidden shadow-lg">
+                <div className="relative lg:h-auto rounded-xl overflow-hidden shadow-lg">
                   <img
                     loading="lazy"
                     src={imageLinks.ganeshChaturthi2}
@@ -79,14 +79,14 @@ function GaneshChaturthiPage() {
         </section>
 
         {/* Mythology and Significance Section */}
-        <section className="py-12 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-10"
+              className="text-center mb-8 md:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-red-800 mb-4">
                 Mythology and Significance
@@ -124,7 +124,8 @@ function GaneshChaturthiPage() {
                       onClick={() => setActiveTab("significance")}
                       role="tab"
                     >
-                      Spiritual Significance
+                      <span className="hidden md:block">Spiritual Significance</span>
+                      <span className="block md:hidden">Significance</span>
                     </button>
                   </li>
                   <li className="z-30 flex-auto text-center">
@@ -135,7 +136,8 @@ function GaneshChaturthiPage() {
                       onClick={() => setActiveTab("symbols")}
                       role="tab"
                     >
-                      Symbols and Forms
+                      <span className="hidden md:block">Symbols and Forms</span>
+                      <span className="block md:hidden">Symbols</span>
                     </button>
                   </li>
                 </ul>
@@ -147,7 +149,7 @@ function GaneshChaturthiPage() {
                 {activeTab === "birth" && (
                   <div className="bg-orange-50 border border-orange-500 p-6 rounded-lg shadow-md">
                     <div className="flex flex-col md:flex-row gap-6">
-                      <div className="md:w-1/2 relative h-[200px] md:h-auto rounded-lg overflow-hidden">
+                      <div className="md:w-1/2 relative h-auto rounded-lg overflow-hidden">
                         <img
                           loading="lazy"
                           src={imageLinks.ganeshBirth2}
@@ -337,16 +339,16 @@ function GaneshChaturthiPage() {
         </section>
 
         {/* Celebrations and Rituals Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-10"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-red-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-red-800 mb-2 md:mb-4">
                 Celebrations and Rituals
               </h2>
               <p className="text-red-700 max-w-3xl mx-auto">

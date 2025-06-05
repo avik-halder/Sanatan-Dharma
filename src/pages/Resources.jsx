@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
 import imageLinks from "../utils/ImageLinks";
 
 const formatText = (text) => {
@@ -43,16 +44,16 @@ export default function ResourcesPage() {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16 mt-16">
+        <section className="py-8 md:py-10 lg:py-10">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 md:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 Sacred Texts
@@ -178,7 +179,7 @@ export default function ResourcesPage() {
                           onClick={() =>
                             (window.location.href = "/resources/vedas")
                           }
-                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded"
+                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-lg"
                         >
                           Explore Vedic Texts
                         </button>
@@ -254,7 +255,7 @@ export default function ResourcesPage() {
                           onClick={() =>
                             (window.location.href = "/resources/upanishads")
                           }
-                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded"
+                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-lg"
                         >
                           Explore Upanishads
                         </button>
@@ -320,7 +321,7 @@ export default function ResourcesPage() {
                           onClick={() =>
                             (window.location.href = "/resources/epics")
                           }
-                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded"
+                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-lg"
                         >
                           Explore Hindu Epics
                         </button>
@@ -390,7 +391,7 @@ export default function ResourcesPage() {
                           onClick={() =>
                             (window.location.href = "/resources/puranas")
                           }
-                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded"
+                          className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-lg"
                         >
                           Explore Puranas
                         </button>
@@ -404,14 +405,14 @@ export default function ResourcesPage() {
         </section>
 
         {/* First 5 Blogs Section */}
-        <section className="">
+        <section className="py-8 bg-orange-100 md:bg-transparent">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-6 md:mb-12"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
                 Latest Blogs
@@ -429,7 +430,7 @@ export default function ResourcesPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-orange-100 rounded-xl p-6 border-[1px] border-orange-500"
+                  className="bg-orange-50 md:bg-orange-100 rounded-xl p-6 border-[1px] border-orange-500"
                 >
                   <h3 className="text-xl font-bold text-orange-700 mb-4">
                     {blog.blog_title}
@@ -452,16 +453,16 @@ export default function ResourcesPage() {
         </section>
 
         {/* Recommended Books Section */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Recommended Books
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -475,56 +476,56 @@ export default function ResourcesPage() {
                   author: "Translated by Eknath Easwaran",
                   description:
                     "A poetic translation of the 700-verse Hindu scripture that is part of the epic Mahabharata.",
-                  image: imageLinks.gita, // Use actual path of the image
+                  image: imageLinks.gita, 
                 },
                 {
                   title: "The Upanishads",
                   author: "Translated by Patrick Olivelle",
                   description:
                     "A scholarly translation of the principal Upanishads with detailed notes and commentary.",
-                  image: imageLinks.upanishad, // Use actual path of the image
+                  image: imageLinks.upanishad, 
                 },
                 {
                   title: "Hinduism: A Very Short Introduction",
                   author: "Kim Knott",
                   description:
                     "A concise yet comprehensive overview of Hinduism, explaining its practices, beliefs, and history.",
-                  image: imageLinks.hinduism, // Use actual path of the image
+                  image: imageLinks.hinduism, 
                 },
                 {
                   title: "The Yoga Sutras of Patanjali",
                   author: "Translated by Edwin F. Bryant",
                   description:
                     "A comprehensive translation and commentary on the foundational text of yoga philosophy.",
-                  image: imageLinks.patanjali, // Use actual path of the image
+                  image: imageLinks.patanjali, 
                 },
                 {
                   title: "The Ramayana",
                   author: "Translated by Ramesh Menon",
                   description:
                     "A modern prose rendition of the ancient epic of Rama, making it accessible to contemporary readers.",
-                  image: imageLinks.ramayana, // Use actual path of the image
+                  image: imageLinks.ramayana, 
                 },
                 {
                   title: "Hindu Myths",
                   author: "Wendy Doniger",
                   description:
                     "A collection of Hindu myths from the Vedas, Puranas, and epics with insightful analysis.",
-                  image: imageLinks.hinduMyths, // Use actual path of the image
+                  image: imageLinks.hinduMyths, 
                 },
                 {
                   title: "Autobiography of a Yogi",
                   author: "Paramahansa Yogananda",
                   description:
                     "A spiritual classic that introduces Hindu spiritual concepts through personal narrative.",
-                  image: imageLinks.yogi, // Use actual path of the image
+                  image: imageLinks.yogi, 
                 },
                 {
                   title: "The Hindu Temple",
                   author: "Stella Kramrisch",
                   description:
                     "A classic study of Hindu temple architecture and its symbolic significance.",
-                  image: imageLinks.hinduTemple, // Use actual path of the image
+                  image: imageLinks.hinduTemple, 
                 },
               ].map((book, index) => (
                 <motion.div
@@ -556,6 +557,7 @@ export default function ResourcesPage() {
                     <button
                       variant="outline"
                       className="w-full p-2 bg-[#CE6400] rounded-lg text-orange-100 hover:scale-105 duration-500"
+                      onClick={() => toast.info('Coming Soon!')}
                     >
                       Find Book
                     </button>
@@ -565,6 +567,7 @@ export default function ResourcesPage() {
             </div>
           </div>
         </section>
+        <ToastContainer />
       </main>
     </div>
   );

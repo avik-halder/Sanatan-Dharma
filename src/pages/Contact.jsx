@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 import { motion } from "framer-motion";
 
 export default function ContactPage() {
@@ -33,14 +34,14 @@ export default function ContactPage() {
     });
 
     if (response.ok) {
-      alert("✅ Message sent! Thank you for contacting us.");
+      toast.success("Message sent! Thank you for contacting us.");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } else {
       const data = await response.json();
-      alert("❌ Failed to send message: " + data.detail);
+      toast.error(data.detail);
     }
   } catch (error) {
-    alert("🚨 Error sending message: " + error.message);
+    toast.warn(error.message);
   } finally {
     setIsSubmitting(false);
   }
@@ -364,6 +365,7 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
+        <ToastContainer />
       </main>
     </div>
   );

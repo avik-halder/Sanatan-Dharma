@@ -324,7 +324,7 @@ const BlogDetails = () => {
             )}
           </motion.button>
         </div>
-        <h1 className="hidden md:block text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold">
+        <h1 className="hidden md:block text-3xl lg:text-5xl text-orange-800 mb-2 md:mb-3 font-bold">
           {isTranslated && translatedBlog
             ? translatedBlog.blog_title
             : blog.blog_title}

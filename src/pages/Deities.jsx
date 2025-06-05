@@ -84,16 +84,16 @@ export default function DeitiesPage() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16 mt-8 lg:mt-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-6 lg:mb-12"
+              className="text-center mb-8 md:mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-orange-800 mb-2 lg:mb-4">
                 The Divine Trinity
@@ -167,16 +167,16 @@ export default function DeitiesPage() {
         </section>
 
         {/* Section for Major Deities with Tabs */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 lg:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 lg:mb-4">
                 Major Deities
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">
@@ -306,16 +306,16 @@ export default function DeitiesPage() {
         </section>
 
         {/* Section for Avatars of Vishnu */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4">
                 Avatars of Vishnu
               </h2>
               <p className="text-orange-700 max-w-3xl mx-auto">

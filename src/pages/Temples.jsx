@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import imageLinks from "../utils/ImageLinks";
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function TemplesPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16 mt-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-center mb-12"
+              className="text-center mb-8 md:mb-12"
             >
               <h2 className="text-2xl md:text-4xl font-bold text-orange-800 mb-4">
                 Temple Architecture
@@ -25,12 +26,13 @@ export default function TemplesPage() {
             </motion.div>
 
             {/* Temple Architecture Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
+                className="order-2 lg:order-1"
               >
                 <div className="space-y-4 text-gray-700">
                   <p>
@@ -80,7 +82,7 @@ export default function TemplesPage() {
                     Indian), and Vesara (hybrid style in central India).
                   </p>
                 </div>
-                <button className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-6 rounded">
+                <button className="mt-6 bg-orange-600 hover:bg-orange-700 text-white py-2 px-6 rounded" onClick={() => toast.info('Coming Soon!')}>
                   Learn More About Temple Architecture
                 </button>
               </motion.div>
@@ -91,7 +93,7 @@ export default function TemplesPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="grid grid-cols-2 gap-4"
+                className="grid grid-cols-2 gap-4 order-1 lg:order-2"
               >
                 {[
                   { name: "Nagara Style", image: imageLinks.nagara },
@@ -105,7 +107,7 @@ export default function TemplesPage() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
-                    className="relative h-52 rounded-lg overflow-hidden group"
+                    className="relative md:h-[215px] rounded-lg overflow-hidden group"
                   >
                     <img
                       loading="lazy"
@@ -124,7 +126,7 @@ export default function TemplesPage() {
         </section>
 
         {/* Famous Temples Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -226,7 +228,7 @@ export default function TemplesPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <div className="bg-orange-50 border border-orange-500 rounded-xl overflow-hidden shadow-md hover:shadow-lg h-full">
-                    <div className="relative h-60">
+                    <div className="relative h-60 md:h-40 lg:h-60">
                       <img
                         loading="lazy"
                         src={temple.image || "/placeholder.svg"}
@@ -245,10 +247,10 @@ export default function TemplesPage() {
                         Deity: {temple.deity}
                       </p>
                       <p className="text-gray-700">{temple.description}</p>
-                      <button className="text-orange-600 mt-4 p-0 underline">
+                      <button className="text-orange-600 mt-4 p-0 underline" onClick={() => toast.info('Coming Soon!')}>
                         Learn more
                       </button>
-                    </div>
+                    </div>  
                   </div>
                 </motion.div>
               ))}
@@ -257,7 +259,7 @@ export default function TemplesPage() {
         </section>
 
         {/* Temple Etiquette Section */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -319,6 +321,7 @@ export default function TemplesPage() {
             </div>
           </div>
         </section>
+        <ToastContainer />
       </main>
     </div>
   );
