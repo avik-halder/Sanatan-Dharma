@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 const VedasPage = () => {
@@ -9,20 +10,20 @@ const VedasPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         {/* Introduction Section */}
-        <section className="py-16">
+        <section className="py-8 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col md:flex-row gap-8 items-center"
+              className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-12 items-center"
             >
-              <div className="md:w-1/2">
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+              <div className="lg:w-1/2 order-2 lg:order-1">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 lg:mb-4 font-bold text-center lg:text-start">
                   The Vedas
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   The oldest and most sacred texts of Hinduism
                 </h2>
                 <p className="text-gray-700 mb-4">
@@ -46,13 +47,13 @@ const VedasPage = () => {
                   intellectual traditions.
                 </p>
               </div>
-              <div className="md:w-1/2">
+              <div className="lg:w-1/2 order-1 lg:order-2">
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="relative h-[300px] w-full rounded-xl overflow-hidden shadow-xl"
+                  className="relative lg:h-[300px] w-full rounded-xl overflow-hidden shadow-xl"
                 >
                   <img
                     loading="lazy"
@@ -67,7 +68,7 @@ const VedasPage = () => {
         </section>
 
         {/* Four Vedas Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -468,7 +469,7 @@ const VedasPage = () => {
         </section>
 
         {/* Structure of Vedas Section */}
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -476,10 +477,10 @@ const VedasPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, staggerChildren: 0.2 }}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4 text-center">
                 Structure of the Vedas
               </h2>
-              <p className="text-orange-700 text-center mb-12">
+              <p className="text-orange-700 text-sm md:text-base text-center mb-8 md:mb-12">
                 An exploration of the components that make up the Vedic texts,
                 from hymns to philosophical teachings.
               </p>
@@ -602,7 +603,7 @@ const VedasPage = () => {
         </section>
 
         {/* Significance Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -709,7 +710,7 @@ const VedasPage = () => {
         </section>
 
         {/* Explore Section */}
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -743,14 +744,11 @@ const VedasPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/upanishads")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/upanishads"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -774,14 +772,11 @@ const VedasPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/epics")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/epics"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -805,14 +800,11 @@ const VedasPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/puranas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/puranas"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
               </div>

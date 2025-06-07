@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 const UpanishadsPage = () => {
@@ -14,20 +15,20 @@ const UpanishadsPage = () => {
     <div className="min-h-screen mt-16">
       <main>
         {/* Introduction Section */}
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex flex-col md:flex-row gap-8 items-center"
+              className="flex flex-col lg:flex-row gap-6 md:gap-8 items-center"
             >
-              <div className="md:w-1/2">
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+              <div className="lg:w-1/2 order-2 lg:order-1">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-4 font-bold text-center lg:text-start">
                   The Upanishads
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center lg:text-start">
                   Philosophical texts exploring the nature of reality and
                   consciousness
                 </h2>
@@ -52,13 +53,13 @@ const UpanishadsPage = () => {
                   from teacher to disciple.
                 </p>
               </div>
-              <div className="md:w-1/2">
+              <div className="lg:w-1/2 order-1 lg:order-2">
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
-                  className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-lg"
+                  className="relative lg:h-[400px] w-full rounded-lg overflow-hidden shadow-lg"
                 >
                   <img
                     loading="lazy"
@@ -73,7 +74,7 @@ const UpanishadsPage = () => {
         </section>
 
         {/* Principal Upanishads Section */}
-        <section className="pt-12 pb-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -512,7 +513,7 @@ const UpanishadsPage = () => {
         </section>
 
         {/* Key Concepts Section */}
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -623,7 +624,7 @@ const UpanishadsPage = () => {
         </section>
 
         {/* Influence and Legacy Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -631,7 +632,7 @@ const UpanishadsPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-4 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4 text-center">
                 Influence and Legacy
               </h2>
               <p className="text-orange-700 mb-10 text-center">
@@ -722,7 +723,7 @@ const UpanishadsPage = () => {
         </section>
 
         {/* Explore Other Texts Section */}
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -756,14 +757,11 @@ const UpanishadsPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/vedas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/vedas"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -787,14 +785,11 @@ const UpanishadsPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/epics")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/epics"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -818,14 +813,11 @@ const UpanishadsPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/puranas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/puranas"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
               </div>

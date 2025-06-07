@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import imageLinks from "../../utils/ImageLinks";
 
 const PuranasPage = () => {
@@ -8,7 +9,7 @@ const PuranasPage = () => {
   return (
     <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             {/* Introduction Section */}
             <motion.div
@@ -16,13 +17,13 @@ const PuranasPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex flex-col md:flex-row gap-8 items-center"
+              className="flex flex-col lg:flex-row gap-6 md:gap-8 items-center"
             >
-              <div className="md:w-1/2">
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+              <div className="lg:w-1/2 order-2 lg:order-1">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center lg:text-start">
                   The Puranas
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 md:mb-6 text-center lg:text-start">
                   Ancient texts of stories, genealogies, and teachings
                 </h2>
                 <p className="text-gray-700 mb-4">
@@ -40,9 +41,9 @@ const PuranasPage = () => {
                   deities.
                 </p>
               </div>
-              <div className="md:w-1/2">
+              <div className="lg:w-1/2 order-1 lg:order-2">
                 <motion.div
-                  className="relative h-80 w-full rounded-xl overflow-hidden shadow-xl"
+                  className="relative md:h-72 lg:h-80 w-full rounded-xl overflow-hidden shadow-xl"
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
@@ -61,7 +62,7 @@ const PuranasPage = () => {
         </section>
 
         {/* 18 Maha Puranas Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -154,7 +155,7 @@ const PuranasPage = () => {
         </section>
 
         {/* Content and Themes Section */}
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -197,7 +198,8 @@ const PuranasPage = () => {
                         onClick={() => setActiveTab("stories")}
                         role="tab"
                       >
-                        Major Stories
+                        <span className="hidden md:block">Major Stories</span>
+                        <span className="block md:hidden">Stories</span>
                       </button>
                     </li>
                     <li className="z-30 flex-auto text-center">
@@ -219,7 +221,8 @@ const PuranasPage = () => {
                         onClick={() => setActiveTab("influence")}
                         role="tab"
                       >
-                        Cultural Influence
+                        <span className="hidden md:block">Cultural Influence</span>
+                        <span className="block md:hidden">Influence</span>
                       </button>
                     </li>
                   </ul>
@@ -246,7 +249,7 @@ const PuranasPage = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="p-8">
+                    <div className="p-8 pt-0 sm:pt-8">
                       <h4 className="text-xl font-semibold text-orange-700 mb-4">
                         Panchalakshana Elements
                       </h4>
@@ -609,7 +612,7 @@ const PuranasPage = () => {
         </section>
 
         {/* Historical Context Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 pb-0 md:pb-0 lg:pb-0 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -743,7 +746,7 @@ const PuranasPage = () => {
         </section>
 
         {/* Modern Relevance Section */}
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -804,7 +807,7 @@ const PuranasPage = () => {
         </section>
 
         {/* Explore Other Texts Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -838,14 +841,11 @@ const PuranasPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/vedas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/vedas"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -869,14 +869,11 @@ const PuranasPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/epics")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/epics"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -900,14 +897,11 @@ const PuranasPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/puranas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/upanishads"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
               </div>

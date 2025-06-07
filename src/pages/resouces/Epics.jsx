@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import imageLinks from "../../utils/ImageLinks";
 
@@ -175,19 +176,19 @@ const EpicsPage = () => {
   return (
     <div className="min-h-screen mt-16">
       <main>
-        <section className="py-16 relative overflow-hidden">
+        <section className="py-8 md:py-10 lg:py-16 relative overflow-hidden">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
-              className="flex flex-col md:flex-row gap-8 items-center mb-16"
+              className="flex flex-col lg:flex-row gap-6 md:gap-8 items-center mb-8 md:mb-10 lg:mb-16"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="md:w-1/2">
-                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-3 font-bold text-center md:text-start">
+              <div className="lg:w-1/2 order-2 lg:order-1">
+                <h1 className="text-3xl md:text-5xl text-orange-800 mb-2 md:mb-4 font-bold text-center lg:text-start">
                   The Hindu Epics
                 </h1>
-                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-6 text-center md:text-start">
+                <h2 className="text-md md:text-lg font-medium text-amber-600 mb-4 md:mb-6 text-center lg:text-start">
                   Ramayana and Mahabharata: Timeless narratives of duty, honor,
                   and dharma
                 </h2>
@@ -206,9 +207,9 @@ const EpicsPage = () => {
                   and Southeast Asia.
                 </p>
               </div>
-              <div className="md:w-1/2">
+              <div className="lg:w-1/2 order-1 lg:order-2">
                 <motion.div
-                  className="relative h-80 w-full rounded-xl overflow-hidden shadow-lg"
+                  className="relative lg:h-80 w-full rounded-xl overflow-hidden shadow-lg"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
@@ -249,14 +250,14 @@ const EpicsPage = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-3 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-2 md:mb-4 text-center">
                 The Great Epics
               </h2>
               <p className="text-orange-700 text-center mb-8">
@@ -722,7 +723,7 @@ const EpicsPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0 }}
@@ -792,7 +793,7 @@ const EpicsPage = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}
@@ -800,7 +801,7 @@ const EpicsPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-8 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-orange-800 mb-6 md:mb-10 text-center">
                 Regional Variations
               </h2>
               <div className="bg-orange-50 border border-orange-500 rounded-xl p-8 shadow-md border border-orange-100">
@@ -891,7 +892,7 @@ const EpicsPage = () => {
           </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-8 md:py-10 lg:py-16">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.section
               initial={{ opacity: 0 }}
@@ -941,7 +942,7 @@ const EpicsPage = () => {
         </section>
 
         {/* Explore Other Texts Section */}
-        <section className="py-16 bg-orange-100">
+        <section className="py-8 md:py-10 lg:py-16 bg-orange-100">
           <div className="w-full px-4 lg:px-32 3xl:px-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -975,14 +976,11 @@ const EpicsPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/vedas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/vedas"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -1006,14 +1004,11 @@ const EpicsPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/puranas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                     <Link to={"/resources/puranas"}> 
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-lg bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
                 <motion.div
@@ -1037,14 +1032,11 @@ const EpicsPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <button
-                      onClick={() =>
-                        (window.location.href = "/resources/puranas")
-                      }
-                      className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600"
-                    >
-                      Learn More
-                    </button>
+                    <Link to={"/resources/upanishads"}>
+                      <button className="w-full px-4 py-2 border border-orange-600 text-orange-50 rounded-md bg-orange-600">
+                        Learn More
+                      </button>
+                    </Link>
                   </div>
                 </motion.div>
               </div>
